@@ -36,3 +36,5 @@ node_modules/
 # Environment files (NEVER commit)
 .env
 .env.*
+
+*.pt
