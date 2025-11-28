@@ -12,16 +12,30 @@ CONF_POSE = 0.30
 CONF_FACE = 0.40
 IOU_HUMAN = 0.45
 IMG_SIZE = 800
+
+# YOLO Pose skeleton connections - BODY ONLY (excluding face keypoints)
+# 0: nose, 1-2: eyes, 3-4: ears, 5-6: shoulders, 7-8: elbows, 
+# 9-10: wrists, 11-12: hips, 13-14: knees, 15-16: ankles
+POSE_CONNECTIONS = [
+    # Body skeleton only (no face connections for stability)
+    (5, 6),          # shoulders
+    (5, 7), (7, 9),  # left arm
+    (6, 8), (8, 10), # right arm
+    (5, 11), (6, 12),# shoulders to hips
+    (11, 12),        # hips
+    (11, 13), (13, 15), # left leg
+    (12, 14), (14, 16)  # right leg
+]
 # ---------------------------------------------------------------------------
 
 class YOLODetector:
     def __init__(self,
-                 human_model_path="yolov8s.pt",
-                 pose_model_path="yolov8s-pose.pt",
+                 human_model_path="yolov8l.pt",
+                 pose_model_path="yolov8x-pose.pt",
                  face_model_path="yolov8s-face.pt"):
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        print(f"🔥 Using device: {self.device}")
+        print(f"Using device: {self.device}")
 
         self.human_model = YOLO(human_model_path)
         self.pose_model = YOLO(pose_model_path)
@@ -137,16 +151,39 @@ class YOLODetector:
             x1, y1, x2, y2 = map(int, det["bbox"])
             conf = det["conf"]
 
+            # Determine color and label based on tracking
+            if 'track_id' in det and det['track_id'] >= 0:
+                # Use track color if available
+                color = det.get('track_color', (0, 255, 0))
+                label = f"ID:{det['track_id']} {conf:.2f}"
+            else:
+                # Default green for untracked
+                color = (0, 255, 0)
+                label = f"Person {conf:.2f}"
+
             # human box
-            cv2.rectangle(out, (x1, y1), (x2, y2), (0,255,0), 2)
-            cv2.putText(out, f"Person {conf:.2f}", (x1, y1-6),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
+            cv2.rectangle(out, (x1, y1), (x2, y2), color, 2)
+            cv2.putText(out, label, (x1, y1-6),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
             # skeleton
             if draw_skeleton and det["pose_keypoints"] is not None:
-                for px, py, v in det["pose_keypoints"]:
-                    if v > 0:
-                        cv2.circle(out, (int(px), int(py)), 3, (0,0,255), -1)
+                kpts = det["pose_keypoints"]
+                
+                # Draw bones (connections)
+                for start_idx, end_idx in POSE_CONNECTIONS:
+                    if start_idx < len(kpts) and end_idx < len(kpts):
+                        x1, y1, v1 = kpts[start_idx]
+                        x2, y2, v2 = kpts[end_idx]
+                        if v1 > 0.5 and v2 > 0.5:  # Higher confidence for stability
+                            cv2.line(out, (int(x1), int(y1)), (int(x2), int(y2)), 
+                                   (0, 255, 255), 2, cv2.LINE_AA)
+                
+                # Draw body keypoints only (indices 5-16: shoulders to ankles)
+                for i, (px, py, v) in enumerate(kpts):
+                    if i >= 5 and v > 0.5:  # Only body keypoints, skip face (0-4)
+                        cv2.circle(out, (int(px), int(py)), 4, (0, 0, 255), -1)
+                        cv2.circle(out, (int(px), int(py)), 5, (255, 255, 255), 1)
 
             # faces
             if draw_faces:
