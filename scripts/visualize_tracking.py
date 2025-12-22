@@ -34,7 +34,7 @@ def visualize_tracking(video_path, draw_skeleton=True, draw_faces=True):
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     
     print("\n" + "="*60)
-    print("🎯 BoxMOT Person Tracking Demo")
+    print("BoxMOT Person Tracking Demo")
     print("="*60)
     print(f"Video: {video_path}")
     print(f"FPS: {fps:.1f} | Total Frames: {total_frames}")

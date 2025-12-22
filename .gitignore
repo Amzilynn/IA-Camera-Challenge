@@ -3,8 +3,8 @@ __pycache__/
 *.pyc
 
 # Conda & venv environments
-Cam_Chan_env/
-venv/
+venv-Cam-Challenge/
+
 
 # VS Code files
 .vscode/
@@ -19,7 +19,7 @@ dist/
 # Logs
 *.log
 
-# Model weights or large files
+# Model weights 
 *.pth
 *.ckpt
 *.onnx
@@ -30,10 +30,10 @@ data/
 *.avi
 *.mov
 
-# Node / frontend (later when you create frontend)
+# Node / frontend 
 node_modules/
 
-# Environment files (NEVER commit)
+# Environment files
 .env    
 .env.*
 
