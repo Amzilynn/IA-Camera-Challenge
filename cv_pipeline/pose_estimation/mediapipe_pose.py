@@ -5,23 +5,20 @@ import time
 
 class MediaPipePoseEstimator:
     """
-    MediaPipe BlazePose implementation for extracting body pose keypoints.
+    MediaPipe BlazePose implementation with enhanced skeleton visualization.
     """
     
     def __init__(self, 
-                 model_complexity=1,     # 0, 1, or 2 (higher is more accurate but slower)
-                 static_image_mode=False, # Set to False for video (tracking-based optimization)
-                 smooth_landmarks=True,   # Temporal filter for smoother keypoints
-                 min_detection_conf=0.5,  # Minimum confidence for detection
-                 min_tracking_conf=0.5,   # Minimum confidence for tracking
-                ):
+                 model_complexity=1,
+                 static_image_mode=False,
+                 smooth_landmarks=True,
+                 min_detection_conf=0.5,
+                 min_tracking_conf=0.5):
         
-        # Initialize MediaPipe Pose
         self.mp_pose = mp.solutions.pose
         self.mp_drawing = mp.solutions.drawing_utils
         self.mp_drawing_styles = mp.solutions.drawing_styles
         
-        # Create pose estimator
         self.pose = self.mp_pose.Pose(
             model_complexity=model_complexity,
             static_image_mode=static_image_mode,
@@ -30,49 +27,18 @@ class MediaPipePoseEstimator:
             min_tracking_confidence=min_tracking_conf
         )
         
-        # Store parameters
         self.model_complexity = model_complexity
         print(f"✓ MediaPipe Pose initialized (complexity: {model_complexity})")
         
-        # Define pose connections for visualization
         self.pose_connections = self.mp_pose.POSE_CONNECTIONS
         
-    def process_frame(self, frame):
-        """
-        Process a frame to extract pose landmarks.
-        
-        Args:
-            frame: RGB input frame
-            
-        Returns:
-            Pose landmarks if detected, None otherwise
-        """
-        # Convert to RGB (MediaPipe requires RGB input)
-        rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        
-        # Process the frame
-        results = self.pose.process(rgb_frame)
-        
-        return results
-    
     def estimate_pose(self, frame, detections):
-        """
-        Estimate pose for each detected person in the frame.
-        
-        Args:
-            frame: Input BGR frame
-            detections: List of detection dictionaries from YOLODetector
-            
-        Returns:
-            Updated detections with pose keypoints added
-        """
+        """Estimate pose for each detected person."""
         height, width = frame.shape[:2]
         
         for det in detections:
-            # Extract person bounding box
             x1, y1, x2, y2 = [int(v) for v in det['bbox']]
             
-            # Extract person region with margin
             margin = 10
             x1_crop = max(0, x1 - margin)
             y1_crop = max(0, y1 - margin)
@@ -84,18 +50,17 @@ class MediaPipePoseEstimator:
             if person_img.size == 0:
                 continue
                 
-            # Process person image to get pose
-            results = self.process_frame(person_img)
+            # Convert to RGB
+            rgb_img = cv2.cvtColor(person_img, cv2.COLOR_BGR2RGB)
+            results = self.pose.process(rgb_img)
             
             if results.pose_landmarks:
-                # Convert normalized landmarks to pixel coordinates in original frame
                 keypoints = []
                 
                 for landmark in results.pose_landmarks.landmark:
-                    # Convert from relative coordinates in the crop to absolute in the full frame
                     px = int(landmark.x * (x2_crop - x1_crop) + x1_crop)
                     py = int(landmark.y * (y2_crop - y1_crop) + y1_crop)
-                    pz = landmark.z  # Keep depth as is
+                    pz = landmark.z
                     visibility = landmark.visibility
                     
                     keypoints.append({
@@ -105,19 +70,18 @@ class MediaPipePoseEstimator:
                         'visibility': visibility
                     })
                 
-                # Add keypoints to detection
                 det['keypoints'] = keypoints
                 
-                # Extract face bounding box (approximate from facial landmarks)
-                if len(keypoints) >= 11:  # Need at least facial landmarks
+                # Extract face bbox from facial landmarks
+                if len(keypoints) >= 11:
                     face_points = [keypoints[i] for i in range(11)]
-                    face_xs = [p['x'] for p in face_points]
-                    face_ys = [p['y'] for p in face_points]
+                    face_xs = [p['x'] for p in face_points if p['visibility'] > 0.5]
+                    face_ys = [p['y'] for p in face_points if p['visibility'] > 0.5]
                     
-                    if face_xs and face_ys:  # If face points exist
-                        face_x1 = max(0, min(face_xs) - 10)
-                        face_y1 = max(0, min(face_ys) - 10)
-                        face_x2 = min(width, max(face_xs) + 10)
+                    if face_xs and face_ys:
+                        face_x1 = max(0, min(face_xs) - 20)
+                        face_y1 = max(0, min(face_ys) - 30)
+                        face_x2 = min(width, max(face_xs) + 20)
                         face_y2 = min(height, max(face_ys) + 10)
                         
                         det['face_bbox'] = [face_x1, face_y1, face_x2, face_y2]
@@ -125,53 +89,61 @@ class MediaPipePoseEstimator:
         return detections
     
     def draw_pose(self, image, detection):
-        """
-        Draw pose skeleton on an image.
-        
-        Args:
-            image: Input BGR image
-            detection: Single detection dictionary with keypoints
-            
-        Returns:
-            Image with pose drawn
-        """
+        """Draw enhanced pose skeleton with better visualization."""
         if 'keypoints' not in detection or detection['keypoints'] is None:
             return image
             
         keypoints = detection['keypoints']
         track_id = detection.get('track_id', -1)
         
-        # Get color based on track ID or use default
+        # Get color based on track ID
         if track_id != -1:
-            color = detection.get('track_color', (0, 255, 0))
+            base_color = detection.get('track_color', (0, 255, 0))
         else:
-            color = (0, 255, 0)
-            
-        # Define connections for skeleton drawing
-        connections = [
-            # Face
-            (0, 1), (1, 2), (2, 3), (3, 7), (0, 4), (4, 5), (5, 6), (6, 8),
-            # Torso
-            (9, 10), (11, 12), (11, 13), (13, 15), (12, 14), (14, 16),
-            # Legs
-            (11, 23), (12, 24), (23, 25), (24, 26), (25, 27), (26, 28), (27, 29), (28, 30), (29, 31), (30, 32)
-        ]
+            base_color = (0, 255, 0)
         
-        # Draw connections
-        for conn in connections:
-            start_idx, end_idx = conn
-            
-            if start_idx < len(keypoints) and end_idx < len(keypoints):
-                start_point = (keypoints[start_idx]['x'], keypoints[start_idx]['y'])
-                end_point = (keypoints[end_idx]['x'], keypoints[end_idx]['y'])
-                
-                # Only draw if both points are visible
-                if keypoints[start_idx]['visibility'] > 0.5 and keypoints[end_idx]['visibility'] > 0.5:
-                    cv2.line(image, start_point, end_point, color, 2)
+        # Define body part connections with colors
+        connections = {
+            'face': [(0, 1), (1, 2), (2, 3), (3, 7), (0, 4), (4, 5), (5, 6), (6, 8), (9, 10)],
+            'torso': [(11, 12), (11, 23), (12, 24), (23, 24)],
+            'arms': [(11, 13), (13, 15), (12, 14), (14, 16), (15, 17), (15, 19), (15, 21), (16, 18), (16, 20), (16, 22)],
+            'legs': [(23, 25), (25, 27), (27, 29), (27, 31), (24, 26), (26, 28), (28, 30), (28, 32)]
+        }
         
-        # Draw keypoints
-        for point in keypoints:
+        # Draw connections with varying thickness
+        for part, conns in connections.items():
+            if part == 'face':
+                thickness = 1
+                alpha = 0.5
+            elif part == 'torso':
+                thickness = 3
+                alpha = 1.0
+            else:
+                thickness = 2
+                alpha = 0.8
+            
+            for start_idx, end_idx in conns:
+                if start_idx < len(keypoints) and end_idx < len(keypoints):
+                    start_kp = keypoints[start_idx]
+                    end_kp = keypoints[end_idx]
+                    
+                    if start_kp['visibility'] > 0.5 and end_kp['visibility'] > 0.5:
+                        start_point = (start_kp['x'], start_kp['y'])
+                        end_point = (end_kp['x'], end_kp['y'])
+                        
+                        # Apply alpha blending for semi-transparent lines
+                        overlay = image.copy()
+                        cv2.line(overlay, start_point, end_point, base_color, thickness)
+                        cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0, image)
+        
+        # Draw keypoints with different sizes
+        key_joints = [11, 12, 13, 14, 15, 16, 23, 24, 25, 26]  # Important joints
+        
+        for i, point in enumerate(keypoints):
             if point['visibility'] > 0.5:
-                cv2.circle(image, (point['x'], point['y']), 4, color, -1)
+                radius = 5 if i in key_joints else 3
+                cv2.circle(image, (point['x'], point['y']), radius, base_color, -1)
+                cv2.circle(image, (point['x'], point['y']), radius + 1, (255, 255, 255), 1)
                 
         return image
+
