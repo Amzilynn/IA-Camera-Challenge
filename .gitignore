@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 
 # Conda & venv environments
-Cam_Chan_env/
+venv-camchallenge/
 venv/
 
 # VS Code files
