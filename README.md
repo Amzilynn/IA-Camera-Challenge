@@ -24,7 +24,7 @@ IA-Camera-Challenge/
 ├── output.mp4              # Annotated video output
 └── scene_log.txt           # Frame-by-frame text log
 ```
-## 🚀 Quick Start
+##  Quick Start
 ### Prerequisites
 - Python 3.12
 - Virtual environment (recommended)
