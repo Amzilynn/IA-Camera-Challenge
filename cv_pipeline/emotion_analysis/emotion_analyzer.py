@@ -5,7 +5,6 @@ import numpy as np
 class EmotionAnalyzer:
     def __init__(self, backend='opencv'):
         self.backend = backend
-        # No heavy initialization needed for DeepFace as it loads models lazyly or globally
         
     def analyze(self, frame, bbox):
         """
