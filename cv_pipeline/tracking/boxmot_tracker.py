@@ -1,8 +1,3 @@
-"""
-BoxMOT Tracker Wrapper for Person Tracking
-Provides persistent ID assignment using BoostTrack (DeepOCSORT-like behavior).
-"""
-
 import numpy as np
 from boxmot import BoostTrack
 from pathlib import Path
