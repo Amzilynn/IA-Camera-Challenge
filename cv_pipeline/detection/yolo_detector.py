@@ -3,9 +3,8 @@ import cv2
 import numpy as np
 import torch
 
-# ---------------------------------------------------------------------------
 # Configuration constants
-# ---------------------------------------------------------------------------
+
 MIN_HEIGHT_RATIO = 0.2
 CONF_HUMAN = 0.35
 CONF_POSE = 0.30
@@ -26,7 +25,6 @@ POSE_CONNECTIONS = [
     (11, 13), (13, 15), # left leg
     (12, 14), (14, 16)  # right leg
 ]
-# ---------------------------------------------------------------------------
 
 class YOLODetector:
     def __init__(self,
@@ -46,7 +44,6 @@ class YOLODetector:
             print("⚠️ Face model missing → face detection disabled")
             self.face_model = None
 
-    # ---------------------------------------------------------------------
     @staticmethod
     def _crop_region(frame, bbox, margin=0.1):
         h, w = frame.shape[:2]
@@ -61,7 +58,6 @@ class YOLODetector:
         cy2 = int(min(h, y2 + my))
         return frame[cy1:cy2, cx1:cx2], (cx1, cy1)
 
-    # ---------------------------------------------------------------------
     def detect(self, frame):
         h, w = frame.shape[:2]
 
@@ -143,7 +139,6 @@ class YOLODetector:
 
         return detections
 
-    # ---------------------------------------------------------------------
     def draw(self, frame, detections, draw_skeleton=True, draw_faces=True):
         out = frame.copy()
 
