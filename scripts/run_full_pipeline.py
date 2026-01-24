@@ -13,6 +13,7 @@ from cv_pipeline.detection.yolo_detector import YOLODetector
 from cv_pipeline.tracking.boxmot_tracker import PersonTracker
 from cv_pipeline.pose_estimation.pose_estimator import PoseEstimator
 from cv_pipeline.emotion_analysis.emotion_analyzer import EmotionAnalyzer
+from cv_pipeline.social_interaction.social_analyzer import SocialAnalyzer
 from cv_pipeline.utils.scene_describer import SceneDescriber
 
 def run_pipeline(video_path, output_path="output.avi"):
@@ -52,9 +53,7 @@ def run_pipeline(video_path, output_path="output.avi"):
         
     # pose_estimator = PoseEstimator() # DISABLED: Unstable on crops. Using YOLO native.
     emotion_analyzer = EmotionAnalyzer()
-    
-    # ... (skipping lines) ...
-    
+    social_analyzer = SocialAnalyzer(fps=fps)
     scene_describer = SceneDescriber(log_file="scene_log.txt")
 
     print("I: Pipeline initialized. Starting loop...")
@@ -91,20 +90,33 @@ def run_pipeline(video_path, output_path="output.avi"):
                      if dom_emotion:
                          det['emotion'] = dom_emotion
                  else:
-                     # Fallback to analyzing upper body region if face not explicitly detected?
-                     # Or just skip. For now, skip to avoid noise.
                      pass
 
-        # 6. Scene Description
-        desc_text = scene_describer.describe(detections, frame_count)
+        # 6. Social Interaction Analysis (STAS)
+        interactions = social_analyzer.analyze(detections)
+
+        # 7. Scene Description
+        desc_text = scene_describer.describe(detections, frame_count, interactions)
         scene_describer.save_log(desc_text)
 
-        # 7. Visualization
-        # Use detector.draw() for basic boxes/yolo-pose, then overlay extra stuff
-        # Enable draw_skeleton=True to use YOLO pose
+        # 8. Visualization
         drawn_frame = detector.draw(frame, detections, draw_skeleton=True, draw_faces=True)
         
-        # (MediaPipe manual drawing removed)
+        # Draw Interactions
+        for inter in interactions:
+            id1, id2 = inter['ids']
+            label = inter['type']
+            # Find center between the two people to place the label
+            p1 = [d for d in detections if d.get('track_id') == id1][0]
+            p2 = [d for d in detections if d.get('track_id') == id2][0]
+            c1 = [(p1['bbox'][0]+p1['bbox'][2])/2, (p1['bbox'][1]+p1['bbox'][3])/2]
+            c2 = [(p2['bbox'][0]+p2['bbox'][2])/2, (p2['bbox'][1]+p2['bbox'][3])/2]
+            cx, cy = int((c1[0]+c2[0])/2), int((c1[1]+c2[1])/2)
+            
+            cv2.putText(drawn_frame, f"<< {label} >>", (cx - 50, cy), 
+                       cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
+            cv2.line(drawn_frame, (int(c1[0]), int(c1[1])), (int(c2[0]), int(c2[1])), (0, 255, 0), 1)
+
         for det in detections:
             # Draw Emotion
             if 'emotion' in det:
