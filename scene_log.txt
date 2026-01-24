@@ -1,26 +1,855 @@
-Scene Log Started: 2026-01-24 22:53:45.912039
+Scene Log Started: 2026-01-24 23:25:18.059067
 --------------------------------------------------
-22:53:46.750 | [Frame 1] ID 1: Pose=Tracked  | [Frame 1] ID 2: Pose=Tracked 
-22:53:47.278 | [Frame 2] ID 1: Pose=Tracked  | [Frame 2] ID 2: Pose=Tracked 
-22:53:47.778 | [Frame 3] ID 1: Pose=Tracked  | [Frame 3] ID 2: Pose=Tracked 
-22:53:48.269 | [Frame 4] ID 1: Pose=Tracked  | [Frame 4] ID 2: Pose=Tracked 
-22:53:50.507 | [Frame 5] ID 1: Emotion=happy Pose=Tracked  | [Frame 5] ID 2: Pose=Tracked 
-22:53:50.995 | [Frame 6] ID 1: Pose=Tracked  | [Frame 6] ID 2: Pose=Tracked 
-22:53:51.464 | [Frame 7] ID 1: Pose=Tracked  | [Frame 7] ID 2: Pose=Tracked 
-22:53:51.887 | [Frame 8] ID 2: Pose=Tracked  | [Frame 8] ID 1: Pose=Tracked 
-22:53:52.256 | [Frame 9] ID 1: Pose=Tracked  | [Frame 9] ID 2: Pose=Tracked 
-22:53:52.822 | [Frame 10] ID 1: Emotion=happy Pose=Tracked  | [Frame 10] ID 2: Emotion=angry Pose=Tracked 
-22:53:53.470 | [Frame 11] ID 1: Pose=Tracked  | [Frame 11] ID 2: Pose=Tracked 
-22:53:53.954 | [Frame 12] ID 2: Pose=Tracked  | [Frame 12] ID 1: Pose=Tracked  | [Frame 12] ID 4: Pose=Tracked 
-22:53:54.490 | [Frame 13] ID 2: Pose=Tracked  | [Frame 13] ID 1: Pose=Tracked  | [Frame 13] ID 4: Pose=Tracked 
-22:53:54.937 | [Frame 14] ID 1: Pose=Tracked  | [Frame 14] ID 2: Pose=Tracked  | [Frame 14] ID 4: Pose=Tracked 
-22:53:55.469 | [Frame 15] ID 2: Emotion=sad Pose=Tracked  | [Frame 15] ID 1: Emotion=happy Pose=Tracked 
-22:53:56.086 | [Frame 16] ID 1: Pose=Tracked  | [Frame 16] ID 2: Pose=Tracked 
-22:53:56.785 | [Frame 17] ID 2: Pose=Tracked  | [Frame 17] ID 1: Pose=Tracked 
-22:53:57.251 | [Frame 18] ID 2: Pose=Tracked  | [Frame 18] ID 1: Pose=Tracked  | [Frame 18] ID 4: Pose=Tracked 
-22:53:57.784 | [Frame 19] ID 1: Pose=Tracked  | [Frame 19] ID 2: Pose=Tracked  | [Frame 19] ID 4: Pose=Tracked 
-22:53:58.619 | [Frame 20] ID 1: Emotion=angry Pose=Tracked  | [Frame 20] ID 2: Emotion=happy Pose=Tracked  | [Frame 20] ID 4: Pose=Tracked 
-22:53:59.050 | [Frame 21] ID 1: Pose=Tracked  | [Frame 21] ID 2: Pose=Tracked  | [Frame 21] ID 4: Pose=Tracked 
-22:53:59.483 | [Frame 22] ID 1: Pose=Tracked  | [Frame 22] ID 2: Pose=Tracked  | [Frame 22] ID 4: Pose=Tracked 
-22:53:59.970 | [Frame 23] ID 1: Pose=Tracked  | [Frame 23] ID 2: Pose=Tracked  | [Frame 23] ID 4: Pose=Tracked  | [Frame 23] ID 4: Pose=Tracked 
-22:54:00.470 | [Frame 24] ID 1: Pose=Tracked  | [Frame 24] ID 2: Pose=Tracked  | [Frame 24] ID 4: Pose=Tracked  | [Frame 24] ID 4: Pose=Tracked 
+23:25:21.090 | [Frame 1] ID 1: Pose=Tracked  | [Frame 1] ID 2: Pose=Tracked 
+23:25:21.328 | [Frame 2] ID 1: Pose=Tracked  | [Frame 2] ID 2: Pose=Tracked 
+23:25:21.536 | [Frame 3] ID 1: Pose=Tracked  | [Frame 3] ID 2: Pose=Tracked 
+23:25:21.723 | [Frame 4] ID 1: Pose=Tracked  | [Frame 4] ID 2: Pose=Tracked 
+23:25:23.188 | [Frame 5] ID 1: Emotion=happy Pose=Tracked  | [Frame 5] ID 2: Pose=Tracked 
+23:25:23.405 | [Frame 6] ID 1: Pose=Tracked  | [Frame 6] ID 2: Pose=Tracked 
+23:25:23.629 | [Frame 7] ID 1: Pose=Tracked  | [Frame 7] ID 2: Pose=Tracked 
+23:25:23.866 | [Frame 8] ID 2: Pose=Tracked  | [Frame 8] ID 1: Pose=Tracked 
+23:25:24.059 | [Frame 9] ID 1: Pose=Tracked  | [Frame 9] ID 2: Pose=Tracked 
+23:25:24.454 | [Frame 10] ID 1: Emotion=happy Pose=Tracked  | [Frame 10] ID 2: Emotion=angry Pose=Tracked 
+23:25:24.937 | [Frame 11] ID 1: Pose=Tracked  | [Frame 11] ID 2: Pose=Tracked 
+23:25:25.144 | [Frame 12] ID 2: Pose=Tracked  | [Frame 12] ID 1: Pose=Tracked  | [Frame 12] ID 4: Pose=Tracked 
+23:25:25.452 | [Frame 13] ID 2: Pose=Tracked  | [Frame 13] ID 1: Pose=Tracked  | [Frame 13] ID 4: Pose=Tracked 
+23:25:25.669 | [Frame 14] ID 1: Pose=Tracked  | [Frame 14] ID 2: Pose=Tracked  | [Frame 14] ID 4: Pose=Tracked 
+23:25:25.978 | [Frame 15] ID 2: Emotion=sad Pose=Tracked  | [Frame 15] ID 1: Emotion=happy Pose=Tracked 
+23:25:26.201 | [Frame 16] ID 1: Pose=Tracked  | [Frame 16] ID 2: Pose=Tracked 
+23:25:26.552 | [Frame 17] ID 2: Pose=Tracked  | [Frame 17] ID 1: Pose=Tracked 
+23:25:26.776 | [Frame 18] ID 2: Pose=Tracked  | [Frame 18] ID 1: Pose=Tracked  | [Frame 18] ID 4: Pose=Tracked 
+23:25:27.101 | [Frame 19] ID 1: Pose=Tracked  | [Frame 19] ID 2: Pose=Tracked  | [Frame 19] ID 4: Pose=Tracked 
+23:25:27.584 | [Frame 20] ID 1: Emotion=angry Pose=Tracked  | [Frame 20] ID 2: Emotion=happy Pose=Tracked  | [Frame 20] ID 4: Pose=Tracked 
+23:25:27.786 | [Frame 21] ID 1: Pose=Tracked  | [Frame 21] ID 2: Pose=Tracked  | [Frame 21] ID 4: Pose=Tracked 
+23:25:27.969 | [Frame 22] ID 1: Pose=Tracked  | [Frame 22] ID 2: Pose=Tracked  | [Frame 22] ID 4: Pose=Tracked 
+23:25:28.158 | [Frame 23] ID 1: Pose=Tracked  | [Frame 23] ID 2: Pose=Tracked  | [Frame 23] ID 4: Pose=Tracked  | [Frame 23] ID 4: Pose=Tracked 
+23:25:28.350 | [Frame 24] ID 1: Pose=Tracked  | [Frame 24] ID 2: Pose=Tracked  | [Frame 24] ID 4: Pose=Tracked  | [Frame 24] ID 4: Pose=Tracked 
+23:25:28.619 | [Frame 25] ID 1: Emotion=angry Pose=Tracked  | [Frame 25] ID 2: Emotion=happy Pose=Tracked  | [Frame 25] ID 4: Emotion=sad Pose=Tracked  | [Frame 25] ID 4: Pose=Tracked 
+23:25:28.833 | [Frame 26] ID 1: Pose=Tracked  | [Frame 26] ID 4: Pose=Tracked  | [Frame 26] ID 2: Pose=Tracked  | [Frame 26] ID 5: Pose=Tracked 
+23:25:29.078 | [Frame 27] ID 1: Pose=Tracked  | [Frame 27] ID 2: Pose=Tracked  | [Frame 27] ID 4: Pose=Tracked  | [Frame 27] ID 5: Pose=Tracked 
+23:25:29.341 | [Frame 28] ID 1: Pose=Tracked  | [Frame 28] ID 2: Pose=Tracked  | [Frame 28] ID 5: Pose=Tracked  | [Frame 28] ID 4: Pose=Tracked 
+23:25:29.632 | [Frame 29] ID 1: Pose=Tracked  | [Frame 29] ID 2: Pose=Tracked  | [Frame 29] ID 4: Pose=Tracked  | [Frame 29] ID 5: Pose=Tracked 
+23:25:29.932 | [Frame 30] ID 1: Emotion=sad Pose=Tracked  | [Frame 30] ID 2: Emotion=happy Pose=Tracked  | [Frame 30] ID 5: Pose=Tracked  | [Frame 30] ID 4: Pose=Tracked 
+23:25:30.169 | [Frame 31] ID 2: Pose=Tracked  | [Frame 31] ID 1: Pose=Tracked  | [Frame 31] ID 4: Pose=Tracked 
+23:25:30.374 | [Frame 32] ID 2: Pose=Tracked  | [Frame 32] ID 1: Pose=Tracked  | [Frame 32] ID 4: Pose=Tracked 
+23:25:30.828 | [Frame 33] ID 2: Pose=Tracked  | [Frame 33] ID 1: Pose=Tracked  | [Frame 33] ID 4: Pose=Tracked 
+23:25:31.019 | [Frame 34] ID 2: Pose=Tracked  | [Frame 34] ID 1: Pose=Tracked  | [Frame 34] ID 4: Pose=Tracked 
+23:25:31.269 | [Frame 35] ID 2: Emotion=sad Pose=Tracked  | [Frame 35] ID 1: Emotion=sad Pose=Tracked  | [Frame 35] ID 4: Pose=Tracked  | [Frame 35] ID 4: Pose=Tracked 
+23:25:31.447 | [Frame 36] ID 2: Pose=Tracked  | [Frame 36] ID 1: Pose=Tracked  | [Frame 36] ID 4: Pose=Tracked 
+23:25:31.647 | [Frame 37] ID 2: Pose=Tracked  | [Frame 37] ID 1: Pose=Tracked  | [Frame 37] ID 4: Pose=Tracked  | [Frame 37] ID 4: Pose=Tracked 
+23:25:31.887 | [Frame 38] ID 1: Pose=Tracked  | [Frame 38] ID 2: Pose=Tracked  | [Frame 38] ID 4: Pose=Tracked  | [Frame 38] ID 4: Pose=Tracked 
+23:25:32.097 | [Frame 39] ID 2: Pose=Tracked  | [Frame 39] ID 1: Pose=Tracked  | [Frame 39] ID 4: Pose=Tracked  | [Frame 39] ID 5: Pose=Tracked 
+23:25:32.346 | [Frame 40] ID 2: Emotion=angry Pose=Tracked  | [Frame 40] ID 1: Emotion=fear Pose=Tracked  | [Frame 40] ID 4: Pose=Tracked  | [Frame 40] ID 5: Pose=Tracked 
+23:25:32.546 | [Frame 41] ID 1: Pose=Tracked  | [Frame 41] ID 2: Pose=Tracked  | [Frame 41] ID 4: Pose=Tracked  | [Frame 41] ID 5: Pose=Tracked 
+23:25:32.746 | [Frame 42] ID 2: Pose=Tracked  | [Frame 42] ID 1: Pose=Tracked  | [Frame 42] ID 4: Pose=Tracked 
+23:25:32.970 | [Frame 43] ID 1: Pose=Tracked  | [Frame 43] ID 2: Pose=Tracked  | [Frame 43] ID 4: Pose=Tracked 
+23:25:33.146 | [Frame 44] ID 2: Pose=Tracked  | [Frame 44] ID 1: Pose=Tracked  | [Frame 44] ID 4: Pose=Tracked 
+23:25:33.387 | [Frame 45] ID 2: Emotion=neutral Pose=Tracked  | [Frame 45] ID 1: Emotion=sad Pose=Tracked  | [Frame 45] ID 4: Emotion=sad Pose=Tracked 
+23:25:33.595 | [Frame 46] ID 2: Pose=Tracked  | [Frame 46] ID 1: Pose=Tracked  | [Frame 46] ID 4: Pose=Tracked  | [Frame 46] ID 4: Pose=Tracked 
+23:25:33.795 | [Frame 47] ID 2: Pose=Tracked  | [Frame 47] ID 1: Pose=Tracked  | [Frame 47] ID 4: Pose=Tracked  | [Frame 47] ID 4: Pose=Tracked 
+23:25:33.970 | [Frame 48] ID 2: Pose=Tracked  | [Frame 48] ID 1: Pose=Tracked  | [Frame 48] ID 4: Pose=Tracked 
+23:25:34.145 | [Frame 49] ID 2: Pose=Tracked  | [Frame 49] ID 1: Pose=Tracked  | [Frame 49] ID 4: Pose=Tracked 
+23:25:34.528 | [Frame 50] ID 2: Emotion=happy Pose=Tracked  | [Frame 50] ID 1: Emotion=angry Pose=Tracked  | [Frame 50] ID 4: Pose=Tracked  | [Frame 50] ID 4: Pose=Tracked 
+23:25:34.694 | [Frame 51] ID 2: Pose=Tracked  | [Frame 51] ID 1: Pose=Tracked  | [Frame 51] ID 4: Pose=Tracked 
+23:25:35.095 | [Frame 52] ID 2: Pose=Tracked  | [Frame 52] ID 1: Pose=Tracked 
+23:25:35.286 | [Frame 53] ID 1: Pose=Tracked  | [Frame 53] ID 2: Pose=Tracked 
+23:25:35.478 | [Frame 54] ID 2: Pose=Tracked  | [Frame 54] ID 1: Pose=Tracked 
+23:25:35.770 | [Frame 55] ID 2: Emotion=neutral Pose=Tracked  | [Frame 55] ID 1: Emotion=sad Pose=Tracked  | [Frame 55] ID 4: Pose=Tracked  | [Frame 55] ID 4: Pose=Tracked 
+23:25:35.986 | [Frame 56] ID 1: Pose=Tracked  | [Frame 56] ID 2: Pose=Tracked 
+23:25:36.168 | [Frame 57] ID 1: Pose=Tracked  | [Frame 57] ID 2: Pose=Tracked  | [Frame 57] ID 5: Pose=Tracked 
+23:25:36.346 | [Frame 58] ID 1: Pose=Tracked  | [Frame 58] ID 2: Pose=Tracked 
+23:25:36.543 | [Frame 59] ID 1: Pose=Tracked  | [Frame 59] ID 2: Pose=Tracked 
+23:25:36.778 | [Frame 60] ID 1: Emotion=happy Pose=Tracked  | [Frame 60] ID 2: Emotion=happy Pose=Tracked 
+23:25:36.959 | [Frame 61] ID 1: Pose=Tracked  | [Frame 61] ID 2: Pose=Tracked 
+23:25:37.184 | [Frame 62] ID 1: Pose=Tracked  | [Frame 62] ID 2: Pose=Tracked  | [Frame 62] ID 5: Pose=Tracked 
+23:25:37.375 | [Frame 63] ID 2: Pose=Tracked  | [Frame 63] ID 1: Pose=Tracked  | [Frame 63] ID 5: Pose=Tracked 
+23:25:37.559 | [Frame 64] ID 2: Pose=Tracked  | [Frame 64] ID 1: Pose=Tracked  | [Frame 64] ID 5: Pose=Tracked 
+23:25:37.778 | [Frame 65] ID 2: Emotion=happy Pose=Tracked  | [Frame 65] ID 1: Emotion=angry Pose=Tracked  | [Frame 65] ID 5: Pose=Tracked 
+23:25:37.942 | [Frame 66] ID 2: Pose=Tracked  | [Frame 66] ID 1: Pose=Tracked  | [Frame 66] ID 5: Pose=Tracked 
+23:25:38.141 | [Frame 67] ID 2: Pose=Tracked  | [Frame 67] ID 1: Pose=Tracked  | [Frame 67] ID 5: Pose=Tracked 
+23:25:38.311 | [Frame 68] ID 2: Pose=Tracked  | [Frame 68] ID 1: Pose=Tracked 
+23:25:38.486 | [Frame 69] ID 1: Pose=Tracked  | [Frame 69] ID 2: Pose=Tracked 
+23:25:38.707 | [Frame 70] ID 2: Emotion=neutral Pose=Tracked  | [Frame 70] ID 1: Emotion=angry Pose=Tracked 
+23:25:38.878 | [Frame 71] ID 2: Pose=Tracked  | [Frame 71] ID 1: Pose=Tracked  | [Frame 71] ID 5: Pose=Tracked 
+23:25:39.070 | [Frame 72] ID 1: Pose=Tracked  | [Frame 72] ID 2: Pose=Tracked  | [Frame 72] ID 5: Pose=Tracked 
+23:25:39.290 | [Frame 73] ID 2: Pose=Tracked  | [Frame 73] ID 1: Pose=Tracked  | [Frame 73] ID 5: Pose=Tracked 
+23:25:39.707 | [Frame 74] ID 2: Pose=Tracked  | [Frame 74] ID 1: Pose=Tracked  | [Frame 74] ID 5: Pose=Tracked 
+23:25:39.941 | [Frame 75] ID 2: Emotion=neutral Pose=Tracked  | [Frame 75] ID 5: Pose=Tracked  | [Frame 75] ID 1: Emotion=sad Pose=Tracked 
+23:25:40.206 | [Frame 76] ID 2: Pose=Tracked  | [Frame 76] ID 1: Pose=Tracked  | [Frame 76] ID 5: Pose=Tracked 
+23:25:40.456 | [Frame 77] ID 1: Pose=Tracked  | [Frame 77] ID 2: Pose=Tracked  | [Frame 77] ID 5: Pose=Tracked 
+23:25:40.655 | [Frame 78] ID 2: Pose=Tracked  | [Frame 78] ID 1: Pose=Tracked  | [Frame 78] ID 5: Pose=Tracked 
+23:25:40.855 | [Frame 79] ID 2: Pose=Tracked  | [Frame 79] ID 1: Pose=Tracked  | [Frame 79] ID 5: Pose=Tracked 
+23:25:41.139 | [Frame 80] ID 2: Emotion=happy Pose=Tracked  | [Frame 80] ID 1: Emotion=sad Pose=Tracked  | [Frame 80] ID 5: Pose=Tracked 
+23:25:41.420 | [Frame 81] ID 2: Pose=Tracked  | [Frame 81] ID 1: Pose=Tracked  | [Frame 81] ID 5: Pose=Tracked 
+23:25:41.645 | [Frame 82] ID 2: Pose=Tracked  | [Frame 82] ID 5: Pose=Tracked  | [Frame 82] ID 1: Pose=Tracked 
+23:25:41.844 | [Frame 83] ID 2: Pose=Tracked  | [Frame 83] ID 5: Pose=Tracked  | [Frame 83] ID 1: Pose=Tracked 
+23:25:42.078 | [Frame 84] ID 5: Pose=Tracked  | [Frame 84] ID 2: Pose=Tracked  | [Frame 84] ID 1: Pose=Tracked 
+23:25:42.321 | [Frame 85] ID 2: Emotion=happy Pose=Tracked  | [Frame 85] ID 5: Pose=Tracked  | [Frame 85] ID 1: Emotion=fear Pose=Tracked 
+23:25:42.504 | [Frame 86] ID 5: Pose=Tracked  | [Frame 86] ID 2: Pose=Tracked  | [Frame 86] ID 1: Pose=Tracked 
+23:25:42.689 | [Frame 87] ID 2: Pose=Tracked  | [Frame 87] ID 5: Pose=Tracked  | [Frame 87] ID 1: Pose=Tracked 
+23:25:42.871 | [Frame 88] ID 2: Pose=Tracked  | [Frame 88] ID 5: Pose=Tracked  | [Frame 88] ID 1: Pose=Tracked 
+23:25:43.054 | [Frame 89] ID 2: Pose=Tracked  | [Frame 89] ID 5: Pose=Tracked  | [Frame 89] ID 1: Pose=Tracked 
+23:25:43.320 | [Frame 90] ID 5: Pose=Tracked  | [Frame 90] ID 2: Emotion=happy Pose=Tracked  | [Frame 90] ID 1: Emotion=fear Pose=Tracked 
+23:25:43.510 | [Frame 91] ID 5: Pose=Tracked  | [Frame 91] ID 2: Pose=Tracked  | [Frame 91] ID 1: Pose=Tracked 
+23:25:43.678 | [Frame 92] ID 5: Pose=Tracked  | [Frame 92] ID 2: Pose=Tracked  | [Frame 92] ID 1: Pose=Tracked 
+23:25:43.853 | [Frame 93] ID 5: Pose=Tracked  | [Frame 93] ID 2: Pose=Tracked  | [Frame 93] ID 1: Pose=Tracked 
+23:25:44.020 | [Frame 94] ID 2: Pose=Tracked  | [Frame 94] ID 5: Pose=Tracked  | [Frame 94] ID 1: Pose=Tracked 
+23:25:44.253 | [Frame 95] ID 5: Pose=Tracked  | [Frame 95] ID 2: Emotion=happy Pose=Tracked  | [Frame 95] ID 1: Emotion=sad Pose=Tracked 
+23:25:44.444 | [Frame 96] ID 5: Pose=Tracked  | [Frame 96] ID 2: Pose=Tracked  | [Frame 96] ID 1: Pose=Tracked 
+23:25:44.719 | [Frame 97] ID 5: Pose=Tracked  | [Frame 97] ID 2: Pose=Tracked  | [Frame 97] ID 1: Pose=Tracked 
+23:25:44.920 | [Frame 98] ID 5: Pose=Tracked  | [Frame 98] ID 2: Pose=Tracked  | [Frame 98] ID 1: Pose=Tracked 
+23:25:45.102 | [Frame 99] ID 5: Pose=Tracked  | [Frame 99] ID 2: Pose=Tracked  | [Frame 99] ID 1: Pose=Tracked 
+23:25:45.351 | [Frame 100] ID 5: Pose=Tracked  | [Frame 100] ID 2: Emotion=happy Pose=Tracked  | [Frame 100] ID 1: Emotion=fear Pose=Tracked 
+23:25:45.552 | [Frame 101] ID 5: Pose=Tracked  | [Frame 101] ID 2: Pose=Tracked  | [Frame 101] ID 1: Pose=Tracked 
+23:25:45.735 | [Frame 102] ID 5: Pose=Tracked  | [Frame 102] ID 2: Pose=Tracked  | [Frame 102] ID 1: Pose=Tracked 
+23:25:45.925 | [Frame 103] ID 5: Pose=Tracked  | [Frame 103] ID 2: Pose=Tracked  | [Frame 103] ID 1: Pose=Tracked 
+23:25:46.101 | [Frame 104] ID 5: Pose=Tracked  | [Frame 104] ID 2: Pose=Tracked  | [Frame 104] ID 1: Pose=Tracked 
+23:25:46.334 | [Frame 105] ID 5: Pose=Tracked  | [Frame 105] ID 2: Emotion=angry Pose=Tracked  | [Frame 105] ID 1: Emotion=fear Pose=Tracked 
+23:25:46.519 | [Frame 106] ID 2: Pose=Tracked  | [Frame 106] ID 5: Pose=Tracked  | [Frame 106] ID 1: Pose=Tracked 
+23:25:46.684 | [Frame 107] ID 2: Pose=Tracked  | [Frame 107] ID 5: Pose=Tracked  | [Frame 107] ID 1: Pose=Tracked 
+23:25:46.877 | [Frame 108] ID 2: Pose=Tracked  | [Frame 108] ID 1: Pose=Tracked  | [Frame 108] ID 5: Pose=Tracked 
+23:25:47.053 | [Frame 109] ID 2: Pose=Tracked  | [Frame 109] ID 5: Pose=Tracked  | [Frame 109] ID 1: Pose=Tracked 
+23:25:47.286 | [Frame 110] ID 2: Emotion=happy Pose=Tracked  | [Frame 110] ID 5: Pose=Tracked  | [Frame 110] ID 1: Emotion=fear Pose=Tracked 
+23:25:47.470 | [Frame 111] ID 2: Pose=Tracked  | [Frame 111] ID 1: Pose=Tracked  | [Frame 111] ID 5: Pose=Tracked 
+23:25:47.649 | [Frame 112] ID 2: Pose=Tracked  | [Frame 112] ID 5: Pose=Tracked  | [Frame 112] ID 1: Pose=Tracked 
+23:25:47.820 | [Frame 113] ID 2: Pose=Tracked  | [Frame 113] ID 5: Pose=Tracked  | [Frame 113] ID 1: Pose=Tracked 
+23:25:48.029 | [Frame 114] ID 2: Pose=Tracked  | [Frame 114] ID 5: Pose=Tracked  | [Frame 114] ID 1: Pose=Tracked 
+23:25:48.270 | [Frame 115] ID 2: Emotion=fear Pose=Tracked  | [Frame 115] ID 5: Pose=Tracked  | [Frame 115] ID 1: Emotion=fear Pose=Tracked 
+23:25:48.448 | [Frame 116] ID 5: Pose=Tracked  | [Frame 116] ID 2: Pose=Tracked  | [Frame 116] ID 1: Pose=Tracked 
+23:25:48.659 | [Frame 117] ID 5: Pose=Tracked  | [Frame 117] ID 2: Pose=Tracked  | [Frame 117] ID 1: Pose=Tracked 
+23:25:48.932 | [Frame 118] ID 2: Pose=Tracked  | [Frame 118] ID 5: Pose=Tracked  | [Frame 118] ID 1: Pose=Tracked 
+23:25:49.127 | [Frame 119] ID 2: Pose=Tracked  | [Frame 119] ID 5: Pose=Tracked  | [Frame 119] ID 1: Pose=Tracked 
+23:25:49.348 | [Frame 120] ID 2: Emotion=fear Pose=Tracked  | [Frame 120] ID 1: Emotion=fear Pose=Tracked  | [Frame 120] ID 5: Pose=Tracked 
+23:25:49.519 | [Frame 121] ID 2: Pose=Tracked  | [Frame 121] ID 1: Pose=Tracked  | [Frame 121] ID 5: Pose=Tracked 
+23:25:49.728 | [Frame 122] ID 2: Pose=Tracked  | [Frame 122] ID 1: Pose=Tracked  | [Frame 122] ID 5: Pose=Tracked 
+23:25:49.947 | [Frame 123] ID 2: Pose=Tracked  | [Frame 123] ID 5: Pose=Tracked  | [Frame 123] ID 1: Pose=Tracked 
+23:25:50.127 | [Frame 124] ID 2: Pose=Tracked  | [Frame 124] ID 1: Pose=Tracked  | [Frame 124] ID 5: Pose=Tracked 
+23:25:50.363 | [Frame 125] ID 2: Emotion=fear Pose=Tracked  | [Frame 125] ID 1: Emotion=fear Pose=Tracked  | [Frame 125] ID 5: Pose=Tracked 
+23:25:50.543 | [Frame 126] ID 2: Pose=Tracked  | [Frame 126] ID 5: Pose=Tracked  | [Frame 126] ID 1: Pose=Tracked 
+23:25:50.697 | [Frame 127] ID 2: Pose=Tracked  | [Frame 127] ID 1: Pose=Tracked 
+23:25:50.846 | [Frame 128] ID 2: Pose=Tracked  | [Frame 128] ID 1: Pose=Tracked 
+23:25:50.997 | [Frame 129] ID 2: Pose=Tracked  | [Frame 129] ID 1: Pose=Tracked 
+23:25:51.213 | [Frame 130] ID 2: Emotion=fear Pose=Tracked  | [Frame 130] ID 1: Emotion=fear Pose=Tracked 
+23:25:51.455 | [Frame 131] ID 2: Pose=Tracked  | [Frame 131] ID 1: Pose=Tracked 
+23:25:51.595 | [Frame 132] ID 2: Pose=Tracked  | [Frame 132] ID 1: Pose=Tracked 
+23:25:51.744 | [Frame 133] ID 2: Pose=Tracked  | [Frame 133] ID 1: Pose=Tracked 
+23:25:51.887 | [Frame 134] ID 2: Pose=Tracked  | [Frame 134] ID 1: Pose=Tracked 
+23:25:52.078 | [Frame 135] ID 2: Emotion=fear Pose=Tracked  | [Frame 135] ID 1: Emotion=fear Pose=Tracked 
+23:25:52.220 | [Frame 136] ID 2: Pose=Tracked  | [Frame 136] ID 1: Pose=Tracked 
+23:25:52.353 | [Frame 137] ID 2: Pose=Tracked  | [Frame 137] ID 1: Pose=Tracked 
+23:25:52.564 | [Frame 138] ID 2: Pose=Tracked  | [Frame 138] ID 1: Pose=Tracked 
+23:25:52.710 | [Frame 139] ID 2: Pose=Tracked  | [Frame 139] ID 1: Pose=Tracked 
+23:25:52.919 | [Frame 140] ID 2: Emotion=fear Pose=Tracked  | [Frame 140] ID 1: Emotion=fear Pose=Tracked 
+23:25:53.068 | [Frame 141] ID 2: Pose=Tracked  | [Frame 141] ID 1: Pose=Tracked 
+23:25:53.211 | [Frame 142] ID 2: Pose=Tracked  | [Frame 142] ID 1: Pose=Tracked 
+23:25:53.369 | [Frame 143] ID 2: Pose=Tracked  | [Frame 143] ID 1: Pose=Tracked 
+23:25:53.519 | [Frame 144] ID 2: Pose=Tracked  | [Frame 144] ID 1: Pose=Tracked 
+23:25:53.711 | [Frame 145] ID 2: Emotion=fear Pose=Tracked  | [Frame 145] ID 1: Emotion=fear Pose=Tracked 
+23:25:53.878 | [Frame 146] ID 2: Pose=Tracked  | [Frame 146] ID 1: Pose=Tracked 
+23:25:54.027 | [Frame 147] ID 2: Pose=Tracked  | [Frame 147] ID 1: Pose=Tracked 
+23:25:54.178 | [Frame 148] ID 2: Pose=Tracked  | [Frame 148] ID 1: Pose=Tracked 
+23:25:54.320 | [Frame 149] ID 2: Pose=Tracked  | [Frame 149] ID 1: Pose=Tracked 
+23:25:54.520 | [Frame 150] ID 2: Emotion=fear Pose=Tracked  | [Frame 150] ID 1: Emotion=fear Pose=Tracked 
+23:25:54.693 | [Frame 151] ID 2: Pose=Tracked  | [Frame 151] ID 1: Pose=Tracked 
+23:25:54.828 | [Frame 152] ID 2: Pose=Tracked  | [Frame 152] ID 1: Pose=Tracked 
+23:25:54.994 | [Frame 153] ID 2: Pose=Tracked  | [Frame 153] ID 1: Pose=Tracked 
+23:25:55.137 | [Frame 154] ID 2: Pose=Tracked  | [Frame 154] ID 1: Pose=Tracked 
+23:25:55.343 | [Frame 155] ID 2: Emotion=fear Pose=Tracked  | [Frame 155] ID 1: Emotion=sad Pose=Tracked 
+23:25:55.478 | [Frame 156] ID 2: Pose=Tracked  | [Frame 156] ID 1: Pose=Tracked 
+23:25:55.645 | [Frame 157] ID 2: Pose=Tracked  | [Frame 157] ID 1: Pose=Tracked 
+23:25:55.793 | [Frame 158] ID 2: Pose=Tracked  | [Frame 158] ID 1: Pose=Tracked 
+23:25:55.951 | [Frame 159] ID 2: Pose=Tracked  | [Frame 159] ID 1: Pose=Tracked 
+23:25:56.231 | [Frame 160] ID 2: Emotion=fear Pose=Tracked  | [Frame 160] ID 1: Emotion=happy Pose=Tracked 
+23:25:56.381 | [Frame 161] ID 2: Pose=Tracked  | [Frame 161] ID 1: Pose=Tracked 
+23:25:56.528 | [Frame 162] ID 2: Pose=Tracked  | [Frame 162] ID 1: Pose=Tracked 
+23:25:56.675 | [Frame 163] ID 2: Pose=Tracked  | [Frame 163] ID 1: Pose=Tracked 
+23:25:56.847 | [Frame 164] ID 2: Pose=Tracked  | [Frame 164] ID 1: Pose=Tracked 
+23:25:57.041 | [Frame 165] ID 2: Emotion=happy Pose=Tracked  | [Frame 165] ID 1: Emotion=fear Pose=Tracked 
+23:25:57.200 | [Frame 166] ID 2: Pose=Tracked  | [Frame 166] ID 1: Pose=Tracked 
+23:25:57.345 | [Frame 167] ID 2: Pose=Tracked  | [Frame 167] ID 1: Pose=Tracked 
+23:25:57.492 | [Frame 168] ID 2: Pose=Tracked  | [Frame 168] ID 1: Pose=Tracked 
+23:25:57.640 | [Frame 169] ID 2: Pose=Tracked  | [Frame 169] ID 1: Pose=Tracked 
+23:25:57.858 | [Frame 170] ID 2: Emotion=happy Pose=Tracked  | [Frame 170] ID 1: Emotion=fear Pose=Tracked 
+23:25:58.007 | [Frame 171] ID 2: Pose=Tracked  | [Frame 171] ID 1: Pose=Tracked 
+23:25:58.161 | [Frame 172] ID 2: Pose=Tracked  | [Frame 172] ID 1: Pose=Tracked 
+23:25:58.311 | [Frame 173] ID 2: Pose=Tracked  | [Frame 173] ID 1: Pose=Tracked 
+23:25:58.440 | [Frame 174] ID 2: Pose=Tracked  | [Frame 174] ID 1: Pose=Tracked 
+23:25:58.640 | [Frame 175] ID 2: Emotion=happy Pose=Tracked  | [Frame 175] ID 1: Emotion=happy Pose=Tracked 
+23:25:58.796 | [Frame 176] ID 2: Pose=Tracked  | [Frame 176] ID 1: Pose=Tracked 
+23:25:58.978 | [Frame 177] ID 2: Pose=Tracked  | [Frame 177] ID 1: Pose=Tracked 
+23:25:59.128 | [Frame 178] ID 1: Pose=Tracked  | [Frame 178] ID 2: Pose=Tracked 
+23:25:59.277 | [Frame 179] ID 2: Pose=Tracked  | [Frame 179] ID 1: Pose=Tracked 
+23:25:59.479 | [Frame 180] ID 1: Emotion=happy Pose=Tracked  | [Frame 180] ID 2: Emotion=happy Pose=Tracked 
+23:25:59.628 | [Frame 181] ID 2: Pose=Tracked  | [Frame 181] ID 1: Pose=Tracked 
+23:25:59.778 | [Frame 182] ID 2: Pose=Tracked  | [Frame 182] ID 1: Pose=Tracked 
+23:26:00.005 | [Frame 183] ID 2: Pose=Tracked  | [Frame 183] ID 1: Pose=Tracked 
+23:26:00.155 | [Frame 184] ID 2: Pose=Tracked  | [Frame 184] ID 1: Pose=Tracked 
+23:26:00.378 | [Frame 185] ID 2: Emotion=happy Pose=Tracked  | [Frame 185] ID 1: Emotion=happy Pose=Tracked 
+23:26:00.523 | [Frame 186] ID 2: Pose=Tracked  | [Frame 186] ID 1: Pose=Tracked 
+23:26:00.671 | [Frame 187] ID 2: Pose=Tracked  | [Frame 187] ID 1: Pose=Tracked 
+23:26:00.820 | [Frame 188] ID 2: Pose=Tracked  | [Frame 188] ID 1: Pose=Tracked 
+23:26:01.004 | [Frame 189] ID 2: Pose=Tracked  | [Frame 189] ID 1: Pose=Tracked 
+23:26:01.221 | [Frame 190] ID 2: Emotion=happy Pose=Tracked  | [Frame 190] ID 1: Emotion=happy Pose=Tracked 
+23:26:01.362 | [Frame 191] ID 2: Pose=Tracked  | [Frame 191] ID 1: Pose=Tracked 
+23:26:01.520 | [Frame 192] ID 2: Pose=Tracked  | [Frame 192] ID 1: Pose=Tracked 
+23:26:01.687 | [Frame 193] ID 2: Pose=Tracked  | [Frame 193] ID 1: Pose=Tracked 
+23:26:01.828 | [Frame 194] ID 2: Pose=Tracked  | [Frame 194] ID 1: Pose=Tracked 
+23:26:02.071 | [Frame 195] ID 2: Emotion=happy Pose=Tracked  | [Frame 195] ID 1: Emotion=fear Pose=Tracked 
+23:26:02.203 | [Frame 196] ID 2: Pose=Tracked  | [Frame 196] ID 1: Pose=Tracked 
+23:26:02.370 | [Frame 197] ID 2: Pose=Tracked  | [Frame 197] ID 1: Pose=Tracked 
+23:26:02.553 | [Frame 198] ID 2: Pose=Tracked  | [Frame 198] ID 1: Pose=Tracked 
+23:26:02.694 | [Frame 199] ID 2: Pose=Tracked  | [Frame 199] ID 1: Pose=Tracked 
+23:26:02.920 | [Frame 200] ID 2: Emotion=fear Pose=Tracked  | [Frame 200] ID 1: Emotion=happy Pose=Tracked 
+23:26:03.118 | [Frame 201] ID 2: Pose=Tracked  | [Frame 201] ID 1: Pose=Tracked 
+23:26:03.286 | [Frame 202] ID 2: Pose=Tracked  | [Frame 202] ID 1: Pose=Tracked 
+23:26:03.443 | [Frame 203] ID 2: Pose=Tracked  | [Frame 203] ID 1: Pose=Tracked 
+23:26:03.602 | [Frame 204] ID 2: Pose=Tracked  | [Frame 204] ID 1: Pose=Tracked 
+23:26:03.819 | [Frame 205] ID 2: Emotion=fear Pose=Tracked  | [Frame 205] ID 1: Emotion=fear Pose=Tracked 
+23:26:03.985 | [Frame 206] ID 2: Pose=Tracked  | [Frame 206] ID 1: Pose=Tracked 
+23:26:04.151 | [Frame 207] ID 2: Pose=Tracked  | [Frame 207] ID 1: Pose=Tracked 
+23:26:04.311 | [Frame 208] ID 2: Pose=Tracked  | [Frame 208] ID 1: Pose=Tracked 
+23:26:04.469 | [Frame 209] ID 2: Pose=Tracked  | [Frame 209] ID 1: Pose=Tracked 
+23:26:04.700 | [Frame 210] ID 2: Emotion=happy Pose=Tracked  | [Frame 210] ID 1: Emotion=angry Pose=Tracked 
+23:26:04.854 | [Frame 211] ID 2: Pose=Tracked  | [Frame 211] ID 1: Pose=Tracked 
+23:26:05.002 | [Frame 212] ID 2: Pose=Tracked  | [Frame 212] ID 1: Pose=Tracked 
+23:26:05.229 | [Frame 213] ID 2: Pose=Tracked  | [Frame 213] ID 1: Pose=Tracked 
+23:26:05.428 | [Frame 214] ID 2: Pose=Tracked  | [Frame 214] ID 1: Pose=Tracked 
+23:26:05.619 | [Frame 215] ID 2: Emotion=happy Pose=Tracked  | [Frame 215] ID 1: Emotion=happy Pose=Tracked 
+23:26:05.770 | [Frame 216] ID 2: Pose=Tracked  | [Frame 216] ID 1: Pose=Tracked 
+23:26:06.078 | [Frame 217] ID 2: Pose=Tracked  | [Frame 217] ID 1: Pose=Tracked 
+23:26:06.287 | [Frame 218] ID 2: Pose=Tracked  | [Frame 218] ID 1: Pose=Tracked 
+23:26:06.483 | [Frame 219] ID 2: Pose=Tracked  | [Frame 219] ID 1: Pose=Tracked 
+23:26:06.707 | [Frame 220] ID 2: Emotion=happy Pose=Tracked  | [Frame 220] ID 1: Emotion=fear Pose=Tracked 
+23:26:06.873 | [Frame 221] ID 2: Pose=Tracked  | [Frame 221] ID 1: Pose=Tracked 
+23:26:07.028 | [Frame 222] ID 2: Pose=Tracked  | [Frame 222] ID 1: Pose=Tracked 
+23:26:07.183 | [Frame 223] ID 2: Pose=Tracked  | [Frame 223] ID 1: Pose=Tracked 
+23:26:07.347 | [Frame 224] ID 2: Pose=Tracked  | [Frame 224] ID 1: Pose=Tracked 
+23:26:07.548 | [Frame 225] ID 2: Emotion=happy Pose=Tracked  | [Frame 225] ID 1: Emotion=fear Pose=Tracked 
+23:26:07.732 | [Frame 226] ID 2: Pose=Tracked  | [Frame 226] ID 1: Pose=Tracked 
+23:26:08.135 | [Frame 227] ID 2: Pose=Tracked  | [Frame 227] ID 1: Pose=Tracked 
+23:26:08.548 | [Frame 228] ID 2: Pose=Tracked  | [Frame 228] ID 1: Pose=Tracked 
+23:26:08.728 | [Frame 229] ID 2: Pose=Tracked  | [Frame 229] ID 1: Pose=Tracked 
+23:26:08.997 | [Frame 230] ID 2: Emotion=angry Pose=Tracked  | [Frame 230] ID 1: Emotion=fear Pose=Tracked 
+23:26:09.180 | [Frame 231] ID 2: Pose=Tracked  | [Frame 231] ID 1: Pose=Tracked 
+23:26:09.386 | [Frame 232] ID 2: Pose=Tracked  | [Frame 232] ID 1: Pose=Tracked 
+23:26:09.554 | [Frame 233] ID 2: Pose=Tracked  | [Frame 233] ID 1: Pose=Tracked 
+23:26:09.696 | [Frame 234] ID 2: Pose=Tracked  | [Frame 234] ID 1: Pose=Tracked 
+23:26:09.919 | [Frame 235] ID 2: Emotion=fear Pose=Tracked  | [Frame 235] ID 1: Emotion=fear Pose=Tracked 
+23:26:10.079 | [Frame 236] ID 2: Pose=Tracked  | [Frame 236] ID 1: Pose=Tracked 
+23:26:10.229 | [Frame 237] ID 2: Pose=Tracked  | [Frame 237] ID 1: Pose=Tracked 
+23:26:10.420 | [Frame 238] ID 2: Pose=Tracked  | [Frame 238] ID 1: Pose=Tracked 
+23:26:10.595 | [Frame 239] ID 2: Pose=Tracked  | [Frame 239] ID 1: Pose=Tracked 
+23:26:10.794 | [Frame 240] ID 2: Emotion=happy Pose=Tracked  | [Frame 240] ID 1: Emotion=fear Pose=Tracked 
+23:26:11.012 | [Frame 241] ID 2: Pose=Tracked  | [Frame 241] ID 1: Pose=Tracked 
+23:26:11.163 | [Frame 242] ID 2: Pose=Tracked  | [Frame 242] ID 1: Pose=Tracked 
+23:26:11.311 | [Frame 243] ID 2: Pose=Tracked  | [Frame 243] ID 1: Pose=Tracked 
+23:26:11.469 | [Frame 244] ID 2: Pose=Tracked  | [Frame 244] ID 1: Pose=Tracked 
+23:26:11.660 | [Frame 245] ID 2: Emotion=happy Pose=Tracked  | [Frame 245] ID 1: Emotion=fear Pose=Tracked 
+23:26:11.811 | [Frame 246] ID 1: Pose=Tracked  | [Frame 246] ID 2: Pose=Tracked 
+23:26:11.960 | [Frame 247] ID 2: Pose=Tracked  | [Frame 247] ID 1: Pose=Tracked 
+23:26:12.110 | [Frame 248] ID 1: Pose=Tracked  | [Frame 248] ID 2: Pose=Tracked 
+23:26:12.260 | [Frame 249] ID 1: Pose=Tracked  | [Frame 249] ID 2: Pose=Tracked 
+23:26:12.444 | [Frame 250] ID 1: Emotion=fear Pose=Tracked  | [Frame 250] ID 2: Emotion=happy Pose=Tracked 
+23:26:12.594 | [Frame 251] ID 2: Pose=Tracked  | [Frame 251] ID 1: Pose=Tracked 
+23:26:12.744 | [Frame 252] ID 2: Pose=Tracked  | [Frame 252] ID 1: Pose=Tracked 
+23:26:12.893 | [Frame 253] ID 2: Pose=Tracked  | [Frame 253] ID 1: Pose=Tracked 
+23:26:13.051 | [Frame 254] ID 2: Pose=Tracked  | [Frame 254] ID 1: Pose=Tracked 
+23:26:13.260 | [Frame 255] ID 2: Emotion=happy Pose=Tracked  | [Frame 255] ID 1: Emotion=fear Pose=Tracked 
+23:26:13.446 | [Frame 256] ID 2: Pose=Tracked  | [Frame 256] ID 1: Pose=Tracked 
+23:26:13.628 | [Frame 257] ID 2: Pose=Tracked  | [Frame 257] ID 1: Pose=Tracked 
+23:26:13.776 | [Frame 258] ID 2: Pose=Tracked  | [Frame 258] ID 1: Pose=Tracked 
+23:26:13.919 | [Frame 259] ID 2: Pose=Tracked  | [Frame 259] ID 1: Pose=Tracked 
+23:26:14.120 | [Frame 260] ID 2: Emotion=happy Pose=Tracked  | [Frame 260] ID 1: Emotion=fear Pose=Tracked 
+23:26:14.270 | [Frame 261] ID 2: Pose=Tracked  | [Frame 261] ID 1: Pose=Tracked 
+23:26:14.420 | [Frame 262] ID 2: Pose=Tracked  | [Frame 262] ID 1: Pose=Tracked 
+23:26:14.569 | [Frame 263] ID 2: Pose=Tracked  | [Frame 263] ID 1: Pose=Tracked 
+23:26:14.728 | [Frame 264] ID 2: Pose=Tracked  | [Frame 264] ID 1: Pose=Tracked 
+23:26:14.928 | [Frame 265] ID 2: Emotion=happy Pose=Tracked  | [Frame 265] ID 1: Emotion=fear Pose=Tracked 
+23:26:15.075 | [Frame 266] ID 2: Pose=Tracked  | [Frame 266] ID 1: Pose=Tracked 
+23:26:15.228 | [Frame 267] ID 2: Pose=Tracked  | [Frame 267] ID 1: Pose=Tracked 
+23:26:15.379 | [Frame 268] ID 1: Pose=Tracked  | [Frame 268] ID 2: Pose=Tracked 
+23:26:15.520 | [Frame 269] ID 1: Pose=Tracked  | [Frame 269] ID 2: Pose=Tracked 
+23:26:15.741 | [Frame 270] ID 2: Emotion=happy Pose=Tracked  | [Frame 270] ID 1: Emotion=fear Pose=Tracked 
+23:26:15.907 | [Frame 271] ID 2: Pose=Tracked  | [Frame 271] ID 1: Pose=Tracked 
+23:26:16.041 | [Frame 272] ID 2: Pose=Tracked  | [Frame 272] ID 1: Pose=Tracked 
+23:26:16.191 | [Frame 273] ID 2: Pose=Tracked  | [Frame 273] ID 1: Pose=Tracked 
+23:26:16.341 | [Frame 274] ID 2: Pose=Tracked  | [Frame 274] ID 1: Pose=Tracked 
+23:26:16.545 | [Frame 275] ID 2: Emotion=happy Pose=Tracked  | [Frame 275] ID 1: Emotion=fear Pose=Tracked 
+23:26:16.690 | [Frame 276] ID 2: Pose=Tracked  | [Frame 276] ID 1: Pose=Tracked 
+23:26:16.841 | [Frame 277] ID 1: Pose=Tracked  | [Frame 277] ID 2: Pose=Tracked 
+23:26:16.987 | [Frame 278] ID 1: Pose=Tracked  | [Frame 278] ID 2: Pose=Tracked 
+23:26:17.140 | [Frame 279] ID 1: Pose=Tracked  | [Frame 279] ID 2: Pose=Tracked 
+23:26:17.343 | [Frame 280] ID 1: Emotion=sad Pose=Tracked  | [Frame 280] ID 2: Emotion=happy Pose=Tracked 
+23:26:17.490 | [Frame 281] ID 1: Pose=Tracked  | [Frame 281] ID 2: Pose=Tracked 
+23:26:17.628 | [Frame 282] ID 2: Pose=Tracked  | [Frame 282] ID 1: Pose=Tracked 
+23:26:17.778 | [Frame 283] ID 2: Pose=Tracked  | [Frame 283] ID 1: Pose=Tracked 
+23:26:17.928 | [Frame 284] ID 2: Pose=Tracked  | [Frame 284] ID 1: Pose=Tracked 
+23:26:18.139 | [Frame 285] ID 2: Emotion=happy Pose=Tracked  | [Frame 285] ID 1: Emotion=fear Pose=Tracked 
+23:26:18.305 | [Frame 286] ID 1: Pose=Tracked  | [Frame 286] ID 2: Pose=Tracked 
+23:26:18.438 | [Frame 287] ID 2: Pose=Tracked  | [Frame 287] ID 1: Pose=Tracked 
+23:26:18.588 | [Frame 288] ID 2: Pose=Tracked  | [Frame 288] ID 1: Pose=Tracked 
+23:26:18.778 | [Frame 289] ID 2: Pose=Tracked  | [Frame 289] ID 1: Pose=Tracked 
+23:26:19.004 | [Frame 290] ID 2: Emotion=happy Pose=Tracked  | [Frame 290] ID 1: Emotion=happy Pose=Tracked 
+23:26:19.144 | [Frame 291] ID 2: Pose=Tracked  | [Frame 291] ID 1: Pose=Tracked 
+23:26:19.304 | [Frame 292] ID 1: Pose=Tracked  | [Frame 292] ID 2: Pose=Tracked 
+23:26:19.454 | [Frame 293] ID 1: Pose=Tracked  | [Frame 293] ID 2: Pose=Tracked 
+23:26:19.604 | [Frame 294] ID 1: Pose=Tracked  | [Frame 294] ID 2: Pose=Tracked 
+23:26:19.820 | [Frame 295] ID 1: Emotion=fear Pose=Tracked  | [Frame 295] ID 2: Emotion=happy Pose=Tracked 
+23:26:19.978 | [Frame 296] ID 1: Pose=Tracked  | [Frame 296] ID 2: Pose=Tracked 
+23:26:20.137 | [Frame 297] ID 1: Pose=Tracked  | [Frame 297] ID 2: Pose=Tracked 
+23:26:20.288 | [Frame 298] ID 1: Pose=Tracked  | [Frame 298] ID 2: Pose=Tracked 
+23:26:20.453 | [Frame 299] ID 1: Pose=Tracked  | [Frame 299] ID 2: Pose=Tracked 
+23:26:20.660 | [Frame 300] ID 1: Emotion=fear Pose=Tracked  | [Frame 300] ID 2: Emotion=happy Pose=Tracked 
+23:26:20.836 | [Frame 301] ID 1: Pose=Tracked  | [Frame 301] ID 2: Pose=Tracked 
+23:26:20.987 | [Frame 302] ID 1: Pose=Tracked  | [Frame 302] ID 2: Pose=Tracked 
+23:26:21.136 | [Frame 303] ID 1: Pose=Tracked  | [Frame 303] ID 2: Pose=Tracked 
+23:26:21.289 | [Frame 304] ID 1: Pose=Tracked  | [Frame 304] ID 2: Pose=Tracked 
+23:26:21.528 | [Frame 305] ID 1: Emotion=fear Pose=Tracked  | [Frame 305] ID 2: Emotion=happy Pose=Tracked 
+23:26:21.687 | [Frame 306] ID 1: Pose=Tracked  | [Frame 306] ID 2: Pose=Tracked 
+23:26:21.828 | [Frame 307] ID 1: Pose=Tracked  | [Frame 307] ID 2: Pose=Tracked 
+23:26:21.985 | [Frame 308] ID 1: Pose=Tracked  | [Frame 308] ID 2: Pose=Tracked 
+23:26:22.135 | [Frame 309] ID 1: Pose=Tracked  | [Frame 309] ID 2: Pose=Tracked 
+23:26:22.343 | [Frame 310] ID 1: Emotion=fear Pose=Tracked  | [Frame 310] ID 2: Emotion=happy Pose=Tracked 
+23:26:22.485 | [Frame 311] ID 1: Pose=Tracked  | [Frame 311] ID 2: Pose=Tracked 
+23:26:22.635 | [Frame 312] ID 1: Pose=Tracked  | [Frame 312] ID 2: Pose=Tracked 
+23:26:22.785 | [Frame 313] ID 1: Pose=Tracked  | [Frame 313] ID 2: Pose=Tracked 
+23:26:22.945 | [Frame 314] ID 1: Pose=Tracked  | [Frame 314] ID 2: Pose=Tracked 
+23:26:23.151 | [Frame 315] ID 1: Emotion=fear Pose=Tracked  | [Frame 315] ID 2: Emotion=happy Pose=Tracked 
+23:26:23.295 | [Frame 316] ID 1: Pose=Tracked  | [Frame 316] ID 2: Pose=Tracked 
+23:26:23.434 | [Frame 317] ID 1: Pose=Tracked  | [Frame 317] ID 2: Pose=Tracked 
+23:26:23.595 | [Frame 318] ID 1: Pose=Tracked  | [Frame 318] ID 2: Pose=Tracked 
+23:26:23.737 | [Frame 319] ID 1: Pose=Tracked  | [Frame 319] ID 2: Pose=Tracked 
+23:26:23.951 | [Frame 320] ID 1: Emotion=fear Pose=Tracked  | [Frame 320] ID 2: Emotion=happy Pose=Tracked 
+23:26:24.100 | [Frame 321] ID 1: Pose=Tracked  | [Frame 321] ID 2: Pose=Tracked 
+23:26:24.241 | [Frame 322] ID 1: Pose=Tracked  | [Frame 322] ID 2: Pose=Tracked 
+23:26:24.392 | [Frame 323] ID 1: Pose=Tracked  | [Frame 323] ID 2: Pose=Tracked 
+23:26:24.534 | [Frame 324] ID 1: Pose=Tracked  | [Frame 324] ID 2: Pose=Tracked 
+23:26:24.733 | [Frame 325] ID 1: Emotion=fear Pose=Tracked  | [Frame 325] ID 2: Emotion=happy Pose=Tracked 
+23:26:24.900 | [Frame 326] ID 2: Pose=Tracked  | [Frame 326] ID 1: Pose=Tracked 
+23:26:25.069 | [Frame 327] ID 1: Pose=Tracked  | [Frame 327] ID 2: Pose=Tracked 
+23:26:25.219 | [Frame 328] ID 1: Pose=Tracked  | [Frame 328] ID 2: Pose=Tracked 
+23:26:25.370 | [Frame 329] ID 1: Pose=Tracked  | [Frame 329] ID 2: Pose=Tracked 
+23:26:25.571 | [Frame 330] ID 1: Emotion=fear Pose=Tracked  | [Frame 330] ID 2: Emotion=happy Pose=Tracked 
+23:26:25.740 | [Frame 331] ID 2: Pose=Tracked  | [Frame 331] ID 1: Pose=Tracked 
+23:26:25.904 | [Frame 332] ID 2: Pose=Tracked  | [Frame 332] ID 1: Pose=Tracked 
+23:26:26.048 | [Frame 333] ID 2: Pose=Tracked  | [Frame 333] ID 1: Pose=Tracked 
+23:26:26.265 | [Frame 334] ID 2: Pose=Tracked  | [Frame 334] ID 1: Pose=Tracked 
+23:26:26.448 | [Frame 335] ID 2: Emotion=happy Pose=Tracked  | [Frame 335] ID 1: Emotion=fear Pose=Tracked 
+23:26:26.596 | [Frame 336] ID 2: Pose=Tracked  | [Frame 336] ID 1: Pose=Tracked 
+23:26:26.752 | [Frame 337] ID 2: Pose=Tracked  | [Frame 337] ID 1: Pose=Tracked 
+23:26:26.941 | [Frame 338] ID 2: Pose=Tracked  | [Frame 338] ID 1: Pose=Tracked 
+23:26:27.088 | [Frame 339] ID 2: Pose=Tracked  | [Frame 339] ID 1: Pose=Tracked 
+23:26:27.311 | [Frame 340] ID 2: Emotion=happy Pose=Tracked  | [Frame 340] ID 1: Emotion=fear Pose=Tracked 
+23:26:27.463 | [Frame 341] ID 2: Pose=Tracked  | [Frame 341] ID 1: Pose=Tracked 
+23:26:27.613 | [Frame 342] ID 2: Pose=Tracked  | [Frame 342] ID 1: Pose=Tracked 
+23:26:27.747 | [Frame 343] ID 2: Pose=Tracked  | [Frame 343] ID 1: Pose=Tracked 
+23:26:27.903 | [Frame 344] ID 2: Pose=Tracked  | [Frame 344] ID 1: Pose=Tracked 
+23:26:28.097 | [Frame 345] ID 2: Emotion=happy Pose=Tracked  | [Frame 345] ID 1: Emotion=fear Pose=Tracked 
+23:26:28.278 | [Frame 346] ID 2: Pose=Tracked  | [Frame 346] ID 1: Pose=Tracked 
+23:26:28.446 | [Frame 347] ID 2: Pose=Tracked  | [Frame 347] ID 1: Pose=Tracked 
+23:26:28.595 | [Frame 348] ID 2: Pose=Tracked  | [Frame 348] ID 1: Pose=Tracked 
+23:26:28.746 | [Frame 349] ID 2: Pose=Tracked  | [Frame 349] ID 1: Pose=Tracked 
+23:26:28.946 | [Frame 350] ID 2: Emotion=happy Pose=Tracked  | [Frame 350] ID 1: Emotion=fear Pose=Tracked 
+23:26:29.079 | [Frame 351] ID 2: Pose=Tracked  | [Frame 351] ID 1: Pose=Tracked 
+23:26:29.229 | [Frame 352] ID 2: Pose=Tracked  | [Frame 352] ID 1: Pose=Tracked 
+23:26:29.395 | [Frame 353] ID 2: Pose=Tracked  | [Frame 353] ID 1: Pose=Tracked 
+23:26:29.548 | [Frame 354] ID 2: Pose=Tracked  | [Frame 354] ID 1: Pose=Tracked 
+23:26:29.751 | [Frame 355] ID 2: Emotion=happy Pose=Tracked  | [Frame 355] ID 1: Emotion=fear Pose=Tracked 
+23:26:29.903 | [Frame 356] ID 2: Pose=Tracked  | [Frame 356] ID 1: Pose=Tracked 
+23:26:30.045 | [Frame 357] ID 2: Pose=Tracked  | [Frame 357] ID 1: Pose=Tracked 
+23:26:30.195 | [Frame 358] ID 2: Pose=Tracked  | [Frame 358] ID 1: Pose=Tracked 
+23:26:30.329 | [Frame 359] ID 2: Pose=Tracked  | [Frame 359] ID 1: Pose=Tracked 
+23:26:30.552 | [Frame 360] ID 2: Emotion=happy Pose=Tracked  | [Frame 360] ID 1: Emotion=fear Pose=Tracked 
+23:26:30.719 | [Frame 361] ID 2: Pose=Tracked  | [Frame 361] ID 1: Pose=Tracked 
+23:26:30.869 | [Frame 362] ID 2: Pose=Tracked  | [Frame 362] ID 1: Pose=Tracked 
+23:26:31.020 | [Frame 363] ID 2: Pose=Tracked  | [Frame 363] ID 1: Pose=Tracked 
+23:26:31.177 | [Frame 364] ID 2: Pose=Tracked  | [Frame 364] ID 1: Pose=Tracked 
+23:26:31.386 | [Frame 365] ID 2: Emotion=happy Pose=Tracked  | [Frame 365] ID 1: Emotion=angry Pose=Tracked 
+23:26:31.537 | [Frame 366] ID 2: Pose=Tracked  | [Frame 366] ID 1: Pose=Tracked 
+23:26:31.687 | [Frame 367] ID 2: Pose=Tracked  | [Frame 367] ID 1: Pose=Tracked 
+23:26:31.836 | [Frame 368] ID 2: Pose=Tracked  | [Frame 368] ID 1: Pose=Tracked 
+23:26:31.993 | [Frame 369] ID 2: Pose=Tracked  | [Frame 369] ID 1: Pose=Tracked 
+23:26:32.228 | [Frame 370] ID 2: Emotion=happy Pose=Tracked  | [Frame 370] ID 1: Emotion=angry Pose=Tracked 
+23:26:32.397 | [Frame 371] ID 2: Pose=Tracked  | [Frame 371] ID 1: Pose=Tracked 
+23:26:32.570 | [Frame 372] ID 2: Pose=Tracked  | [Frame 372] ID 1: Pose=Tracked 
+23:26:32.728 | [Frame 373] ID 2: Pose=Tracked  | [Frame 373] ID 1: Pose=Tracked 
+23:26:32.919 | [Frame 374] ID 2: Pose=Tracked  | [Frame 374] ID 1: Pose=Tracked 
+23:26:33.170 | [Frame 375] ID 2: Emotion=happy Pose=Tracked  | [Frame 375] ID 1: Emotion=happy Pose=Tracked 
+23:26:33.311 | [Frame 376] ID 2: Pose=Tracked  | [Frame 376] ID 1: Pose=Tracked 
+23:26:33.465 | [Frame 377] ID 2: Pose=Tracked  | [Frame 377] ID 1: Pose=Tracked 
+23:26:33.608 | [Frame 378] ID 2: Pose=Tracked  | [Frame 378] ID 1: Pose=Tracked 
+23:26:33.758 | [Frame 379] ID 2: Pose=Tracked  | [Frame 379] ID 1: Pose=Tracked 
+23:26:33.958 | [Frame 380] ID 2: Emotion=happy Pose=Tracked  | [Frame 380] ID 1: Emotion=happy Pose=Tracked 
+23:26:34.108 | [Frame 381] ID 2: Pose=Tracked  | [Frame 381] ID 1: Pose=Tracked 
+23:26:34.253 | [Frame 382] ID 2: Pose=Tracked  | [Frame 382] ID 1: Pose=Tracked 
+23:26:34.410 | [Frame 383] ID 2: Pose=Tracked  | [Frame 383] ID 1: Pose=Tracked 
+23:26:34.574 | [Frame 384] ID 2: Pose=Tracked  | [Frame 384] ID 1: Pose=Tracked 
+23:26:34.764 | [Frame 385] ID 2: Emotion=happy Pose=Tracked  | [Frame 385] ID 1: Emotion=fear Pose=Tracked 
+23:26:34.920 | [Frame 386] ID 2: Pose=Tracked  | [Frame 386] ID 1: Pose=Tracked 
+23:26:35.069 | [Frame 387] ID 2: Pose=Tracked  | [Frame 387] ID 1: Pose=Tracked 
+23:26:35.240 | [Frame 388] ID 2: Pose=Tracked  | [Frame 388] ID 1: Pose=Tracked 
+23:26:35.440 | [Frame 389] ID 2: Pose=Tracked  | [Frame 389] ID 1: Pose=Tracked 
+23:26:35.640 | [Frame 390] ID 2: Emotion=happy Pose=Tracked  | [Frame 390] ID 1: Emotion=fear Pose=Tracked 
+23:26:35.803 | [Frame 391] ID 2: Pose=Tracked  | [Frame 391] ID 1: Pose=Tracked 
+23:26:35.973 | [Frame 392] ID 2: Pose=Tracked  | [Frame 392] ID 1: Pose=Tracked 
+23:26:36.123 | [Frame 393] ID 2: Pose=Tracked  | [Frame 393] ID 1: Pose=Tracked 
+23:26:36.278 | [Frame 394] ID 2: Pose=Tracked  | [Frame 394] ID 1: Pose=Tracked 
+23:26:36.522 | [Frame 395] ID 2: Emotion=happy Pose=Tracked  | [Frame 395] ID 1: Emotion=fear Pose=Tracked 
+23:26:36.711 | [Frame 396] ID 2: Pose=Tracked  | [Frame 396] ID 1: Pose=Tracked 
+23:26:36.878 | [Frame 397] ID 2: Pose=Tracked  | [Frame 397] ID 1: Pose=Tracked 
+23:26:37.041 | [Frame 398] ID 2: Pose=Tracked  | [Frame 398] ID 1: Pose=Tracked 
+23:26:37.221 | [Frame 399] ID 2: Pose=Tracked  | [Frame 399] ID 1: Pose=Tracked 
+23:26:37.445 | [Frame 400] ID 2: Emotion=angry Pose=Tracked  | [Frame 400] ID 1: Emotion=fear Pose=Tracked 
+23:26:37.605 | [Frame 401] ID 2: Pose=Tracked  | [Frame 401] ID 1: Pose=Tracked 
+23:26:37.770 | [Frame 402] ID 2: Pose=Tracked  | [Frame 402] ID 1: Pose=Tracked 
+23:26:37.921 | [Frame 403] ID 2: Pose=Tracked  | [Frame 403] ID 1: Pose=Tracked 
+23:26:38.088 | [Frame 404] ID 2: Pose=Tracked  | [Frame 404] ID 1: Pose=Tracked 
+23:26:38.311 | [Frame 405] ID 2: Emotion=sad Pose=Tracked  | [Frame 405] ID 1: Emotion=fear Pose=Tracked 
+23:26:38.456 | [Frame 406] ID 2: Pose=Tracked  | [Frame 406] ID 1: Pose=Tracked 
+23:26:38.629 | [Frame 407] ID 2: Pose=Tracked  | [Frame 407] ID 1: Pose=Tracked 
+23:26:38.787 | [Frame 408] ID 2: Pose=Tracked  | [Frame 408] ID 1: Pose=Tracked 
+23:26:38.937 | [Frame 409] ID 2: Pose=Tracked  | [Frame 409] ID 1: Pose=Tracked 
+23:26:39.153 | [Frame 410] ID 2: Emotion=fear Pose=Tracked  | [Frame 410] ID 1: Emotion=fear Pose=Tracked 
+23:26:39.328 | [Frame 411] ID 2: Pose=Tracked  | [Frame 411] ID 1: Pose=Tracked 
+23:26:39.528 | [Frame 412] ID 2: Pose=Tracked  | [Frame 412] ID 1: Pose=Tracked 
+23:26:39.686 | [Frame 413] ID 2: Pose=Tracked  | [Frame 413] ID 1: Pose=Tracked 
+23:26:39.903 | [Frame 414] ID 2: Pose=Tracked  | [Frame 414] ID 1: Pose=Tracked 
+23:26:40.120 | [Frame 415] ID 2: Emotion=angry Pose=Tracked  | [Frame 415] ID 1: Emotion=fear Pose=Tracked 
+23:26:40.286 | [Frame 416] ID 2: Pose=Tracked  | [Frame 416] ID 1: Pose=Tracked 
+23:26:40.459 | [Frame 417] ID 2: Pose=Tracked  | [Frame 417] ID 1: Pose=Tracked 
+23:26:40.669 | [Frame 418] ID 2: Pose=Tracked  | [Frame 418] ID 1: Pose=Tracked 
+23:26:40.835 | [Frame 419] ID 2: Pose=Tracked  | [Frame 419] ID 1: Pose=Tracked 
+23:26:41.044 | [Frame 420] ID 2: Emotion=fear Pose=Tracked  | [Frame 420] ID 1: Emotion=fear Pose=Tracked 
+23:26:41.201 | [Frame 421] ID 2: Pose=Tracked  | [Frame 421] ID 1: Pose=Tracked 
+23:26:41.367 | [Frame 422] ID 2: Pose=Tracked  | [Frame 422] ID 1: Pose=Tracked 
+23:26:41.534 | [Frame 423] ID 2: Pose=Tracked  | [Frame 423] ID 1: Pose=Tracked 
+23:26:41.692 | [Frame 424] ID 2: Pose=Tracked  | [Frame 424] ID 1: Pose=Tracked 
+23:26:41.909 | [Frame 425] ID 2: Emotion=fear Pose=Tracked  | [Frame 425] ID 1: Emotion=fear Pose=Tracked 
+23:26:42.051 | [Frame 426] ID 2: Pose=Tracked  | [Frame 426] ID 1: Pose=Tracked 
+23:26:42.219 | [Frame 427] ID 2: Pose=Tracked  | [Frame 427] ID 1: Pose=Tracked 
+23:26:42.378 | [Frame 428] ID 2: Pose=Tracked  | [Frame 428] ID 1: Pose=Tracked 
+23:26:42.534 | [Frame 429] ID 2: Pose=Tracked  | [Frame 429] ID 1: Pose=Tracked 
+23:26:42.733 | [Frame 430] ID 2: Emotion=sad Pose=Tracked  | [Frame 430] ID 1: Emotion=neutral Pose=Tracked 
+23:26:42.899 | [Frame 431] ID 2: Pose=Tracked  | [Frame 431] ID 1: Pose=Tracked 
+23:26:43.050 | [Frame 432] ID 2: Pose=Tracked  | [Frame 432] ID 1: Pose=Tracked 
+23:26:43.215 | [Frame 433] ID 2: Pose=Tracked  | [Frame 433] ID 1: Pose=Tracked 
+23:26:43.385 | [Frame 434] ID 2: Pose=Tracked  | [Frame 434] ID 1: Pose=Tracked 
+23:26:43.649 | [Frame 435] ID 2: Emotion=happy Pose=Tracked  | [Frame 435] ID 1: Emotion=neutral Pose=Tracked 
+23:26:43.807 | [Frame 436] ID 2: Pose=Tracked  | [Frame 436] ID 1: Pose=Tracked 
+23:26:43.978 | [Frame 437] ID 2: Pose=Tracked  | [Frame 437] ID 1: Pose=Tracked 
+23:26:44.120 | [Frame 438] ID 2: Pose=Tracked  | [Frame 438] ID 1: Pose=Tracked 
+23:26:44.278 | [Frame 439] ID 2: Pose=Tracked  | [Frame 439] ID 1: Pose=Tracked 
+23:26:44.469 | [Frame 440] ID 2: Emotion=fear Pose=Tracked  | [Frame 440] ID 1: Emotion=neutral Pose=Tracked 
+23:26:44.620 | [Frame 441] ID 2: Pose=Tracked  | [Frame 441] ID 1: Pose=Tracked 
+23:26:44.782 | [Frame 442] ID 2: Pose=Tracked  | [Frame 442] ID 1: Pose=Tracked 
+23:26:45.048 | [Frame 443] ID 2: Pose=Tracked  | [Frame 443] ID 1: Pose=Tracked 
+23:26:45.219 | [Frame 444] ID 2: Pose=Tracked  | [Frame 444] ID 1: Pose=Tracked 
+23:26:45.419 | [Frame 445] ID 2: Emotion=angry Pose=Tracked  | [Frame 445] ID 1: Emotion=neutral Pose=Tracked 
+23:26:45.581 | [Frame 446] ID 2: Pose=Tracked  | [Frame 446] ID 1: Pose=Tracked 
+23:26:45.747 | [Frame 447] ID 2: Pose=Tracked  | [Frame 447] ID 1: Pose=Tracked 
+23:26:46.120 | [Frame 448] ID 2: Pose=Tracked  | [Frame 448] ID 1: Pose=Tracked 
+23:26:46.346 | [Frame 449] ID 2: Pose=Tracked  | [Frame 449] ID 1: Pose=Tracked 
+23:26:46.580 | [Frame 450] ID 2: Emotion=neutral Pose=Tracked  | [Frame 450] ID 1: Emotion=sad Pose=Tracked 
+23:26:46.803 | [Frame 451] ID 2: Pose=Tracked  | [Frame 451] ID 1: Pose=Tracked 
+23:26:47.128 | [Frame 452] ID 2: Pose=Tracked  | [Frame 452] ID 1: Pose=Tracked 
+23:26:47.302 | [Frame 453] ID 2: Pose=Tracked  | [Frame 453] ID 1: Pose=Tracked 
+23:26:47.446 | [Frame 454] ID 2: Pose=Tracked  | [Frame 454] ID 1: Pose=Tracked 
+23:26:47.863 | [Frame 455] ID 2: Emotion=neutral Pose=Tracked  | [Frame 455] ID 1: Emotion=sad Pose=Tracked 
+23:26:48.029 | [Frame 456] ID 2: Pose=Tracked  | [Frame 456] ID 1: Pose=Tracked 
+23:26:48.178 | [Frame 457] ID 2: Pose=Tracked  | [Frame 457] ID 1: Pose=Tracked 
+23:26:48.346 | [Frame 458] ID 2: Pose=Tracked  | [Frame 458] ID 1: Pose=Tracked 
+23:26:48.494 | [Frame 459] ID 2: Pose=Tracked  | [Frame 459] ID 1: Pose=Tracked 
+23:26:48.686 | [Frame 460] ID 2: Emotion=neutral Pose=Tracked  | [Frame 460] ID 1: Emotion=sad Pose=Tracked 
+23:26:48.869 | [Frame 461] ID 2: Pose=Tracked  | [Frame 461] ID 1: Pose=Tracked 
+23:26:49.019 | [Frame 462] ID 2: Pose=Tracked  | [Frame 462] ID 1: Pose=Tracked 
+23:26:49.194 | [Frame 463] ID 2: Pose=Tracked  | [Frame 463] ID 1: Pose=Tracked 
+23:26:49.348 | [Frame 464] ID 2: Pose=Tracked  | [Frame 464] ID 1: Pose=Tracked 
+23:26:49.561 | [Frame 465] ID 2: Emotion=neutral Pose=Tracked  | [Frame 465] ID 1: Emotion=sad Pose=Tracked 
+23:26:49.710 | [Frame 466] ID 2: Pose=Tracked  | [Frame 466] ID 1: Pose=Tracked 
+23:26:49.864 | [Frame 467] ID 2: Pose=Tracked  | [Frame 467] ID 1: Pose=Tracked 
+23:26:50.110 | [Frame 468] ID 2: Pose=Tracked  | [Frame 468] ID 1: Pose=Tracked 
+23:26:50.271 | [Frame 469] ID 2: Pose=Tracked  | [Frame 469] ID 1: Pose=Tracked 
+23:26:50.469 | [Frame 470] ID 2: Emotion=neutral Pose=Tracked  | [Frame 470] ID 1: Emotion=sad Pose=Tracked 
+23:26:50.619 | [Frame 471] ID 2: Pose=Tracked  | [Frame 471] ID 1: Pose=Tracked 
+23:26:50.793 | [Frame 472] ID 2: Pose=Tracked  | [Frame 472] ID 1: Pose=Tracked 
+23:26:50.927 | [Frame 473] ID 2: Pose=Tracked  | [Frame 473] ID 1: Pose=Tracked 
+23:26:51.078 | [Frame 474] ID 2: Pose=Tracked  | [Frame 474] ID 1: Pose=Tracked 
+23:26:51.292 | [Frame 475] ID 2: Emotion=neutral Pose=Tracked  | [Frame 475] ID 1: Emotion=sad Pose=Tracked 
+23:26:51.443 | [Frame 476] ID 2: Pose=Tracked  | [Frame 476] ID 1: Pose=Tracked 
+23:26:51.594 | [Frame 477] ID 2: Pose=Tracked  | [Frame 477] ID 1: Pose=Tracked 
+23:26:51.759 | [Frame 478] ID 2: Pose=Tracked  | [Frame 478] ID 1: Pose=Tracked 
+23:26:51.907 | [Frame 479] ID 2: Pose=Tracked  | [Frame 479] ID 1: Pose=Tracked 
+23:26:52.092 | [Frame 480] ID 2: Emotion=neutral Pose=Tracked  | [Frame 480] ID 1: Emotion=sad Pose=Tracked 
+23:26:52.258 | [Frame 481] ID 2: Pose=Tracked  | [Frame 481] ID 1: Pose=Tracked 
+23:26:52.491 | [Frame 482] ID 2: Pose=Tracked  | [Frame 482] ID 1: Pose=Tracked 
+23:26:52.666 | [Frame 483] ID 2: Pose=Tracked  | [Frame 483] ID 1: Pose=Tracked 
+23:26:52.866 | [Frame 484] ID 2: Pose=Tracked  | [Frame 484] ID 1: Pose=Tracked 
+23:26:53.128 | [Frame 485] ID 2: Emotion=neutral Pose=Tracked  | [Frame 485] ID 1: Emotion=sad Pose=Tracked 
+23:26:53.301 | [Frame 486] ID 2: Pose=Tracked  | [Frame 486] ID 1: Pose=Tracked 
+23:26:53.457 | [Frame 487] ID 2: Pose=Tracked  | [Frame 487] ID 1: Pose=Tracked 
+23:26:53.607 | [Frame 488] ID 2: Pose=Tracked  | [Frame 488] ID 1: Pose=Tracked 
+23:26:53.790 | [Frame 489] ID 2: Pose=Tracked  | [Frame 489] ID 1: Pose=Tracked 
+23:26:53.978 | [Frame 490] ID 2: Emotion=neutral Pose=Tracked  | [Frame 490] ID 1: Emotion=neutral Pose=Tracked 
+23:26:54.128 | [Frame 491] ID 2: Pose=Tracked  | [Frame 491] ID 1: Pose=Tracked 
+23:26:54.278 | [Frame 492] ID 2: Pose=Tracked  | [Frame 492] ID 1: Pose=Tracked 
+23:26:54.440 | [Frame 493] ID 2: Pose=Tracked  | [Frame 493] ID 1: Pose=Tracked 
+23:26:54.595 | [Frame 494] ID 2: Pose=Tracked  | [Frame 494] ID 1: Pose=Tracked 
+23:26:54.906 | [Frame 495] ID 2: Emotion=neutral Pose=Tracked  | [Frame 495] ID 1: Emotion=neutral Pose=Tracked 
+23:26:55.061 | [Frame 496] ID 2: Pose=Tracked  | [Frame 496] ID 1: Pose=Tracked 
+23:26:55.205 | [Frame 497] ID 2: Pose=Tracked  | [Frame 497] ID 1: Pose=Tracked 
+23:26:55.605 | [Frame 498] ID 2: Pose=Tracked  | [Frame 498] ID 1: Pose=Tracked 
+23:26:55.788 | [Frame 499] ID 2: Pose=Tracked  | [Frame 499] ID 1: Pose=Tracked 
+23:26:55.988 | [Frame 500] ID 2: Emotion=surprise Pose=Tracked  | [Frame 500] ID 1: Emotion=sad Pose=Tracked 
+23:26:56.138 | [Frame 501] ID 2: Pose=Tracked  | [Frame 501] ID 1: Pose=Tracked 
+23:26:56.341 | [Frame 502] ID 2: Pose=Tracked  | [Frame 502] ID 1: Pose=Tracked 
+23:26:56.488 | [Frame 503] ID 2: Pose=Tracked  | [Frame 503] ID 1: Pose=Tracked 
+23:26:56.639 | [Frame 504] ID 2: Pose=Tracked  | [Frame 504] ID 1: Pose=Tracked 
+23:26:56.837 | [Frame 505] ID 2: Emotion=neutral Pose=Tracked  | [Frame 505] ID 1: Emotion=neutral Pose=Tracked 
+23:26:57.028 | [Frame 506] ID 2: Pose=Tracked  | [Frame 506] ID 1: Pose=Tracked 
+23:26:57.169 | [Frame 507] ID 2: Pose=Tracked  | [Frame 507] ID 1: Pose=Tracked 
+23:26:57.328 | [Frame 508] ID 2: Pose=Tracked  | [Frame 508] ID 1: Pose=Tracked 
+23:26:57.487 | [Frame 509] ID 2: Pose=Tracked  | [Frame 509] ID 1: Pose=Tracked 
+23:26:57.787 | [Frame 510] ID 2: Emotion=sad Pose=Tracked  | [Frame 510] ID 1: Emotion=sad Pose=Tracked 
+23:26:57.953 | [Frame 511] ID 2: Pose=Tracked  | [Frame 511] ID 1: Pose=Tracked 
+23:26:58.129 | [Frame 512] ID 2: Pose=Tracked  | [Frame 512] ID 1: Pose=Tracked 
+23:26:58.410 | [Frame 513] ID 2: Pose=Tracked  | [Frame 513] ID 1: Pose=Tracked 
+23:26:58.586 | [Frame 514] ID 2: Pose=Tracked  | [Frame 514] ID 1: Pose=Tracked 
+23:26:58.794 | [Frame 515] ID 2: Emotion=neutral Pose=Tracked  | [Frame 515] ID 1: Emotion=fear Pose=Tracked 
+23:26:59.001 | [Frame 516] ID 2: Pose=Tracked  | [Frame 516] ID 1: Pose=Tracked 
+23:26:59.178 | [Frame 517] ID 2: Pose=Tracked  | [Frame 517] ID 1: Pose=Tracked 
+23:26:59.359 | [Frame 518] ID 2: Pose=Tracked  | [Frame 518] ID 1: Pose=Tracked 
+23:26:59.544 | [Frame 519] ID 2: Pose=Tracked  | [Frame 519] ID 1: Pose=Tracked  | [Frame 519] ID 7: Pose=Tracked 
+23:26:59.835 | [Frame 520] ID 2: Emotion=neutral Pose=Tracked  | [Frame 520] ID 1: Emotion=sad Pose=Tracked  | [Frame 520] ID 7: Pose=Tracked 
+23:27:00.035 | [Frame 521] ID 2: Pose=Tracked  | [Frame 521] ID 1: Pose=Tracked  | [Frame 521] ID 7: Pose=Tracked 
+23:27:00.269 | [Frame 522] ID 2: Pose=Tracked  | [Frame 522] ID 1: Pose=Tracked  | [Frame 522] ID 7: Pose=Tracked 
+23:27:00.458 | [Frame 523] ID 2: Pose=Tracked  | [Frame 523] ID 7: Pose=Tracked 
+23:27:00.661 | [Frame 524] ID 2: Pose=Tracked 
+23:27:00.916 | [Frame 525] ID 2: Emotion=fear Pose=Tracked  | [Frame 525] ID 8: Pose=Tracked 
+23:27:01.100 | [Frame 526] ID 2: Pose=Tracked  | [Frame 526] ID 8: Pose=Tracked  | [Frame 526] ID 1: Pose=Tracked 
+23:27:01.349 | [Frame 527] ID 2: Pose=Tracked  | [Frame 527] ID 8: Pose=Tracked  | [Frame 527] ID 1: Pose=Tracked 
+23:27:01.566 | [Frame 528] ID 2: Pose=Tracked  | [Frame 528] ID 1: Pose=Tracked  | [Frame 528] ID 8: Pose=Tracked 
+23:27:01.774 | [Frame 529] ID 2: Pose=Tracked  | [Frame 529] ID 1: Pose=Tracked  | [Frame 529] ID 8: Pose=Tracked  | [Frame 529] ID 9: Pose=Tracked 
+23:27:02.020 | [Frame 530] ID 2: Emotion=sad Pose=Tracked  | [Frame 530] ID 1: Emotion=sad Pose=Tracked  | [Frame 530] ID 8: Pose=Tracked  | [Frame 530] ID 9: Pose=Tracked 
+23:27:02.248 | [Frame 531] ID 2: Pose=Tracked  | [Frame 531] ID 1: Pose=Tracked  | [Frame 531] ID 9: Pose=Tracked  | [Frame 531] ID 8: Pose=Tracked 
+23:27:02.449 | [Frame 532] ID 2: Pose=Tracked  | [Frame 532] ID 1: Pose=Tracked  | [Frame 532] ID 9: Pose=Tracked  | [Frame 532] ID 8: Pose=Tracked 
+23:27:02.645 | [Frame 533] ID 2: Pose=Tracked  | [Frame 533] ID 1: Pose=Tracked  | [Frame 533] ID 9: Pose=Tracked 
+23:27:02.828 | [Frame 534] ID 2: Pose=Tracked  | [Frame 534] ID 1: Pose=Tracked 
+23:27:03.178 | [Frame 535] ID 2: Emotion=neutral Pose=Tracked  | [Frame 535] ID 1: Emotion=sad Pose=Tracked 
+23:27:03.390 | [Frame 536] ID 2: Pose=Tracked  | [Frame 536] ID 1: Pose=Tracked 
+23:27:03.566 | [Frame 537] ID 2: Pose=Tracked  | [Frame 537] ID 10: Pose=Tracked  | [Frame 537] ID 1: Pose=Tracked 
+23:27:03.819 | [Frame 538] ID 10: Pose=Tracked  | [Frame 538] ID 2: Pose=Tracked  | [Frame 538] ID 1: Pose=Tracked 
+23:27:04.031 | [Frame 539] ID 10: Pose=Tracked  | [Frame 539] ID 2: Pose=Tracked  | [Frame 539] ID 1: Pose=Tracked 
+23:27:04.319 | [Frame 540] ID 10: Emotion=fear Pose=Tracked  | [Frame 540] ID 2: Emotion=angry Pose=Tracked  | [Frame 540] ID 1: Emotion=sad Pose=Tracked 
+23:27:04.497 | [Frame 541] ID 10: Pose=Tracked  | [Frame 541] ID 2: Pose=Tracked  | [Frame 541] ID 1: Pose=Tracked 
+23:27:04.697 | [Frame 542] ID 10: Pose=Tracked  | [Frame 542] ID 2: Pose=Tracked  | [Frame 542] ID 1: Pose=Tracked 
+23:27:04.920 | [Frame 543] ID 10: Pose=Tracked  | [Frame 543] ID 2: Pose=Tracked  | [Frame 543] ID 1: Pose=Tracked 
+23:27:05.170 | [Frame 544] ID 10: Pose=Tracked  | [Frame 544] ID 2: Pose=Tracked  | [Frame 544] ID 1: Pose=Tracked 
+23:27:05.419 | [Frame 545] ID 2: Emotion=fear Pose=Tracked  | [Frame 545] ID 10: Pose=Tracked  | [Frame 545] ID 1: Emotion=fear Pose=Tracked  | [Frame 545] ID 12: Pose=Tracked 
+23:27:05.628 | [Frame 546] ID 2: Pose=Tracked  | [Frame 546] ID 10: Pose=Tracked  | [Frame 546] ID 1: Pose=Tracked  | [Frame 546] ID 12: Pose=Tracked 
+23:27:05.836 | [Frame 547] ID 2: Pose=Tracked  | [Frame 547] ID 1: Pose=Tracked  | [Frame 547] ID 10: Pose=Tracked  | [Frame 547] ID 12: Pose=Tracked 
+23:27:06.228 | [Frame 548] ID 2: Pose=Tracked  | [Frame 548] ID 1: Pose=Tracked  | [Frame 548] ID 10: Pose=Tracked  | [Frame 548] ID 12: 
+23:27:06.588 | [Frame 549] ID 10: Pose=Tracked  | [Frame 549] ID 1: Pose=Tracked  | [Frame 549] ID 2: Pose=Tracked  | [Frame 549] ID 12: Pose=Tracked 
+23:27:06.811 | [Frame 550] ID 10: Pose=Tracked  | [Frame 550] ID 2: Emotion=sad Pose=Tracked  | [Frame 550] ID 1: Pose=Tracked  | [Frame 550] ID 12: Pose=Tracked 
+23:27:07.028 | [Frame 551] ID 2: Pose=Tracked  | [Frame 551] ID 10: Pose=Tracked  | [Frame 551] ID 1: Pose=Tracked  | [Frame 551] ID 12: Pose=Tracked 
+23:27:07.245 | [Frame 552] ID 2: Pose=Tracked  | [Frame 552] ID 10: Pose=Tracked  | [Frame 552] ID 1: Pose=Tracked 
+23:27:07.460 | [Frame 553] ID 10: Pose=Tracked  | [Frame 553] ID 2: Pose=Tracked  | [Frame 553] ID 1: Pose=Tracked 
+23:27:07.670 | [Frame 554] ID 2: Pose=Tracked  | [Frame 554] ID 10: Pose=Tracked  | [Frame 554] ID 1: Pose=Tracked 
+23:27:07.869 | [Frame 555] ID 10: Pose=Tracked  | [Frame 555] ID 2: Pose=Tracked  | [Frame 555] ID 1: Pose=Tracked  | [Frame 555] ID 13: Pose=Tracked 
+23:27:08.328 | [Frame 556] ID 2: Pose=Tracked  | [Frame 556] ID 10: Pose=Tracked  | [Frame 556] ID 1: Pose=Tracked  | [Frame 556] ID 13: Pose=Tracked 
+23:27:08.627 | [Frame 557] ID 2: Pose=Tracked  | [Frame 557] ID 10: Pose=Tracked  | [Frame 557] ID 13: Pose=Tracked  | [Frame 557] ID 1: Pose=Tracked 
+23:27:08.895 | [Frame 558] ID 10: Pose=Tracked  | [Frame 558] ID 2: Pose=Tracked  | [Frame 558] ID 13: Pose=Tracked  | [Frame 558] ID 1: Pose=Tracked 
+23:27:09.128 | [Frame 559] ID 10: Pose=Tracked  | [Frame 559] ID 2: Pose=Tracked  | [Frame 559] ID 13: Pose=Tracked  | [Frame 559] ID 1: Pose=Tracked 
+23:27:09.375 | [Frame 560] ID 10: Pose=Tracked  | [Frame 560] ID 2: Pose=Tracked  | [Frame 560] ID 1: Pose=Tracked  | [Frame 560] ID 13: Pose=Tracked 
+23:27:09.587 | [Frame 561] ID 10: Pose=Tracked  | [Frame 561] ID 2: Pose=Tracked  | [Frame 561] ID 1: Pose=Tracked  | [Frame 561] ID 13: Pose=Tracked 
+23:27:09.794 | [Frame 562] ID 10: Pose=Tracked  | [Frame 562] ID 2: Pose=Tracked  | [Frame 562] ID 1: Pose=Tracked  | [Frame 562] ID 13: Pose=Tracked 
+23:27:09.992 | [Frame 563] ID 10: Pose=Tracked  | [Frame 563] ID 2: Pose=Tracked  | [Frame 563] ID 1: Pose=Tracked  | [Frame 563] ID 13: Pose=Tracked 
+23:27:10.320 | [Frame 564] ID 10: Pose=Tracked  | [Frame 564] ID 1: Pose=Tracked  | [Frame 564] ID 2: Pose=Tracked  | [Frame 564] ID 13: Pose=Tracked 
+23:27:10.570 | [Frame 565] ID 10: Pose=Tracked  | [Frame 565] ID 2: Pose=Tracked  | [Frame 565] ID 1: Pose=Tracked  | [Frame 565] ID 13: Pose=Tracked 
+23:27:10.844 | [Frame 566] ID 10: Pose=Tracked  | [Frame 566] ID 2: Pose=Tracked  | [Frame 566] ID 1: Pose=Tracked  | [Frame 566] ID 13: Pose=Tracked 
+23:27:11.077 | [Frame 567] ID 10: Pose=Tracked  | [Frame 567] ID 1: Pose=Tracked  | [Frame 567] ID 2: Pose=Tracked  | [Frame 567] ID 13: Pose=Tracked 
+23:27:11.274 | [Frame 568] ID 10: Pose=Tracked  | [Frame 568] ID 1: Pose=Tracked  | [Frame 568] ID 2: Pose=Tracked  | [Frame 568] ID 13: Pose=Tracked 
+23:27:11.478 | [Frame 569] ID 10: Pose=Tracked  | [Frame 569] ID 2: Pose=Tracked  | [Frame 569] ID 1: Pose=Tracked  | [Frame 569] ID 13: Pose=Tracked 
+23:27:11.924 | [Frame 570] ID 10: Pose=Tracked  | [Frame 570] ID 2: Pose=Tracked  | [Frame 570] ID 13: Pose=Tracked  | [Frame 570] ID 1: Pose=Tracked 
+23:27:12.157 | [Frame 571] ID 10: Pose=Tracked  | [Frame 571] ID 2: Pose=Tracked  | [Frame 571] ID 13: Pose=Tracked  | [Frame 571] ID 1: Pose=Tracked 
+23:27:12.407 | [Frame 572] ID 10: Pose=Tracked  | [Frame 572] ID 2: Pose=Tracked  | [Frame 572] ID 1: Pose=Tracked  | [Frame 572] ID 13: Pose=Tracked 
+23:27:12.656 | [Frame 573] ID 10: Pose=Tracked  | [Frame 573] ID 2: Pose=Tracked  | [Frame 573] ID 1: Pose=Tracked  | [Frame 573] ID 13: Pose=Tracked 
+23:27:12.895 | [Frame 574] ID 10: Pose=Tracked  | [Frame 574] ID 2: Pose=Tracked  | [Frame 574] ID 1: Pose=Tracked  | [Frame 574] ID 13: Pose=Tracked 
+23:27:13.128 | [Frame 575] ID 10: Pose=Tracked  | [Frame 575] ID 2: Pose=Tracked  | [Frame 575] ID 1: Pose=Tracked  | [Frame 575] ID 13: Pose=Tracked 
+23:27:13.489 | [Frame 576] ID 10: Pose=Tracked  | [Frame 576] ID 2: Pose=Tracked  | [Frame 576] ID 13: Pose=Tracked  | [Frame 576] ID 1: Pose=Tracked 
+23:27:13.720 | [Frame 577] ID 10: Pose=Tracked  | [Frame 577] ID 2: Pose=Tracked  | [Frame 577] ID 13: Pose=Tracked  | [Frame 577] ID 1: Pose=Tracked 
+23:27:13.939 | [Frame 578] ID 10: Pose=Tracked  | [Frame 578] ID 2: Pose=Tracked  | [Frame 578] ID 13: Pose=Tracked  | [Frame 578] ID 1: Pose=Tracked 
+23:27:14.178 | [Frame 579] ID 2: Pose=Tracked  | [Frame 579] ID 10: Pose=Tracked  | [Frame 579] ID 13: Pose=Tracked  | [Frame 579] ID 1: Pose=Tracked 
+23:27:14.432 | [Frame 580] ID 2: Pose=Tracked  | [Frame 580] ID 10: Pose=Tracked  | [Frame 580] ID 13: Pose=Tracked  | [Frame 580] ID 1: Pose=Tracked 
+23:27:14.628 | [Frame 581] ID 2: Pose=Tracked  | [Frame 581] ID 13: Pose=Tracked  | [Frame 581] ID 10: Pose=Tracked  | [Frame 581] ID 1: Pose=Tracked 
+23:27:14.828 | [Frame 582] ID 2: Pose=Tracked  | [Frame 582] ID 13: Pose=Tracked  | [Frame 582] ID 10: Pose=Tracked  | [Frame 582] ID 1: Pose=Tracked 
+23:27:15.054 | [Frame 583] ID 2: Pose=Tracked  | [Frame 583] ID 13: Pose=Tracked  | [Frame 583] ID 10: Pose=Tracked  | [Frame 583] ID 1: Pose=Tracked 
+23:27:15.254 | [Frame 584] ID 2: Pose=Tracked  | [Frame 584] ID 13: Pose=Tracked  | [Frame 584] ID 10: Pose=Tracked  | [Frame 584] ID 1: Pose=Tracked 
+23:27:15.519 | [Frame 585] ID 2: Emotion=fear Pose=Tracked  | [Frame 585] ID 10: Emotion=fear Pose=Tracked  | [Frame 585] ID 1: Pose=Tracked  | [Frame 585] ID 13: Pose=Tracked 
+23:27:15.728 | [Frame 586] ID 2: Pose=Tracked  | [Frame 586] ID 10: Pose=Tracked  | [Frame 586] ID 13: Pose=Tracked  | [Frame 586] ID 1: Pose=Tracked 
+23:27:15.936 | [Frame 587] ID 2: Pose=Tracked  | [Frame 587] ID 10: Pose=Tracked  | [Frame 587] ID 1: Pose=Tracked  | [Frame 587] ID 13: Pose=Tracked 
+23:27:16.270 | [Frame 588] ID 2: Pose=Tracked  | [Frame 588] ID 10: Pose=Tracked  | [Frame 588] ID 13: Pose=Tracked  | [Frame 588] ID 1: 
+23:27:16.503 | [Frame 589] ID 2: Pose=Tracked  | [Frame 589] ID 10: Pose=Tracked  | [Frame 589] ID 13: Pose=Tracked  | [Frame 589] ID 1: Pose=Tracked 
+23:27:16.795 | [Frame 590] ID 2: Emotion=fear Pose=Tracked  | [Frame 590] ID 10: Emotion=sad Pose=Tracked  | [Frame 590] ID 13: Pose=Tracked  | [Frame 590] ID 1: Pose=Tracked 
+23:27:17.020 | [Frame 591] ID 2: Pose=Tracked  | [Frame 591] ID 13: Pose=Tracked  | [Frame 591] ID 10: Pose=Tracked  | [Frame 591] ID 1: Pose=Tracked 
+23:27:17.237 | [Frame 592] ID 2: Pose=Tracked  | [Frame 592] ID 13: Pose=Tracked  | [Frame 592] ID 10: Pose=Tracked  | [Frame 592] ID 1: Pose=Tracked 
+23:27:17.451 | [Frame 593] ID 2: Pose=Tracked  | [Frame 593] ID 10: Pose=Tracked  | [Frame 593] ID 13: Pose=Tracked  | [Frame 593] ID 1: Pose=Tracked 
+23:27:17.902 | [Frame 594] ID 2: Pose=Tracked  | [Frame 594] ID 10: Pose=Tracked  | [Frame 594] ID 13: Pose=Tracked  | [Frame 594] ID 1: Pose=Tracked 
+23:27:18.235 | [Frame 595] ID 2: Emotion=fear Pose=Tracked  | [Frame 595] ID 10: Emotion=sad Pose=Tracked  | [Frame 595] ID 13: Pose=Tracked  | [Frame 595] ID 1: Pose=Tracked 
+23:27:18.478 | [Frame 596] ID 2: Pose=Tracked  | [Frame 596] ID 10: Pose=Tracked  | [Frame 596] ID 13: Pose=Tracked  | [Frame 596] ID 1: Pose=Tracked 
+23:27:18.701 | [Frame 597] ID 2: Pose=Tracked  | [Frame 597] ID 10: Pose=Tracked  | [Frame 597] ID 13: Pose=Tracked  | [Frame 597] ID 1: Pose=Tracked 
+23:27:18.927 | [Frame 598] ID 2: Pose=Tracked  | [Frame 598] ID 10: Pose=Tracked  | [Frame 598] ID 13: Pose=Tracked  | [Frame 598] ID 1: Pose=Tracked 
+23:27:19.158 | [Frame 599] ID 2: Pose=Tracked  | [Frame 599] ID 10: Pose=Tracked  | [Frame 599] ID 13: Pose=Tracked  | [Frame 599] ID 1: Pose=Tracked 
+23:27:19.358 | [Frame 600] ID 2: Emotion=neutral Pose=Tracked  | [Frame 600] ID 13: Pose=Tracked  | [Frame 600] ID 1: Pose=Tracked 
+23:27:19.595 | [Frame 601] ID 2: Pose=Tracked  | [Frame 601] ID 13: Pose=Tracked  | [Frame 601] ID 1: Pose=Tracked 
+23:27:19.770 | [Frame 602] ID 2: Pose=Tracked  | [Frame 602] ID 13: Pose=Tracked  | [Frame 602] ID 1: Pose=Tracked 
+23:27:19.983 | [Frame 603] ID 2: Pose=Tracked  | [Frame 603] ID 1: Pose=Tracked  | [Frame 603] ID 13: Pose=Tracked 
+23:27:20.165 | [Frame 604] ID 2: Pose=Tracked  | [Frame 604] ID 1: Pose=Tracked  | [Frame 604] ID 13: Pose=Tracked 
+23:27:20.386 | [Frame 605] ID 2: Emotion=happy Pose=Tracked  | [Frame 605] ID 13: Emotion=sad Pose=Tracked  | [Frame 605] ID 1: Pose=Tracked 
+23:27:20.583 | [Frame 606] ID 2: Pose=Tracked  | [Frame 606] ID 13: Pose=Tracked  | [Frame 606] ID 1: Pose=Tracked 
+23:27:20.770 | [Frame 607] ID 2: Pose=Tracked  | [Frame 607] ID 1: Pose=Tracked  | [Frame 607] ID 13: Pose=Tracked 
+23:27:20.965 | [Frame 608] ID 2: Pose=Tracked  | [Frame 608] ID 13: Pose=Tracked  | [Frame 608] ID 1: Pose=Tracked 
+23:27:21.132 | [Frame 609] ID 2: Pose=Tracked  | [Frame 609] ID 1: Pose=Tracked  | [Frame 609] ID 13: Pose=Tracked 
+23:27:21.299 | [Frame 610] ID 2: Emotion=sad Pose=Tracked  | [Frame 610] ID 1: Pose=Tracked 
+23:27:21.464 | [Frame 611] ID 2: Pose=Tracked  | [Frame 611] ID 1: Pose=Tracked 
+23:27:21.598 | [Frame 612] ID 2: Pose=Tracked  | [Frame 612] ID 1: Pose=Tracked 
+23:27:21.769 | [Frame 613] ID 2: Pose=Tracked  | [Frame 613] ID 1: Pose=Tracked 
+23:27:21.915 | [Frame 614] ID 2: Pose=Tracked  | [Frame 614] ID 1: Pose=Tracked 
+23:27:22.113 | [Frame 615] ID 2: Emotion=fear Pose=Tracked  | [Frame 615] ID 1: Pose=Tracked 
+23:27:22.272 | [Frame 616] ID 2: Pose=Tracked  | [Frame 616] ID 1: Pose=Tracked 
+23:27:22.678 | [Frame 617] ID 2: Pose=Tracked  | [Frame 617] ID 1: Pose=Tracked 
+23:27:22.863 | [Frame 618] ID 2: Pose=Tracked  | [Frame 618] ID 1: Pose=Tracked 
+23:27:23.031 | [Frame 619] ID 2: Pose=Tracked  | [Frame 619] ID 1: Pose=Tracked 
+23:27:23.230 | [Frame 620] ID 2: Emotion=sad Pose=Tracked  | [Frame 620] ID 1: Pose=Tracked 
+23:27:23.421 | [Frame 621] ID 2: Pose=Tracked  | [Frame 621] ID 1: Pose=Tracked 
+23:27:23.596 | [Frame 622] ID 2: Pose=Tracked  | [Frame 622] ID 1: Pose=Tracked 
+23:27:23.796 | [Frame 623] ID 2: Pose=Tracked  | [Frame 623] ID 1: Pose=Tracked 
+23:27:23.952 | [Frame 624] ID 2: Pose=Tracked  | [Frame 624] ID 1: Pose=Tracked 
+23:27:24.129 | [Frame 625] ID 2: Emotion=sad Pose=Tracked  | [Frame 625] ID 1: Pose=Tracked 
+23:27:24.269 | [Frame 626] ID 2: Pose=Tracked  | [Frame 626] ID 1: Pose=Tracked 
+23:27:24.419 | [Frame 627] ID 2: Pose=Tracked  | [Frame 627] ID 1: Pose=Tracked 
+23:27:24.595 | [Frame 628] ID 2: Pose=Tracked  | [Frame 628] ID 1: Pose=Tracked 
+23:27:24.769 | [Frame 629] ID 2: Pose=Tracked  | [Frame 629] ID 1: Pose=Tracked 
+23:27:24.978 | [Frame 630] ID 2: Emotion=fear Pose=Tracked  | [Frame 630] ID 1: Pose=Tracked 
+23:27:25.137 | [Frame 631] ID 2: Pose=Tracked  | [Frame 631] ID 1: Pose=Tracked 
+23:27:25.377 | [Frame 632] ID 2: Pose=Tracked  | [Frame 632] ID 1: Pose=Tracked 
+23:27:25.528 | [Frame 633] ID 2: Pose=Tracked  | [Frame 633] ID 1: Pose=Tracked 
+23:27:25.695 | [Frame 634] ID 2: Pose=Tracked  | [Frame 634] ID 1: Pose=Tracked 
+23:27:25.887 | [Frame 635] ID 2: Emotion=happy Pose=Tracked  | [Frame 635] ID 1: Pose=Tracked 
+23:27:26.301 | [Frame 636] ID 2: Pose=Tracked  | [Frame 636] ID 1: Pose=Tracked 
+23:27:26.494 | [Frame 637] ID 2: Pose=Tracked  | [Frame 637] ID 1: Pose=Tracked 
+23:27:26.678 | [Frame 638] ID 2: Pose=Tracked  | [Frame 638] ID 1: Pose=Tracked 
+23:27:26.878 | [Frame 639] ID 2: Pose=Tracked  | [Frame 639] ID 1: Pose=Tracked 
+23:27:27.078 | [Frame 640] ID 2: Emotion=sad Pose=Tracked  | [Frame 640] ID 1: Pose=Tracked 
+23:27:27.260 | [Frame 641] ID 2: Pose=Tracked  | [Frame 641] ID 1: Pose=Tracked 
+23:27:27.428 | [Frame 642] ID 2: Pose=Tracked  | [Frame 642] ID 1: Pose=Tracked 
+23:27:27.593 | [Frame 643] ID 2: Pose=Tracked  | [Frame 643] ID 1: Pose=Tracked 
+23:27:27.760 | [Frame 644] ID 2: Pose=Tracked  | [Frame 644] ID 1: Pose=Tracked 
+23:27:27.928 | [Frame 645] ID 2: Pose=Tracked  | [Frame 645] ID 1: Pose=Tracked 
+23:27:28.078 | [Frame 646] ID 2: Pose=Tracked  | [Frame 646] ID 1: Pose=Tracked 
+23:27:28.328 | [Frame 647] ID 2: Pose=Tracked  | [Frame 647] ID 1: Pose=Tracked 
+23:27:28.478 | [Frame 648] ID 2: Pose=Tracked  | [Frame 648] ID 1: Pose=Tracked 
+23:27:28.642 | [Frame 649] ID 2: Pose=Tracked  | [Frame 649] ID 1: Pose=Tracked 
+23:27:28.778 | [Frame 650] ID 2: Pose=Tracked  | [Frame 650] ID 1: Pose=Tracked 
+23:27:28.928 | [Frame 651] ID 2: Pose=Tracked  | [Frame 651] ID 1: Pose=Tracked 
+23:27:29.095 | [Frame 652] ID 2: Pose=Tracked  | [Frame 652] ID 1: Pose=Tracked 
+23:27:29.258 | [Frame 653] ID 2: Pose=Tracked  | [Frame 653] ID 1: Pose=Tracked 
+23:27:29.441 | [Frame 654] ID 2: Pose=Tracked  | [Frame 654] ID 1: Pose=Tracked 
+23:27:29.625 | [Frame 655] ID 2: Emotion=sad Pose=Tracked  | [Frame 655] ID 1: Emotion=sad Pose=Tracked 
+23:27:29.758 | [Frame 656] ID 2: Pose=Tracked  | [Frame 656] ID 1: Pose=Tracked 
+23:27:29.920 | [Frame 657] ID 2: Pose=Tracked  | [Frame 657] ID 1: Pose=Tracked 
+23:27:30.091 | [Frame 658] ID 2: Pose=Tracked  | [Frame 658] ID 1: Pose=Tracked 
+23:27:30.241 | [Frame 659] ID 2: Pose=Tracked  | [Frame 659] ID 1: Pose=Tracked 
+23:27:30.428 | [Frame 660] ID 2: Emotion=fear Pose=Tracked  | [Frame 660] ID 1: Emotion=sad Pose=Tracked 
+23:27:30.623 | [Frame 661] ID 2: Pose=Tracked  | [Frame 661] ID 1: Pose=Tracked 
+23:27:30.807 | [Frame 662] ID 2: Pose=Tracked  | [Frame 662] ID 1: Pose=Tracked 
+23:27:30.970 | [Frame 663] ID 2: Pose=Tracked  | [Frame 663] ID 1: Pose=Tracked 
+23:27:31.379 | [Frame 664] ID 2: Pose=Tracked  | [Frame 664] ID 1: Pose=Tracked 
+23:27:31.673 | [Frame 665] ID 2: Emotion=sad Pose=Tracked  | [Frame 665] ID 1: Emotion=sad Pose=Tracked 
+23:27:31.840 | [Frame 666] ID 2: Pose=Tracked  | [Frame 666] ID 1: Pose=Tracked 
+23:27:32.037 | [Frame 667] ID 2: Pose=Tracked  | [Frame 667] ID 1: Pose=Tracked 
+23:27:32.178 | [Frame 668] ID 2: Pose=Tracked  | [Frame 668] ID 1: Pose=Tracked 
+23:27:32.387 | [Frame 669] ID 2: Pose=Tracked  | [Frame 669] ID 1: Pose=Tracked 
+23:27:32.578 | [Frame 670] ID 2: Emotion=sad Pose=Tracked  | [Frame 670] ID 1: Pose=Tracked 
+23:27:32.728 | [Frame 671] ID 2: Pose=Tracked  | [Frame 671] ID 1: Pose=Tracked 
+23:27:32.978 | [Frame 672] ID 2: Pose=Tracked  | [Frame 672] ID 1: Pose=Tracked 
+23:27:33.170 | [Frame 673] ID 2: Pose=Tracked  | [Frame 673] ID 1: Pose=Tracked 
+23:27:33.342 | [Frame 674] ID 2: Pose=Tracked  | [Frame 674] ID 1: Pose=Tracked 
+23:27:33.538 | [Frame 675] ID 2: Emotion=neutral Pose=Tracked  | [Frame 675] ID 1: Emotion=sad Pose=Tracked 
+23:27:33.704 | [Frame 676] ID 2: Pose=Tracked  | [Frame 676] ID 1: Pose=Tracked 
+23:27:34.054 | [Frame 677] ID 2: Pose=Tracked  | [Frame 677] ID 1: Pose=Tracked 
+23:27:34.487 | [Frame 678] ID 2: Pose=Tracked  | [Frame 678] ID 1: Pose=Tracked 
+23:27:34.753 | [Frame 679] ID 2: Pose=Tracked  | [Frame 679] ID 1: Pose=Tracked 
+23:27:34.987 | [Frame 680] ID 2: Emotion=fear Pose=Tracked  | [Frame 680] ID 1: Emotion=sad Pose=Tracked 
+23:27:35.203 | [Frame 681] ID 2: Pose=Tracked  | [Frame 681] ID 1: Pose=Tracked 
+23:27:35.404 | [Frame 682] ID 2: Pose=Tracked  | [Frame 682] ID 1: Pose=Tracked 
+23:27:35.592 | [Frame 683] ID 2: Pose=Tracked  | [Frame 683] ID 1: Pose=Tracked 
+23:27:35.786 | [Frame 684] ID 2: Pose=Tracked  | [Frame 684] ID 1: Pose=Tracked 
+23:27:35.986 | [Frame 685] ID 2: Emotion=fear Pose=Tracked  | [Frame 685] ID 1: Pose=Tracked 
+23:27:36.169 | [Frame 686] ID 2: Pose=Tracked  | [Frame 686] ID 1: Pose=Tracked 
+23:27:36.355 | [Frame 687] ID 2: Pose=Tracked  | [Frame 687] ID 1: Pose=Tracked 
+23:27:36.593 | [Frame 688] ID 2: Pose=Tracked  | [Frame 688] ID 1: Pose=Tracked 
+23:27:36.770 | [Frame 689] ID 2: Pose=Tracked  | [Frame 689] ID 1: Pose=Tracked 
+23:27:37.020 | [Frame 690] ID 2: Emotion=fear Pose=Tracked  | [Frame 690] ID 1: Pose=Tracked 
+23:27:37.201 | [Frame 691] ID 2: Pose=Tracked  | [Frame 691] ID 1: Pose=Tracked 
+23:27:37.378 | [Frame 692] ID 2: Pose=Tracked  | [Frame 692] ID 1: Pose=Tracked 
+23:27:37.534 | [Frame 693] ID 2: Pose=Tracked  | [Frame 693] ID 1: Pose=Tracked 
+23:27:37.701 | [Frame 694] ID 2: Pose=Tracked  | [Frame 694] ID 1: Pose=Tracked 
+23:27:37.903 | [Frame 695] ID 2: Emotion=happy Pose=Tracked  | [Frame 695] ID 1: Pose=Tracked 
+23:27:38.069 | [Frame 696] ID 2: Pose=Tracked  | [Frame 696] ID 1: Pose=Tracked 
+23:27:38.229 | [Frame 697] ID 2: Pose=Tracked  | [Frame 697] ID 1: Pose=Tracked 
+23:27:38.383 | [Frame 698] ID 2: Pose=Tracked  | [Frame 698] ID 1: Pose=Tracked 
+23:27:38.528 | [Frame 699] ID 2: Pose=Tracked  | [Frame 699] ID 1: Pose=Tracked 
+23:27:38.700 | [Frame 700] ID 2: Emotion=happy Pose=Tracked  | [Frame 700] ID 1: Pose=Tracked 
+23:27:38.923 | [Frame 701] ID 2: Pose=Tracked  | [Frame 701] ID 1: Pose=Tracked 
+23:27:39.107 | [Frame 702] ID 2: Pose=Tracked  | [Frame 702] ID 1: Pose=Tracked 
+23:27:39.520 | [Frame 703] ID 2: Pose=Tracked  | [Frame 703] ID 1: Pose=Tracked 
+23:27:39.699 | [Frame 704] ID 2: Pose=Tracked  | [Frame 704] ID 1: Pose=Tracked 
+23:27:39.903 | [Frame 705] ID 2: Emotion=sad Pose=Tracked  | [Frame 705] ID 1: Pose=Tracked 
+23:27:40.069 | [Frame 706] ID 2: Pose=Tracked  | [Frame 706] ID 1: Pose=Tracked 
+23:27:40.229 | [Frame 707] ID 2: Pose=Tracked  | [Frame 707] ID 1: Pose=Tracked 
+23:27:40.383 | [Frame 708] ID 2: Pose=Tracked  | [Frame 708] ID 1: Pose=Tracked 
+23:27:40.548 | [Frame 709] ID 2: Pose=Tracked  | [Frame 709] ID 1: Pose=Tracked 
+23:27:40.721 | [Frame 710] ID 2: Emotion=sad Pose=Tracked  | [Frame 710] ID 1: Pose=Tracked 
+23:27:40.898 | [Frame 711] ID 2: Pose=Tracked  | [Frame 711] ID 1: Pose=Tracked 
+23:27:41.069 | [Frame 712] ID 2: Pose=Tracked  | [Frame 712] ID 1: Pose=Tracked 
+23:27:41.214 | [Frame 713] ID 2: Pose=Tracked  | [Frame 713] ID 1: Pose=Tracked 
+23:27:41.587 | [Frame 714] ID 2: Pose=Tracked  | [Frame 714] ID 1: Pose=Tracked 
+23:27:41.947 | [Frame 715] ID 2: Emotion=fear Pose=Tracked  | [Frame 715] ID 1: Pose=Tracked 
+23:27:42.170 | [Frame 716] ID 2: Pose=Tracked  | [Frame 716] ID 1: Pose=Tracked 
+23:27:42.362 | [Frame 717] ID 2: Pose=Tracked  | [Frame 717] ID 1: Pose=Tracked 
+23:27:42.563 | [Frame 718] ID 2: Pose=Tracked  | [Frame 718] ID 1: Pose=Tracked 
+23:27:42.746 | [Frame 719] ID 2: Pose=Tracked  | [Frame 719] ID 1: Pose=Tracked 
+23:27:43.046 | [Frame 720] ID 2: Emotion=sad Pose=Tracked  | [Frame 720] ID 1: Pose=Tracked 
+23:27:43.230 | [Frame 721] ID 2: Pose=Tracked  | [Frame 721] ID 1: Pose=Tracked 
+23:27:43.421 | [Frame 722] ID 2: Pose=Tracked  | [Frame 722] ID 1: Pose=Tracked 
+23:27:43.838 | [Frame 723] ID 2: Pose=Tracked  | [Frame 723] ID 1: Pose=Tracked 
+23:27:44.020 | [Frame 724] ID 2: Pose=Tracked  | [Frame 724] ID 1: Pose=Tracked 
+23:27:44.236 | [Frame 725] ID 2: Emotion=sad Pose=Tracked  | [Frame 725] ID 1: Emotion=fear Pose=Tracked 
+23:27:44.419 | [Frame 726] ID 2: Pose=Tracked  | [Frame 726] ID 1: Pose=Tracked 
+23:27:44.602 | [Frame 727] ID 2: Pose=Tracked  | [Frame 727] ID 1: Pose=Tracked 
+23:27:44.778 | [Frame 728] ID 2: Pose=Tracked  | [Frame 728] ID 1: Pose=Tracked 
+23:27:44.969 | [Frame 729] ID 2: Pose=Tracked  | [Frame 729] ID 1: Pose=Tracked 
+23:27:45.161 | [Frame 730] ID 2: Emotion=fear Pose=Tracked  | [Frame 730] ID 1: Emotion=sad Pose=Tracked 
+23:27:45.328 | [Frame 731] ID 2: Pose=Tracked  | [Frame 731] ID 1: Pose=Tracked 
+23:27:45.479 | [Frame 732] ID 2: Pose=Tracked  | [Frame 732] ID 1: Pose=Tracked 
+23:27:45.644 | [Frame 733] ID 2: Pose=Tracked  | [Frame 733] ID 1: Pose=Tracked 
+23:27:45.798 | [Frame 734] ID 2: Pose=Tracked  | [Frame 734] ID 1: Pose=Tracked 
+23:27:45.978 | [Frame 735] ID 2: Emotion=fear Pose=Tracked  | [Frame 735] ID 1: Emotion=sad Pose=Tracked 
+23:27:46.128 | [Frame 736] ID 2: Pose=Tracked  | [Frame 736] ID 1: Pose=Tracked 
+23:27:46.277 | [Frame 737] ID 2: Pose=Tracked  | [Frame 737] ID 1: Pose=Tracked 
+23:27:46.419 | [Frame 738] ID 2: Pose=Tracked  | [Frame 738] ID 1: Pose=Tracked 
+23:27:46.578 | [Frame 739] ID 2: Pose=Tracked  | [Frame 739] ID 1: Pose=Tracked 
+23:27:46.809 | [Frame 740] ID 2: Emotion=fear Pose=Tracked  | [Frame 740] ID 1: Emotion=fear Pose=Tracked 
+23:27:46.969 | [Frame 741] ID 2: Pose=Tracked  | [Frame 741] ID 1: Pose=Tracked 
+23:27:47.118 | [Frame 742] ID 2: Pose=Tracked  | [Frame 742] ID 1: Pose=Tracked 
+23:27:47.269 | [Frame 743] ID 2: Pose=Tracked  | [Frame 743] ID 1: Pose=Tracked 
+23:27:47.428 | [Frame 744] ID 2: Pose=Tracked  | [Frame 744] ID 1: Pose=Tracked 
+23:27:47.628 | [Frame 745] ID 2: Emotion=fear Pose=Tracked  | [Frame 745] ID 1: Emotion=fear Pose=Tracked 
+23:27:47.786 | [Frame 746] ID 2: Pose=Tracked  | [Frame 746] ID 1: Pose=Tracked 
+23:27:47.973 | [Frame 747] ID 2: Pose=Tracked  | [Frame 747] ID 1: Pose=Tracked 
+23:27:48.120 | [Frame 748] ID 2: Pose=Tracked  | [Frame 748] ID 1: Pose=Tracked 
+23:27:48.328 | [Frame 749] ID 2: Pose=Tracked  | [Frame 749] ID 1: Pose=Tracked 
+23:27:48.591 | [Frame 750] ID 2: Emotion=fear Pose=Tracked  | [Frame 750] ID 1: Emotion=fear Pose=Tracked 
+23:27:49.015 | [Frame 751] ID 2: Pose=Tracked  | [Frame 751] ID 1: Pose=Tracked 
+23:27:49.191 | [Frame 752] ID 2: Pose=Tracked  | [Frame 752] ID 1: Pose=Tracked 
+23:27:49.365 | [Frame 753] ID 2: Pose=Tracked  | [Frame 753] ID 1: Pose=Tracked 
+23:27:49.524 | [Frame 754] ID 2: Pose=Tracked  | [Frame 754] ID 1: Pose=Tracked 
+23:27:49.757 | [Frame 755] ID 2: Emotion=sad Pose=Tracked  | [Frame 755] ID 1: Emotion=fear Pose=Tracked 
+23:27:49.895 | [Frame 756] ID 2: Pose=Tracked  | [Frame 756] ID 1: Pose=Tracked 
+23:27:50.219 | [Frame 757] ID 2: Pose=Tracked  | [Frame 757] ID 1: Pose=Tracked 
+23:27:50.406 | [Frame 758] ID 2: Pose=Tracked  | [Frame 758] ID 1: Pose=Tracked 
+23:27:50.596 | [Frame 759] ID 2: Pose=Tracked  | [Frame 759] ID 1: Pose=Tracked 
+23:27:50.820 | [Frame 760] ID 2: Emotion=sad Pose=Tracked  | [Frame 760] ID 1: Emotion=neutral Pose=Tracked 
+23:27:50.973 | [Frame 761] ID 2: Pose=Tracked  | [Frame 761] ID 1: Pose=Tracked 
+23:27:51.140 | [Frame 762] ID 2: Pose=Tracked  | [Frame 762] ID 1: Pose=Tracked 
+23:27:51.314 | [Frame 763] ID 2: Pose=Tracked  | [Frame 763] ID 1: Pose=Tracked 
+23:27:51.455 | [Frame 764] ID 2: Pose=Tracked  | [Frame 764] ID 1: Pose=Tracked 
+23:27:51.655 | [Frame 765] ID 2: Emotion=sad Pose=Tracked  | [Frame 765] ID 1: Emotion=fear Pose=Tracked 
+23:27:51.836 | [Frame 766] ID 2: Pose=Tracked  | [Frame 766] ID 1: Pose=Tracked 
+23:27:52.028 | [Frame 767] ID 2: Pose=Tracked  | [Frame 767] ID 1: Pose=Tracked 
+23:27:52.228 | [Frame 768] ID 2: Pose=Tracked  | [Frame 768] ID 1: Pose=Tracked 
+23:27:52.395 | [Frame 769] ID 2: Pose=Tracked  | [Frame 769] ID 1: Pose=Tracked 
+23:27:52.604 | [Frame 770] ID 2: Emotion=fear Pose=Tracked  | [Frame 770] ID 1: Emotion=neutral Pose=Tracked 
+23:27:52.770 | [Frame 771] ID 2: Pose=Tracked  | [Frame 771] ID 1: Pose=Tracked 
+23:27:52.937 | [Frame 772] ID 2: Pose=Tracked  | [Frame 772] ID 1: Pose=Tracked 
+23:27:53.103 | [Frame 773] ID 2: Pose=Tracked  | [Frame 773] ID 1: Pose=Tracked 
+23:27:53.302 | [Frame 774] ID 2: Pose=Tracked  | [Frame 774] ID 1: Pose=Tracked 
+23:27:53.503 | [Frame 775] ID 2: Emotion=sad Pose=Tracked  | [Frame 775] ID 1: Emotion=happy Pose=Tracked 
+23:27:53.702 | [Frame 776] ID 2: Pose=Tracked  | [Frame 776] ID 1: Pose=Tracked 
+23:27:53.852 | [Frame 777] ID 2: Pose=Tracked  | [Frame 777] ID 1: Pose=Tracked 
+23:27:54.011 | [Frame 778] ID 2: Pose=Tracked  | [Frame 778] ID 1: Pose=Tracked 
+23:27:54.278 | [Frame 779] ID 2: Pose=Tracked  | [Frame 779] ID 1: Pose=Tracked 
+23:27:54.536 | [Frame 780] ID 2: Emotion=neutral Pose=Tracked  | [Frame 780] ID 1: Emotion=happy Pose=Tracked 
+23:27:54.777 | [Frame 781] ID 2: Pose=Tracked  | [Frame 781] ID 1: Pose=Tracked 
+23:27:54.952 | [Frame 782] ID 2: Pose=Tracked  | [Frame 782] ID 1: Pose=Tracked 
+23:27:55.170 | [Frame 783] ID 2: Pose=Tracked  | [Frame 783] ID 1: Pose=Tracked 
+23:27:55.335 | [Frame 784] ID 2: Pose=Tracked  | [Frame 784] ID 1: Pose=Tracked 
+23:27:55.535 | [Frame 785] ID 2: Emotion=neutral Pose=Tracked  | [Frame 785] ID 1: Emotion=neutral Pose=Tracked 
+23:27:55.700 | [Frame 786] ID 2: Pose=Tracked  | [Frame 786] ID 1: Pose=Tracked 
+23:27:55.888 | [Frame 787] ID 2: Pose=Tracked  | [Frame 787] ID 1: Pose=Tracked 
+23:27:56.070 | [Frame 788] ID 2: Pose=Tracked  | [Frame 788] ID 1: Pose=Tracked 
+23:27:56.234 | [Frame 789] ID 2: Pose=Tracked  | [Frame 789] ID 1: Pose=Tracked 
+23:27:56.437 | [Frame 790] ID 2: Emotion=neutral Pose=Tracked  | [Frame 790] ID 1: Emotion=neutral Pose=Tracked 
+23:27:56.625 | [Frame 791] ID 2: Pose=Tracked  | [Frame 791] ID 1: Pose=Tracked 
+23:27:56.783 | [Frame 792] ID 2: Pose=Tracked  | [Frame 792] ID 1: Pose=Tracked 
+23:27:56.941 | [Frame 793] ID 2: Pose=Tracked  | [Frame 793] ID 1: Pose=Tracked 
+23:27:57.120 | [Frame 794] ID 2: Pose=Tracked  | [Frame 794] ID 1: Pose=Tracked 
+23:27:57.328 | [Frame 795] ID 2: Emotion=neutral Pose=Tracked  | [Frame 795] ID 1: Emotion=neutral Pose=Tracked 
+23:27:57.480 | [Frame 796] ID 2: Pose=Tracked  | [Frame 796] ID 1: Pose=Tracked 
+23:27:57.628 | [Frame 797] ID 2: Pose=Tracked  | [Frame 797] ID 1: Pose=Tracked 
+23:27:57.782 | [Frame 798] ID 2: Pose=Tracked  | [Frame 798] ID 1: Pose=Tracked 
+23:27:57.945 | [Frame 799] ID 2: Pose=Tracked  | [Frame 799] ID 1: Pose=Tracked 
+23:27:58.132 | [Frame 800] ID 2: Emotion=neutral Pose=Tracked  | [Frame 800] ID 1: Emotion=neutral Pose=Tracked 
+23:27:58.282 | [Frame 801] ID 2: Pose=Tracked  | [Frame 801] ID 1: Pose=Tracked 
+23:27:58.419 | [Frame 802] ID 2: Pose=Tracked  | [Frame 802] ID 1: Pose=Tracked 
+23:27:58.582 | [Frame 803] ID 2: Pose=Tracked  | [Frame 803] ID 1: Pose=Tracked 
+23:27:58.748 | [Frame 804] ID 2: Pose=Tracked  | [Frame 804] ID 1: Pose=Tracked 
+23:27:58.948 | [Frame 805] ID 2: Emotion=neutral Pose=Tracked  | [Frame 805] ID 1: Emotion=neutral Pose=Tracked 
+23:27:59.098 | [Frame 806] ID 2: Pose=Tracked  | [Frame 806] ID 1: Pose=Tracked 
+23:27:59.248 | [Frame 807] ID 2: Pose=Tracked  | [Frame 807] ID 1: Pose=Tracked 
+23:27:59.413 | [Frame 808] ID 2: Pose=Tracked  | [Frame 808] ID 1: Pose=Tracked 
+23:27:59.548 | [Frame 809] ID 2: Pose=Tracked  | [Frame 809] ID 1: Pose=Tracked 
+23:27:59.746 | [Frame 810] ID 2: Emotion=neutral Pose=Tracked  | [Frame 810] ID 1: Emotion=happy Pose=Tracked 
+23:27:59.910 | [Frame 811] ID 2: Pose=Tracked  | [Frame 811] ID 1: Pose=Tracked 
+23:28:00.070 | [Frame 812] ID 2: Pose=Tracked  | [Frame 812] ID 1: Pose=Tracked 
+23:28:00.247 | [Frame 813] ID 2: Pose=Tracked  | [Frame 813] ID 1: Pose=Tracked 
+23:28:00.404 | [Frame 814] ID 2: Pose=Tracked  | [Frame 814] ID 1: Pose=Tracked 
+23:28:00.597 | [Frame 815] ID 2: Emotion=neutral Pose=Tracked  | [Frame 815] ID 1: Emotion=happy Pose=Tracked 
+23:28:00.746 | [Frame 816] ID 2: Pose=Tracked  | [Frame 816] ID 1: Pose=Tracked 
+23:28:00.930 | [Frame 817] ID 2: Pose=Tracked  | [Frame 817] ID 1: Pose=Tracked 
+23:28:01.112 | [Frame 818] ID 2: Pose=Tracked  | [Frame 818] ID 1: Pose=Tracked 
+23:28:01.247 | [Frame 819] ID 2: Pose=Tracked  | [Frame 819] ID 1: Pose=Tracked 
+23:28:01.469 | [Frame 820] ID 2: Emotion=neutral Pose=Tracked  | [Frame 820] ID 1: Emotion=neutral Pose=Tracked 
+23:28:01.646 | [Frame 821] ID 2: Pose=Tracked  | [Frame 821] ID 1: Pose=Tracked 
+23:28:01.796 | [Frame 822] ID 2: Pose=Tracked  | [Frame 822] ID 1: Pose=Tracked 
+23:28:01.970 | [Frame 823] ID 2: Pose=Tracked  | [Frame 823] ID 1: Pose=Tracked 
+23:28:02.144 | [Frame 824] ID 2: Pose=Tracked  | [Frame 824] ID 1: Pose=Tracked 
+23:28:02.387 | [Frame 825] ID 2: Emotion=neutral Pose=Tracked  | [Frame 825] ID 1: Emotion=neutral Pose=Tracked 
+23:28:02.528 | [Frame 826] ID 2: Pose=Tracked  | [Frame 826] ID 1: Pose=Tracked 
+23:28:02.695 | [Frame 827] ID 2: Pose=Tracked  | [Frame 827] ID 1: Pose=Tracked 
+23:28:02.869 | [Frame 828] ID 2: Pose=Tracked  | [Frame 828] ID 1: Pose=Tracked 
+23:28:03.061 | [Frame 829] ID 2: Pose=Tracked  | [Frame 829] ID 1: Pose=Tracked 
+23:28:03.260 | [Frame 830] ID 2: Emotion=angry Pose=Tracked  | [Frame 830] ID 1: Emotion=neutral Pose=Tracked 
+23:28:03.414 | [Frame 831] ID 2: Pose=Tracked  | [Frame 831] ID 1: Pose=Tracked 
+23:28:03.660 | [Frame 832] ID 2: Pose=Tracked  | [Frame 832] ID 1: Pose=Tracked 
+23:28:04.128 | [Frame 833] ID 2: Pose=Tracked  | [Frame 833] ID 1: Pose=Tracked 
+23:28:04.459 | [Frame 834] ID 2: Pose=Tracked  | [Frame 834] ID 1: Pose=Tracked 
+23:28:04.743 | [Frame 835] ID 2: Emotion=angry Pose=Tracked  | [Frame 835] ID 1: Emotion=sad Pose=Tracked  | [Frame 835] ID 16: Pose=Tracked 
+23:28:04.959 | [Frame 836] ID 2: Pose=Tracked  | [Frame 836] ID 1: Pose=Tracked  | [Frame 836] ID 16: Pose=Tracked 
+23:28:05.178 | [Frame 837] ID 2: Pose=Tracked  | [Frame 837] ID 16: Pose=Tracked  | [Frame 837] ID 1: Pose=Tracked 
+23:28:05.400 | [Frame 838] ID 2: Pose=Tracked  | [Frame 838] ID 1: Pose=Tracked  | [Frame 838] ID 16: Pose=Tracked 
+23:28:05.632 | [Frame 839] ID 2: Pose=Tracked  | [Frame 839] ID 1: Pose=Tracked  | [Frame 839] ID 16: Pose=Tracked 
+23:28:05.884 | [Frame 840] ID 2: Emotion=angry Pose=Tracked  | [Frame 840] ID 1: Emotion=angry Pose=Tracked  | [Frame 840] ID 16: Emotion=sad Pose=Tracked 
+23:28:06.108 | [Frame 841] ID 2: Pose=Tracked  | [Frame 841] ID 16: Pose=Tracked  | [Frame 841] ID 1: Pose=Tracked 
+23:28:06.292 | [Frame 842] ID 16: Pose=Tracked  | [Frame 842] ID 2: Pose=Tracked  | [Frame 842] ID 1: Pose=Tracked 
+23:28:06.519 | [Frame 843] ID 16: Pose=Tracked  | [Frame 843] ID 2: Pose=Tracked  | [Frame 843] ID 1: Pose=Tracked 
+23:28:06.710 | [Frame 844] ID 16: Pose=Tracked  | [Frame 844] ID 2: Pose=Tracked  | [Frame 844] ID 1: Pose=Tracked 
+23:28:06.969 | [Frame 845] ID 16: Emotion=sad Pose=Tracked  | [Frame 845] ID 2: Emotion=neutral Pose=Tracked  | [Frame 845] ID 1: Emotion=fear Pose=Tracked 
+23:28:07.145 | [Frame 846] ID 16: Pose=Tracked  | [Frame 846] ID 2: Pose=Tracked  | [Frame 846] ID 1: Pose=Tracked 
+23:28:07.378 | [Frame 847] ID 16: Pose=Tracked  | [Frame 847] ID 2: Pose=Tracked  | [Frame 847] ID 1: Pose=Tracked 
+23:28:07.553 | [Frame 848] ID 16: Pose=Tracked  | [Frame 848] ID 2: Pose=Tracked  | [Frame 848] ID 1: Pose=Tracked 
+23:28:07.769 | [Frame 849] ID 16: Pose=Tracked  | [Frame 849] ID 2: Pose=Tracked  | [Frame 849] ID 1: Pose=Tracked 
+23:28:07.991 | [Frame 850] ID 16: Pose=Tracked  | [Frame 850] ID 2: Emotion=neutral Pose=Tracked  | [Frame 850] ID 1: Emotion=fear Pose=Tracked 
+23:28:08.190 | [Frame 851] ID 16: Pose=Tracked  | [Frame 851] ID 2: Pose=Tracked  | [Frame 851] ID 1: Pose=Tracked 
+23:28:08.395 | [Frame 852] ID 16: Pose=Tracked  | [Frame 852] ID 2: Pose=Tracked  | [Frame 852] ID 1: Pose=Tracked 
+23:28:08.645 | [Frame 853] ID 16: Pose=Tracked  | [Frame 853] ID 2: Pose=Tracked  | [Frame 853] ID 1: Pose=Tracked 
