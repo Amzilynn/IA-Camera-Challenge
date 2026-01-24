@@ -28,9 +28,9 @@ POSE_CONNECTIONS = [
 
 class YOLODetector:
     def __init__(self,
-                 human_model_path="yolov8l.pt",
-                 pose_model_path="yolov8x-pose.pt",
-                 face_model_path="yolov8s-face.pt"):
+                 human_model_path="yolov8m.pt",
+                 pose_model_path="yolov8m-pose.pt",
+                 face_model_path="yolov8n-face.pt"):
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"Using device: {self.device}")
