@@ -7,7 +7,6 @@ A comprehensive CV pipeline for security camera analysis with real-time person d
 - **Pose Estimation** - MediaPipe BlazePose for skeleton tracking
 - **Emotion Analysis** - DeepFace for facial emotion recognition
 - **Scene Logging** - Text-based scene description with timestamps
-###  In Progress
 - **Social Interaction Analysis (STAS)** - Geometry-based interaction detection
 ## 📁 Project Structure
 ```
