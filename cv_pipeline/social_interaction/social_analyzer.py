@@ -17,7 +17,16 @@ class SocialAnalyzer:
         
         # Current active interactions: {(id1, id2): "Interaction Type"}
         # We use sorted tuple as key to ensure (A, B) and (B, A) are treated same
-        self.interactions = {}
+        self.active_interactions = {} # {(id1, id2, type): start_time}
+        self.active_waiting = {}      # {id: start_time}
+        
+        # Persistent metrics
+        self.metrics = {
+            'interaction_durations': {}, # {(id1, id2, type): total_seconds}
+            'approach_times': {},        # {(id1, id2): [durations]}
+            'waiting_durations': {},     # {id: total_seconds}
+            'service_counts': {}         # {(id1, id2): count}
+        }
 
     def _get_center(self, bbox):
         x1, y1, x2, y2 = bbox
@@ -88,26 +97,84 @@ class SocialAnalyzer:
         self.history = {tid: h for tid, h in self.history.items() if tid in active_ids or len(h) > 0}
 
     def analyze(self, detections):
-        self.update_history(detections, time.time())
-        current_interactions = []
+        current_time = time.time()
+        self.update_history(detections, current_time)
+        found_interactions = []
         
-        # Consider all pairs of tracked people
         tracked_dets = [d for d in detections if d.get('track_id', -1) != -1]
+        active_ids = {d['track_id'] for d in tracked_dets}
         
+        # 1. Detect current pair interactions
+        current_pair_states = set()
         for i in range(len(tracked_dets)):
             for j in range(i + 1, len(tracked_dets)):
-                det_a = tracked_dets[i]
-                det_b = tracked_dets[j]
+                det_a, det_b = tracked_dets[i], tracked_dets[j]
                 id1, id2 = det_a['track_id'], det_b['track_id']
+                pair_ids = tuple(sorted((id1, id2)))
                 
-                interaction = self._detect_pair_interaction(det_a, det_b)
-                if interaction:
-                    current_interactions.append({
-                        'ids': (id1, id2),
-                        'type': interaction
-                    })
+                interaction_type = self._detect_pair_interaction(det_a, det_b)
+                if interaction_type:
+                    state_key = (pair_ids[0], pair_ids[1], interaction_type)
+                    current_pair_states.add(state_key)
+                    found_interactions.append({'ids': pair_ids, 'type': interaction_type})
+
+        # 2. Update interaction durations and counts
+        # Handle ended interactions
+        ended_interactions = [k for k in self.active_interactions if k not in current_pair_states]
+        for key in ended_interactions:
+            duration = current_time - self.active_interactions[key]
+            self.metrics['interaction_durations'][key] = self.metrics['interaction_durations'].get(key, 0) + duration
+            
+            # Specific logic for Approach Time
+            if key[2] == "Approaching":
+                pair = (key[0], key[1])
+                if pair not in self.metrics['approach_times']: self.metrics['approach_times'][pair] = []
+                self.metrics['approach_times'][pair].append(duration)
+                
+            del self.active_interactions[key]
+
+        # Handle new interactions
+        for key in current_pair_states:
+            if key not in self.active_interactions:
+                self.active_interactions[key] = current_time
+                # Increment service frequency
+                if key[2] == "Service/Helping":
+                    pair = (key[0], key[1])
+                    self.metrics['service_counts'][pair] = self.metrics['service_counts'].get(pair, 0) + 1
+
+        # 3. Waiting Duration Logic
+        # A person is "waiting" if stationary AND not in a social interaction (Talking/Service)
+        socially_engaged = {tid for (id1, id2, itype) in self.active_interactions if itype in ["Talking", "Service/Helping"] for tid in (id1, id2)}
         
-        return current_interactions
+        for det in tracked_dets:
+            tid = det['track_id']
+            is_stationary = self._is_stationary(tid)
+            
+            if is_stationary and tid not in socially_engaged:
+                if tid not in self.active_waiting:
+                    self.active_waiting[tid] = current_time
+            else:
+                if tid in self.active_waiting:
+                    duration = current_time - self.active_waiting[tid]
+                    self.metrics['waiting_durations'][tid] = self.metrics['waiting_durations'].get(tid, 0) + duration
+                    del self.active_waiting[tid]
+
+        return found_interactions
+
+    def _is_stationary(self, track_id, threshold=10):
+        if track_id not in self.history or len(self.history[track_id]) < self.fps:
+            return False
+        recent = list(self.history[track_id])[-self.fps:]
+        # Calculate average speed over last 1s
+        speeds = []
+        for k in range(1, len(recent)):
+            d = np.linalg.norm(recent[k]['pos'] - recent[k-1]['pos'])
+            speeds.append(d / self.dt)
+        return np.mean(speeds) < threshold
+
+    def get_metrics(self):
+        """Returns a snapshot of accumulated metrics."""
+        return self.metrics
 
     def _detect_pair_interaction(self, det_a, det_b):
         hist_a = self.history[det_a['track_id']]
