@@ -142,15 +142,16 @@ class SocialAnalyzer:
                     pair = (key[0], key[1])
                     self.metrics['service_counts'][pair] = self.metrics['service_counts'].get(pair, 0) + 1
 
-        # 3. Waiting Duration Logic
-        # A person is "waiting" if stationary AND not in a social interaction (Talking/Service)
+        # 3. Waiting Duration Logic & Person Statuses
         socially_engaged = {tid for (id1, id2, itype) in self.active_interactions if itype in ["Talking", "Service/Helping"] for tid in (id1, id2)}
         
+        person_statuses = {}
         for det in tracked_dets:
             tid = det['track_id']
-            is_stationary = self._is_stationary(tid)
+            is_static = self.is_stationary(tid)
             
-            if is_stationary and tid not in socially_engaged:
+            # Update waiting duration metrics
+            if is_static and tid not in socially_engaged:
                 if tid not in self.active_waiting:
                     self.active_waiting[tid] = current_time
             else:
@@ -158,10 +159,17 @@ class SocialAnalyzer:
                     duration = current_time - self.active_waiting[tid]
                     self.metrics['waiting_durations'][tid] = self.metrics['waiting_durations'].get(tid, 0) + duration
                     del self.active_waiting[tid]
+            
+            # Compile status for satisfaction analysis
+            person_statuses[tid] = {
+                'stationary': is_static,
+                'engaged': tid in socially_engaged,
+                'interaction_type': next((itype for (id1, id2, itype) in self.active_interactions if tid in (id1, id2)), None)
+            }
 
-        return found_interactions
+        return found_interactions, person_statuses
 
-    def _is_stationary(self, track_id, threshold=10):
+    def is_stationary(self, track_id, threshold=10):
         if track_id not in self.history or len(self.history[track_id]) < self.fps:
             return False
         recent = list(self.history[track_id])[-self.fps:]
