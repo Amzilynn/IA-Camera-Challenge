@@ -23,7 +23,7 @@ dist/
 *.pth
 *.ckpt
 *.onnx
-
+models/mivolo_imbd.pth.tar
 # Video or input data
 data/
 *.mp4
