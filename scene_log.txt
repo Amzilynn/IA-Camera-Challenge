@@ -1,147 +1,1158 @@
-Scene Log Started: 2026-01-25 00:16:53.424494
+Scene Log Started: 2026-02-02 15:47:57.722922
 --------------------------------------------------
-[1] 00:16:56.303 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[2] 00:16:56.503 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[3] 00:16:56.678 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[4] 00:16:56.860 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[5] 00:16:57.020 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[6] 00:16:57.193 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[7] 00:16:57.432 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[8] 00:16:57.619 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[9] 00:16:57.783 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[10] 00:16:58.093 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[11] 00:16:58.669 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[12] 00:16:58.828 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[13] 00:16:59.053 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[14] 00:16:59.193 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked 
-[15] 00:16:59.403 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[16] 00:16:59.669 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[17] 00:17:00.053 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[18] 00:17:00.193 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[19] 00:17:00.533 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked 
-[20] 00:17:00.993 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked 
-[21] 00:17:01.169 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked 
-[22] 00:17:01.353 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked 
-[23] 00:17:01.553 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(4&4): Walking Together
-[24] 00:17:01.742 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(4&4): Walking Together
-[25] 00:17:01.934 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(4&4): Walking Together
-[26] 00:17:02.178 | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked 
-[27] 00:17:02.420 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(4&5): Physical Contact
-[28] 00:17:02.779 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(5&4): Physical Contact
-[29] 00:17:03.119 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(4&5): Physical Contact
-[30] 00:17:03.374 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(5&4): Physical Contact
-[31] 00:17:03.664 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[32] 00:17:03.948 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching
-[33] 00:17:04.434 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching
-[34] 00:17:04.623 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[35] 00:17:04.843 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(4&4): Walking Together
-[36] 00:17:05.042 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching
-[37] 00:17:05.234 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
-[38] 00:17:05.423 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
-[39] 00:17:05.601 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(1&5): Approaching | Interaction(4&5): Physical Contact
-[40] 00:17:05.793 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(1&5): Approaching | Interaction(4&5): Physical Contact
-[41] 00:17:05.969 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&5): Approaching | Interaction(4&5): Physical Contact
-[42] 00:17:06.120 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching
-[43] 00:17:06.300 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching
-[44] 00:17:06.474 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[45] 00:17:06.633 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[46] 00:17:06.834 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
-[47] 00:17:07.013 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
-[48] 00:17:07.203 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[49] 00:17:07.392 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[50] 00:17:07.684 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
-[51] 00:17:07.873 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked 
-[52] 00:17:08.266 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[53] 00:17:08.444 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[54] 00:17:08.648 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[55] 00:17:08.869 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 4: Pose=Tracked  | ID 4: Pose=Tracked  | Interaction(1&4): Approaching | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
-[56] 00:17:09.033 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[57] 00:17:09.224 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(2&5): Approaching
-[58] 00:17:09.616 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[59] 00:17:09.853 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[60] 00:17:10.024 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[61] 00:17:10.204 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[62] 00:17:10.403 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(2&5): Physical Contact
-[63] 00:17:10.574 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(2&5): Approaching
-[64] 00:17:10.734 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[65] 00:17:10.900 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[66] 00:17:11.061 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[67] 00:17:11.223 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(2&5): Approaching
-[68] 00:17:11.413 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[69] 00:17:11.573 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
-[70] 00:17:11.770 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[71] 00:17:11.943 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked  | Interaction(2&5): Approaching
-[72] 00:17:12.128 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked 
-[73] 00:17:12.334 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[74] 00:17:12.763 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[75] 00:17:12.913 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[76] 00:17:13.149 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[77] 00:17:13.334 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 5: Pose=Tracked 
-[78] 00:17:13.504 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[79] 00:17:13.678 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[80] 00:17:13.894 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[81] 00:17:14.129 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[82] 00:17:14.304 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[83] 00:17:14.453 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[84] 00:17:14.624 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[85] 00:17:14.770 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[86] 00:17:14.919 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[87] 00:17:15.084 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[88] 00:17:15.261 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[89] 00:17:15.428 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[90] 00:17:15.622 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[91] 00:17:15.803 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[92] 00:17:15.953 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[93] 00:17:16.119 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[94] 00:17:16.259 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[95] 00:17:16.443 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[96] 00:17:16.669 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[97] 00:17:16.983 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[98] 00:17:17.154 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[99] 00:17:17.320 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[100] 00:17:17.493 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[101] 00:17:17.704 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[102] 00:17:17.870 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[103] 00:17:18.074 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[104] 00:17:18.225 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[105] 00:17:18.384 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[106] 00:17:18.570 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[107] 00:17:18.724 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[108] 00:17:18.893 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[109] 00:17:19.053 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[110] 00:17:19.263 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[111] 00:17:19.414 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[112] 00:17:19.569 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[113] 00:17:19.724 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[114] 00:17:19.895 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[115] 00:17:20.084 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[116] 00:17:20.229 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[117] 00:17:20.413 | ID 5: Pose=Tracked  | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[118] 00:17:20.695 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[119] 00:17:20.859 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[120] 00:17:21.001 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[121] 00:17:21.169 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[122] 00:17:21.353 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[123] 00:17:21.589 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[124] 00:17:21.732 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[125] 00:17:21.903 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked  | ID 5: Pose=Tracked 
-[126] 00:17:22.053 | ID 2: Pose=Tracked  | ID 5: Pose=Tracked  | ID 1: Pose=Tracked 
-[127] 00:17:22.219 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[128] 00:17:22.362 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[129] 00:17:22.494 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[130] 00:17:22.654 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[131] 00:17:22.889 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[132] 00:17:23.014 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[133] 00:17:23.134 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[134] 00:17:23.256 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[135] 00:17:23.394 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[136] 00:17:23.775 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[137] 00:17:23.953 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[138] 00:17:24.096 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[139] 00:17:24.266 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[140] 00:17:24.406 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[141] 00:17:24.535 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[142] 00:17:24.664 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[143] 00:17:24.797 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[144] 00:17:24.964 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
-[145] 00:17:25.091 | ID 2: Pose=Tracked  | ID 1: Pose=Tracked 
+[1] 15:47:58.693 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 3: Pose=Tracked 
+[2] 15:47:58.843 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 3: Pose=Tracked 
+[3] 15:47:58.954 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked 
+[4] 15:47:59.043 | ID 1: Pose=Tracked  | ID 2: Pose=Tracked  | ID 3: Pose=Tracked 
+[5] 15:48:00.089 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 2: Emotion=fear Age=33 Gender=male Pose=Tracked 
+[6] 15:48:00.192 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 2: Emotion=fear Age=33 Gender=male Pose=Tracked 
+[7] 15:48:00.274 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 2: Emotion=fear Age=33 Gender=male Pose=Tracked 
+[8] 15:48:00.351 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 2: Emotion=fear Age=33 Gender=male Pose=Tracked 
+[9] 15:48:00.454 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 3: Pose=Tracked  | ID 2: Emotion=fear Age=33 Gender=male Pose=Tracked  | Interaction(1&3): Approaching
+[10] 15:48:00.943 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 2: Emotion=fear Age=35 Gender=male Pose=Tracked  | ID 3: Emotion=happy Age=24 Gender=female Pose=Tracked  | Interaction(1&3): Physical Contact
+[11] 15:48:01.037 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 3: Emotion=happy Age=24 Gender=female Pose=Tracked  | ID 2: Emotion=fear Age=35 Gender=male Pose=Tracked  | Interaction(1&3): Physical Contact
+[12] 15:48:01.103 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 3: Emotion=happy Age=24 Gender=female Pose=Tracked  | Interaction(1&3): Physical Contact
+[13] 15:48:01.155 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[14] 15:48:01.206 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[15] 15:48:01.512 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[16] 15:48:01.602 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[17] 15:48:01.669 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[18] 15:48:01.721 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[19] 15:48:01.787 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[20] 15:48:02.113 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[21] 15:48:02.180 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[22] 15:48:02.253 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 5: Pose=Tracked 
+[23] 15:48:02.320 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 5: Pose=Tracked 
+[24] 15:48:02.386 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 5: Pose=Tracked 
+[25] 15:48:02.663 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 5: Emotion=happy Age=36 Gender=male Pose=Tracked 
+[26] 15:48:02.738 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 5: Emotion=happy Age=36 Gender=male Pose=Tracked 
+[27] 15:48:02.807 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[28] 15:48:02.855 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[29] 15:48:02.904 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[30] 15:48:03.089 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[31] 15:48:03.150 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[32] 15:48:03.206 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[33] 15:48:03.263 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[34] 15:48:03.317 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[35] 15:48:03.495 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[36] 15:48:03.559 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[37] 15:48:03.619 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[38] 15:48:03.665 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[39] 15:48:03.721 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[40] 15:48:03.895 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[41] 15:48:03.949 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[42] 15:48:04.013 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[43] 15:48:04.063 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[44] 15:48:04.132 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[45] 15:48:04.477 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[46] 15:48:04.532 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[47] 15:48:04.583 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[48] 15:48:04.647 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[49] 15:48:04.712 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[50] 15:48:05.049 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[51] 15:48:05.116 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[52] 15:48:05.188 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[53] 15:48:05.255 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[54] 15:48:05.321 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[55] 15:48:05.631 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[56] 15:48:05.720 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[57] 15:48:05.789 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[58] 15:48:05.853 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[59] 15:48:05.919 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[60] 15:48:06.230 | ID 6: Emotion=fear Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[61] 15:48:06.309 | ID 6: Emotion=fear Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[62] 15:48:06.379 | ID 6: Emotion=fear Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[63] 15:48:06.457 | ID 6: Emotion=fear Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[64] 15:48:06.555 | ID 6: Emotion=fear Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[65] 15:48:06.891 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[66] 15:48:06.961 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[67] 15:48:07.027 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[68] 15:48:07.105 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[69] 15:48:07.171 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[70] 15:48:07.494 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked 
+[71] 15:48:07.568 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[72] 15:48:07.635 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[73] 15:48:07.699 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[74] 15:48:07.763 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[75] 15:48:08.078 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[76] 15:48:08.147 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[77] 15:48:08.211 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[78] 15:48:08.279 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[79] 15:48:08.337 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked 
+[80] 15:48:08.645 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[81] 15:48:08.717 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[82] 15:48:08.786 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[83] 15:48:08.849 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Approaching
+[84] 15:48:08.914 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[85] 15:48:09.229 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[86] 15:48:09.305 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[87] 15:48:09.374 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[88] 15:48:09.439 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[89] 15:48:09.507 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[90] 15:48:09.809 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[91] 15:48:09.884 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[92] 15:48:09.949 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[93] 15:48:10.014 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[94] 15:48:10.080 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[95] 15:48:10.373 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[96] 15:48:10.437 | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[97] 15:48:10.513 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[98] 15:48:10.579 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[99] 15:48:10.645 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[100] 15:48:10.936 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[101] 15:48:11.007 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[102] 15:48:11.078 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[103] 15:48:11.161 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[104] 15:48:11.226 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[105] 15:48:11.512 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[106] 15:48:11.579 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[107] 15:48:11.650 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[108] 15:48:11.722 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[109] 15:48:11.789 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[110] 15:48:12.079 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[111] 15:48:12.146 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[112] 15:48:12.216 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[113] 15:48:12.282 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[114] 15:48:12.351 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[115] 15:48:12.645 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[116] 15:48:12.744 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[117] 15:48:12.813 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[118] 15:48:12.892 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[119] 15:48:12.992 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[120] 15:48:13.316 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[121] 15:48:13.387 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[122] 15:48:13.457 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[123] 15:48:13.524 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[124] 15:48:13.591 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[125] 15:48:13.876 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[126] 15:48:13.947 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[127] 15:48:14.015 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[128] 15:48:14.079 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[129] 15:48:14.146 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[130] 15:48:14.433 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[131] 15:48:14.500 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Physical Contact
+[132] 15:48:14.565 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked 
+[133] 15:48:14.633 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked 
+[134] 15:48:14.699 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked 
+[135] 15:48:14.994 | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[136] 15:48:15.097 | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[137] 15:48:15.193 | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[138] 15:48:15.285 | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[139] 15:48:15.352 | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[140] 15:48:15.642 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[141] 15:48:15.707 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[142] 15:48:15.769 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[143] 15:48:15.839 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[144] 15:48:15.904 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[145] 15:48:16.194 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[146] 15:48:16.259 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[147] 15:48:16.320 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[148] 15:48:16.395 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[149] 15:48:16.456 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[150] 15:48:16.745 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[151] 15:48:16.820 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[152] 15:48:16.885 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[153] 15:48:16.950 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[154] 15:48:17.020 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[155] 15:48:17.314 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[156] 15:48:17.389 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[157] 15:48:17.456 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[158] 15:48:17.536 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[159] 15:48:17.605 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[160] 15:48:17.890 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[161] 15:48:17.963 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[162] 15:48:18.016 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[163] 15:48:18.095 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[164] 15:48:18.159 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[165] 15:48:18.453 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[166] 15:48:18.516 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[167] 15:48:18.586 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[168] 15:48:18.654 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[169] 15:48:18.718 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[170] 15:48:19.006 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[171] 15:48:19.073 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[172] 15:48:19.154 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[173] 15:48:19.218 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[174] 15:48:19.285 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[175] 15:48:19.579 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[176] 15:48:19.651 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[177] 15:48:19.722 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[178] 15:48:19.785 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[179] 15:48:19.854 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[180] 15:48:20.139 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[181] 15:48:20.206 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[182] 15:48:20.278 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[183] 15:48:20.345 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[184] 15:48:20.404 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[185] 15:48:20.703 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[186] 15:48:20.770 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[187] 15:48:20.852 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[188] 15:48:20.913 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[189] 15:48:20.982 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[190] 15:48:21.267 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[191] 15:48:21.348 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[192] 15:48:21.413 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[193] 15:48:21.476 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[194] 15:48:21.545 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[195] 15:48:21.841 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[196] 15:48:21.913 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[197] 15:48:21.982 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[198] 15:48:22.049 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[199] 15:48:22.119 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[200] 15:48:22.406 | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[201] 15:48:22.476 | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[202] 15:48:22.545 | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[203] 15:48:22.612 | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[204] 15:48:22.676 | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[205] 15:48:22.967 | ID 6: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[206] 15:48:23.041 | ID 6: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[207] 15:48:23.107 | ID 6: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[208] 15:48:23.169 | ID 6: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[209] 15:48:23.239 | ID 6: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[210] 15:48:23.528 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[211] 15:48:23.602 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[212] 15:48:23.672 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[213] 15:48:23.739 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[214] 15:48:23.804 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[215] 15:48:24.097 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[216] 15:48:24.161 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[217] 15:48:24.231 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[218] 15:48:24.299 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[219] 15:48:24.363 | ID 6: Emotion=fear Age=42 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[220] 15:48:24.657 | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[221] 15:48:24.725 | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[222] 15:48:24.803 | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[223] 15:48:24.871 | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[224] 15:48:24.937 | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[225] 15:48:25.251 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[226] 15:48:25.318 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[227] 15:48:25.386 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[228] 15:48:25.449 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[229] 15:48:25.513 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[230] 15:48:25.802 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[231] 15:48:25.871 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[232] 15:48:25.971 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[233] 15:48:26.065 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[234] 15:48:26.158 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[235] 15:48:26.473 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[236] 15:48:26.539 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[237] 15:48:26.607 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[238] 15:48:26.703 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[239] 15:48:26.801 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[240] 15:48:27.125 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[241] 15:48:27.194 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[242] 15:48:27.255 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[243] 15:48:27.324 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[244] 15:48:27.389 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked 
+[245] 15:48:27.679 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[246] 15:48:27.759 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[247] 15:48:27.855 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[248] 15:48:27.949 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[249] 15:48:28.029 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[250] 15:48:28.316 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[251] 15:48:28.385 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[252] 15:48:28.463 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[253] 15:48:28.534 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[254] 15:48:28.615 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[255] 15:48:28.904 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[256] 15:48:28.973 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[257] 15:48:29.042 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[258] 15:48:29.107 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[259] 15:48:29.171 | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[260] 15:48:29.458 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[261] 15:48:29.531 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[262] 15:48:29.598 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[263] 15:48:29.661 | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked 
+[264] 15:48:29.726 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=44 Gender=female Pose=Tracked 
+[265] 15:48:30.017 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked 
+[266] 15:48:30.087 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked 
+[267] 15:48:30.156 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked 
+[268] 15:48:30.221 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked 
+[269] 15:48:30.285 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=44 Gender=female Pose=Tracked 
+[270] 15:48:30.573 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked 
+[271] 15:48:30.644 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked 
+[272] 15:48:30.713 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked 
+[273] 15:48:30.777 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked 
+[274] 15:48:30.842 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=fear Age=43 Gender=female Pose=Tracked 
+[275] 15:48:31.133 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[276] 15:48:31.200 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[277] 15:48:31.268 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[278] 15:48:31.331 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[279] 15:48:31.395 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[280] 15:48:31.691 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[281] 15:48:31.757 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[282] 15:48:31.823 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[283] 15:48:31.887 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[284] 15:48:31.949 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=43 Gender=female Pose=Tracked 
+[285] 15:48:32.241 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=42 Gender=female Pose=Tracked 
+[286] 15:48:32.304 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=42 Gender=female Pose=Tracked 
+[287] 15:48:32.376 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=42 Gender=female Pose=Tracked 
+[288] 15:48:32.439 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=42 Gender=female Pose=Tracked 
+[289] 15:48:32.504 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=42 Gender=female Pose=Tracked 
+[290] 15:48:32.795 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[291] 15:48:32.862 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[292] 15:48:32.927 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[293] 15:48:32.993 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[294] 15:48:33.058 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[295] 15:48:33.347 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[296] 15:48:33.414 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[297] 15:48:33.482 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[298] 15:48:33.547 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[299] 15:48:33.612 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=41 Gender=female Pose=Tracked 
+[300] 15:48:33.901 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[301] 15:48:33.968 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[302] 15:48:34.039 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[303] 15:48:34.103 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[304] 15:48:34.170 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[305] 15:48:34.460 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[306] 15:48:34.526 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[307] 15:48:34.599 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[308] 15:48:34.659 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[309] 15:48:34.726 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[310] 15:48:35.013 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[311] 15:48:35.079 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[312] 15:48:35.151 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[313] 15:48:35.217 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[314] 15:48:35.285 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[315] 15:48:35.580 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[316] 15:48:35.682 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[317] 15:48:35.750 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[318] 15:48:35.817 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[319] 15:48:35.881 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[320] 15:48:36.172 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[321] 15:48:36.237 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[322] 15:48:36.306 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[323] 15:48:36.373 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[324] 15:48:36.437 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[325] 15:48:36.726 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[326] 15:48:36.824 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[327] 15:48:36.930 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[328] 15:48:37.026 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[329] 15:48:37.121 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[330] 15:48:37.447 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[331] 15:48:37.517 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[332] 15:48:37.582 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[333] 15:48:37.647 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[334] 15:48:37.711 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[335] 15:48:38.000 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[336] 15:48:38.068 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[337] 15:48:38.138 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[338] 15:48:38.202 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[339] 15:48:38.267 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[340] 15:48:38.555 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[341] 15:48:38.627 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[342] 15:48:38.695 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[343] 15:48:38.755 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[344] 15:48:38.818 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[345] 15:48:39.118 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[346] 15:48:39.185 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[347] 15:48:39.249 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[348] 15:48:39.313 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[349] 15:48:39.382 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[350] 15:48:39.702 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[351] 15:48:39.766 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[352] 15:48:39.835 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[353] 15:48:39.899 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[354] 15:48:39.964 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[355] 15:48:40.257 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[356] 15:48:40.332 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[357] 15:48:40.400 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[358] 15:48:40.463 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[359] 15:48:40.530 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[360] 15:48:40.821 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[361] 15:48:40.905 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[362] 15:48:40.983 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[363] 15:48:41.055 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[364] 15:48:41.139 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[365] 15:48:41.455 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[366] 15:48:41.551 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[367] 15:48:41.613 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[368] 15:48:41.682 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[369] 15:48:41.747 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[370] 15:48:42.030 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[371] 15:48:42.097 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[372] 15:48:42.165 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[373] 15:48:42.230 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[374] 15:48:42.297 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[375] 15:48:42.583 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[376] 15:48:42.649 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[377] 15:48:42.713 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[378] 15:48:42.784 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[379] 15:48:42.849 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[380] 15:48:43.139 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[381] 15:48:43.207 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[382] 15:48:43.266 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[383] 15:48:43.339 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[384] 15:48:43.405 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[385] 15:48:43.689 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[386] 15:48:43.759 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[387] 15:48:43.817 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[388] 15:48:43.889 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[389] 15:48:43.959 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[390] 15:48:44.243 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[391] 15:48:44.312 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[392] 15:48:44.378 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[393] 15:48:44.443 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[394] 15:48:44.504 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[395] 15:48:44.794 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[396] 15:48:44.858 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[397] 15:48:44.928 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[398] 15:48:44.992 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[399] 15:48:45.059 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[400] 15:48:45.340 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[401] 15:48:45.435 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[402] 15:48:45.508 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[403] 15:48:45.575 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[404] 15:48:45.676 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[405] 15:48:45.976 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[406] 15:48:46.059 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[407] 15:48:46.119 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[408] 15:48:46.189 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[409] 15:48:46.254 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[410] 15:48:46.552 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[411] 15:48:46.638 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[412] 15:48:46.733 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[413] 15:48:46.829 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[414] 15:48:46.922 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[415] 15:48:47.209 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[416] 15:48:47.275 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[417] 15:48:47.342 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[418] 15:48:47.407 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[419] 15:48:47.473 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[420] 15:48:47.756 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[421] 15:48:47.835 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[422] 15:48:47.901 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[423] 15:48:47.967 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[424] 15:48:48.033 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[425] 15:48:48.318 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[426] 15:48:48.384 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[427] 15:48:48.455 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[428] 15:48:48.516 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[429] 15:48:48.582 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[430] 15:48:48.868 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[431] 15:48:48.942 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[432] 15:48:49.008 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[433] 15:48:49.071 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[434] 15:48:49.154 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[435] 15:48:49.447 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[436] 15:48:49.512 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[437] 15:48:49.582 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[438] 15:48:49.645 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[439] 15:48:49.709 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[440] 15:48:50.003 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[441] 15:48:50.089 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[442] 15:48:50.158 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[443] 15:48:50.218 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[444] 15:48:50.289 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[445] 15:48:50.583 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[446] 15:48:50.649 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[447] 15:48:50.714 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[448] 15:48:50.779 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[449] 15:48:50.845 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[450] 15:48:51.136 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[451] 15:48:51.206 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[452] 15:48:51.277 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[453] 15:48:51.341 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[454] 15:48:51.408 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[455] 15:48:51.698 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[456] 15:48:51.784 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[457] 15:48:51.855 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[458] 15:48:51.920 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[459] 15:48:51.987 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[460] 15:48:52.284 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[461] 15:48:52.369 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[462] 15:48:52.450 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[463] 15:48:52.533 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[464] 15:48:52.600 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[465] 15:48:52.893 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[466] 15:48:52.965 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[467] 15:48:53.036 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[468] 15:48:53.109 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[469] 15:48:53.167 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[470] 15:48:53.469 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[471] 15:48:53.576 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[472] 15:48:53.672 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[473] 15:48:53.770 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[474] 15:48:53.839 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[475] 15:48:54.149 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[476] 15:48:54.223 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[477] 15:48:54.293 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[478] 15:48:54.372 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[479] 15:48:54.470 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[480] 15:48:54.776 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[481] 15:48:54.853 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[482] 15:48:54.924 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[483] 15:48:55.008 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[484] 15:48:55.098 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[485] 15:48:55.394 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[486] 15:48:55.468 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked 
+[487] 15:48:55.539 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[488] 15:48:55.627 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[489] 15:48:55.726 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[490] 15:48:56.044 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[491] 15:48:56.123 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[492] 15:48:56.260 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked 
+[493] 15:48:56.351 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked 
+[494] 15:48:56.444 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[495] 15:48:56.788 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[496] 15:48:56.879 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[497] 15:48:56.954 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[498] 15:48:57.028 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[499] 15:48:57.109 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[500] 15:48:57.424 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[501] 15:48:57.500 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[502] 15:48:57.580 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[503] 15:48:57.665 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[504] 15:48:57.737 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[505] 15:48:58.054 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[506] 15:48:58.135 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[507] 15:48:58.222 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[508] 15:48:58.305 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[509] 15:48:58.384 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[510] 15:48:58.717 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[511] 15:48:58.797 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[512] 15:48:58.900 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[513] 15:48:58.985 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[514] 15:48:59.056 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[515] 15:48:59.372 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[516] 15:48:59.473 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[517] 15:48:59.562 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[518] 15:48:59.643 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[519] 15:48:59.725 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[520] 15:49:00.059 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[521] 15:49:00.140 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[522] 15:49:00.222 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[523] 15:49:00.324 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[524] 15:49:00.426 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[525] 15:49:00.754 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[526] 15:49:00.830 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[527] 15:49:00.920 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[528] 15:49:01.008 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[529] 15:49:01.082 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[530] 15:49:01.405 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[531] 15:49:01.492 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[532] 15:49:01.565 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[533] 15:49:01.635 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[534] 15:49:01.718 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[535] 15:49:02.022 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[536] 15:49:02.101 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[537] 15:49:02.174 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[538] 15:49:02.253 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[539] 15:49:02.323 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[540] 15:49:02.627 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[541] 15:49:02.699 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[542] 15:49:02.769 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[543] 15:49:02.837 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[544] 15:49:02.903 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[545] 15:49:03.201 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[546] 15:49:03.284 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[547] 15:49:03.355 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[548] 15:49:03.425 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[549] 15:49:03.494 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[550] 15:49:03.805 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[551] 15:49:03.877 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[552] 15:49:03.947 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[553] 15:49:04.013 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[554] 15:49:04.083 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[555] 15:49:04.379 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[556] 15:49:04.461 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[557] 15:49:04.533 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[558] 15:49:04.598 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[559] 15:49:04.665 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[560] 15:49:04.963 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[561] 15:49:05.057 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[562] 15:49:05.128 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[563] 15:49:05.194 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[564] 15:49:05.262 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[565] 15:49:05.569 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[566] 15:49:05.642 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[567] 15:49:05.717 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[568] 15:49:05.786 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[569] 15:49:05.854 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[570] 15:49:06.160 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[571] 15:49:06.233 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[572] 15:49:06.303 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[573] 15:49:06.378 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[574] 15:49:06.443 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[575] 15:49:06.753 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[576] 15:49:06.837 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[577] 15:49:06.907 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[578] 15:49:06.974 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[579] 15:49:07.042 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[580] 15:49:07.378 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[581] 15:49:07.477 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[582] 15:49:07.549 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[583] 15:49:07.642 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[584] 15:49:07.714 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[585] 15:49:08.005 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[586] 15:49:08.085 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[587] 15:49:08.158 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[588] 15:49:08.240 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[589] 15:49:08.308 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[590] 15:49:08.615 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[591] 15:49:08.697 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[592] 15:49:08.781 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[593] 15:49:08.865 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[594] 15:49:08.935 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[595] 15:49:09.232 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[596] 15:49:09.312 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[597] 15:49:09.387 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[598] 15:49:09.486 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[599] 15:49:09.603 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[600] 15:49:09.930 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[601] 15:49:10.033 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[602] 15:49:10.124 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[603] 15:49:10.198 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[604] 15:49:10.298 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[605] 15:49:10.636 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[606] 15:49:10.724 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[607] 15:49:10.802 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[608] 15:49:10.896 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[609] 15:49:10.970 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked 
+[610] 15:49:11.304 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked 
+[611] 15:49:11.393 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked 
+[612] 15:49:11.468 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked 
+[613] 15:49:11.543 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[614] 15:49:11.614 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[615] 15:49:11.909 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[616] 15:49:11.985 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[617] 15:49:12.054 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked 
+[618] 15:49:12.121 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked 
+[619] 15:49:12.205 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[620] 15:49:12.504 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[621] 15:49:12.579 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[622] 15:49:12.652 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[623] 15:49:12.718 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[624] 15:49:12.788 | ID 1: Emotion=sad Age=52 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[625] 15:49:13.087 | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked 
+[626] 15:49:13.160 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[627] 15:49:13.235 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[628] 15:49:13.306 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[629] 15:49:13.373 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[630] 15:49:13.667 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[631] 15:49:13.743 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[632] 15:49:13.816 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[633] 15:49:13.882 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[634] 15:49:13.950 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[635] 15:49:14.266 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[636] 15:49:14.340 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[637] 15:49:14.411 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[638] 15:49:14.480 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[639] 15:49:14.550 | ID 1: Emotion=sad Age=51 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[640] 15:49:14.844 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[641] 15:49:14.926 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[642] 15:49:14.997 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[643] 15:49:15.065 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[644] 15:49:15.138 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[645] 15:49:15.447 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[646] 15:49:15.525 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[647] 15:49:15.597 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[648] 15:49:15.664 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[649] 15:49:15.738 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[650] 15:49:16.045 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[651] 15:49:16.121 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[652] 15:49:16.193 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[653] 15:49:16.273 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[654] 15:49:16.340 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[655] 15:49:16.636 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[656] 15:49:16.709 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[657] 15:49:16.788 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[658] 15:49:16.853 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[659] 15:49:16.921 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[660] 15:49:17.221 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[661] 15:49:17.297 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[662] 15:49:17.369 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[663] 15:49:17.433 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[664] 15:49:17.499 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[665] 15:49:17.793 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[666] 15:49:17.866 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[667] 15:49:17.938 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[668] 15:49:18.003 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[669] 15:49:18.086 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[670] 15:49:18.390 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[671] 15:49:18.462 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[672] 15:49:18.531 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[673] 15:49:18.599 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[674] 15:49:18.664 | ID 1: Emotion=sad Age=50 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[675] 15:49:18.963 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[676] 15:49:19.037 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[677] 15:49:19.106 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[678] 15:49:19.172 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[679] 15:49:19.237 | ID 1: Emotion=sad Age=49 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[680] 15:49:19.539 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[681] 15:49:19.614 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[682] 15:49:19.685 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[683] 15:49:19.768 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[684] 15:49:19.843 | ID 1: Emotion=sad Age=48 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[685] 15:49:20.141 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[686] 15:49:20.234 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[687] 15:49:20.303 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[688] 15:49:20.372 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[689] 15:49:20.441 | ID 1: Emotion=sad Age=47 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[690] 15:49:20.760 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[691] 15:49:20.836 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[692] 15:49:20.921 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[693] 15:49:20.990 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[694] 15:49:21.058 | ID 1: Emotion=sad Age=46 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=40 Gender=female Pose=Tracked 
+[695] 15:49:21.347 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[696] 15:49:21.416 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[697] 15:49:21.496 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[698] 15:49:21.591 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[699] 15:49:21.659 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[700] 15:49:21.959 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[701] 15:49:22.038 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[702] 15:49:22.112 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[703] 15:49:22.182 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[704] 15:49:22.251 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[705] 15:49:22.547 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[706] 15:49:22.629 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[707] 15:49:22.725 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[708] 15:49:22.809 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[709] 15:49:22.876 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[710] 15:49:23.191 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[711] 15:49:23.267 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[712] 15:49:23.339 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[713] 15:49:23.408 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[714] 15:49:23.476 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[715] 15:49:23.775 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[716] 15:49:23.853 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[717] 15:49:23.941 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[718] 15:49:24.010 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[719] 15:49:24.095 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[720] 15:49:24.395 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[721] 15:49:24.477 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[722] 15:49:24.556 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[723] 15:49:24.628 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[724] 15:49:24.697 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[725] 15:49:24.988 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[726] 15:49:25.068 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[727] 15:49:25.138 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[728] 15:49:25.206 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[729] 15:49:25.273 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[730] 15:49:25.567 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[731] 15:49:25.645 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[732] 15:49:25.718 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[733] 15:49:25.799 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[734] 15:49:25.880 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[735] 15:49:26.222 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[736] 15:49:26.330 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[737] 15:49:26.416 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[738] 15:49:26.502 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[739] 15:49:26.592 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[740] 15:49:26.895 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[741] 15:49:26.971 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[742] 15:49:27.053 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[743] 15:49:27.124 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[744] 15:49:27.194 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[745] 15:49:27.500 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[746] 15:49:27.572 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[747] 15:49:27.645 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[748] 15:49:27.733 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[749] 15:49:27.799 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[750] 15:49:28.108 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[751] 15:49:28.182 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[752] 15:49:28.257 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[753] 15:49:28.340 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[754] 15:49:28.407 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[755] 15:49:28.713 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[756] 15:49:28.795 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[757] 15:49:28.866 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[758] 15:49:28.935 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[759] 15:49:29.020 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[760] 15:49:29.337 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[761] 15:49:29.415 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[762] 15:49:29.482 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[763] 15:49:29.549 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[764] 15:49:29.627 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[765] 15:49:29.930 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[766] 15:49:30.014 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[767] 15:49:30.079 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[768] 15:49:30.145 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[769] 15:49:30.214 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[770] 15:49:30.513 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[771] 15:49:30.592 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[772] 15:49:30.662 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[773] 15:49:30.727 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[774] 15:49:30.794 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[775] 15:49:31.090 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[776] 15:49:31.164 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[777] 15:49:31.241 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[778] 15:49:31.312 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[779] 15:49:31.380 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[780] 15:49:31.698 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[781] 15:49:31.774 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[782] 15:49:31.841 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[783] 15:49:31.923 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[784] 15:49:31.989 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[785] 15:49:32.301 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[786] 15:49:32.392 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[787] 15:49:32.461 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[788] 15:49:32.544 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[789] 15:49:32.612 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[790] 15:49:32.933 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[791] 15:49:33.006 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[792] 15:49:33.078 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[793] 15:49:33.144 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[794] 15:49:33.212 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[795] 15:49:33.517 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[796] 15:49:33.592 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[797] 15:49:33.662 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[798] 15:49:33.728 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[799] 15:49:33.807 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[800] 15:49:34.116 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[801] 15:49:34.190 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[802] 15:49:34.276 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[803] 15:49:34.340 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked 
+[804] 15:49:34.406 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[805] 15:49:34.714 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[806] 15:49:34.793 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[807] 15:49:34.865 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[808] 15:49:34.933 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[809] 15:49:35.009 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[810] 15:49:35.315 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[811] 15:49:35.389 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[812] 15:49:35.461 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[813] 15:49:35.529 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[814] 15:49:35.598 | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked 
+[815] 15:49:35.905 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[816] 15:49:35.978 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[817] 15:49:36.050 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[818] 15:49:36.116 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[819] 15:49:36.182 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[820] 15:49:36.493 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[821] 15:49:36.570 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[822] 15:49:36.639 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[823] 15:49:36.704 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[824] 15:49:36.772 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[825] 15:49:37.080 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[826] 15:49:37.151 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[827] 15:49:37.239 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[828] 15:49:37.324 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[829] 15:49:37.407 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[830] 15:49:37.702 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[831] 15:49:37.770 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[832] 15:49:37.853 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[833] 15:49:37.921 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[834] 15:49:37.987 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[835] 15:49:38.284 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[836] 15:49:38.354 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[837] 15:49:38.422 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[838] 15:49:38.487 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[839] 15:49:38.555 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[840] 15:49:38.852 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[841] 15:49:38.939 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[842] 15:49:39.006 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[843] 15:49:39.072 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[844] 15:49:39.138 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[845] 15:49:39.436 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[846] 15:49:39.511 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[847] 15:49:39.580 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[848] 15:49:39.646 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[849] 15:49:39.742 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[850] 15:49:40.085 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[851] 15:49:40.153 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[852] 15:49:40.219 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[853] 15:49:40.286 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[854] 15:49:40.352 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[855] 15:49:40.661 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[856] 15:49:40.733 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[857] 15:49:40.803 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[858] 15:49:40.869 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[859] 15:49:40.934 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[860] 15:49:41.240 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[861] 15:49:41.308 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[862] 15:49:41.377 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[863] 15:49:41.443 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[864] 15:49:41.509 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[865] 15:49:41.819 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[866] 15:49:41.898 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[867] 15:49:41.979 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[868] 15:49:42.045 | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[869] 15:49:42.112 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[870] 15:49:42.429 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[871] 15:49:42.506 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[872] 15:49:42.578 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[873] 15:49:42.662 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[874] 15:49:42.729 | ID 6: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=45 Gender=male Pose=Tracked 
+[875] 15:49:43.045 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked 
+[876] 15:49:43.115 | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[877] 15:49:43.184 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[878] 15:49:43.259 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[879] 15:49:43.329 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[880] 15:49:43.653 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[881] 15:49:43.723 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked 
+[882] 15:49:43.792 | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked 
+[883] 15:49:43.859 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[884] 15:49:43.925 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[885] 15:49:44.262 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[886] 15:49:44.340 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[887] 15:49:44.412 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[888] 15:49:44.479 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[889] 15:49:44.546 | ID 1: Emotion=sad Age=44 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[890] 15:49:44.897 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[891] 15:49:44.975 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[892] 15:49:45.042 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[893] 15:49:45.109 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[894] 15:49:45.174 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[895] 15:49:45.549 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[896] 15:49:45.621 | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked 
+[897] 15:49:45.691 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[898] 15:49:45.763 | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | Interaction(1&6): Walking Together
+[899] 15:49:45.834 | ID 1: Emotion=sad Age=43 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=36 Gender=female Pose=Tracked 
+[900] 15:49:46.212 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[901] 15:49:46.293 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[902] 15:49:46.362 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together
+[903] 15:49:46.433 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[904] 15:49:46.501 | ID 1: Emotion=sad Age=42 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[905] 15:49:46.851 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[906] 15:49:46.927 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[907] 15:49:47.010 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked 
+[908] 15:49:47.091 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked  | Interaction(1&6): Walking Together | Interaction(1&6): Walking Together | Interaction(6&6): Walking Together
+[909] 15:49:47.172 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked  | ID 6: Emotion=sad Age=35 Gender=female Pose=Tracked  | Interaction(1&6): Physical Contact | Interaction(6&6): Walking Together
+[910] 15:49:47.539 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked 
+[911] 15:49:47.611 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 7: Pose=Tracked 
+[912] 15:49:47.680 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 7: Pose=Tracked  | Interaction(1&7): Physical Contact
+[913] 15:49:47.747 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 7: Pose=Tracked  | Interaction(1&7): Physical Contact
+[914] 15:49:47.817 | ID 1: Emotion=sad Age=41 Gender=male Pose=Tracked  | ID 7: Pose=Tracked  | Interaction(1&7): Physical Contact
+[915] 15:49:48.205 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 7: Emotion=fear Age=36 Gender=female Pose=Tracked  | Interaction(1&7): Physical Contact
+[916] 15:49:48.282 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 7: Emotion=fear Age=36 Gender=female Pose=Tracked  | Interaction(1&7): Physical Contact
+[917] 15:49:48.351 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 7: Emotion=fear Age=36 Gender=female Pose=Tracked  | Interaction(1&7): Physical Contact
+[918] 15:49:48.419 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 7: Emotion=fear Age=36 Gender=female Pose=Tracked  | Interaction(1&7): Walking Together
+[919] 15:49:48.485 | ID 1: Emotion=sad Age=40 Gender=male Pose=Tracked  | ID 7: Emotion=fear Age=36 Gender=female Pose=Tracked  | Interaction(1&7): Physical Contact
+[920] 15:49:48.911 | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 7: Emotion=fear Age=34 Gender=female Pose=Tracked  | Interaction(1&7): Walking Together
+[921] 15:49:48.984 | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&1): Walking Together
+[922] 15:49:49.071 | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked  | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked  | Interaction(1&1): Walking Together | Interaction(1&1): Walking Together | Interaction(1&1): Walking Together
+[923] 15:49:49.123 | ID 1: Emotion=sad Age=39 Gender=male Pose=Tracked 
+[924] 15:49:49.175 | ID 1: Emotion=sad Age=39 Gender=male 
+[925] 15:49:49.439 | ID 1: Emotion=sad Age=38 Gender=male 
+[929] 15:49:49.694 | ID 1: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[930] 15:49:50.031 | ID 9: Emotion=sad Age=34 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[931] 15:49:50.112 | ID 9: Emotion=sad Age=34 Gender=female Pose=Tracked  | ID 1: Emotion=sad Age=38 Gender=male Pose=Tracked  | Interaction(1&9): Walking Together
+[932] 15:49:50.171 | ID 1: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[933] 15:49:50.237 | ID 1: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[934] 15:49:50.291 | ID 1: Emotion=sad Age=38 Gender=male Pose=Tracked 
+[940] 15:49:50.737 | ID 1: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[941] 15:49:50.800 | ID 1: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[942] 15:49:50.857 | ID 1: Emotion=sad Age=37 Gender=male Pose=Tracked 
+[959] 15:49:51.929 | ID 11: Pose=Tracked 
+[960] 15:49:52.159 | ID 1: Emotion=sad Age=36 Gender=male Pose=Tracked 
+[961] 15:49:52.215 | ID 1: Emotion=sad Age=36 Gender=male Pose=Tracked 
+[979] 15:49:53.116 | ID 1: Emotion=sad Age=36 Gender=male Pose=Tracked 
+[980] 15:49:53.295 | ID 11: Emotion=neutral Age=41 Gender=male Pose=Tracked 
+[981] 15:49:53.351 | ID 11: Emotion=neutral Age=41 Gender=male Pose=Tracked 
+[982] 15:49:53.404 | ID 11: Emotion=neutral Age=41 Gender=male Pose=Tracked 
+[994] 15:49:54.118 | ID 1: Emotion=sad Age=36 Gender=male Pose=Tracked 
+[995] 15:49:54.309 | ID 1: Emotion=sad Age=35 Gender=male Pose=Tracked 
+[1001] 15:49:54.768 | ID 1: Emotion=sad Age=35 Gender=male Pose=Tracked 
+[1002] 15:49:54.824 | ID 1: Emotion=sad Age=35 Gender=male Pose=Tracked 
+[1024] 15:49:56.012 | ID 13: Pose=Tracked 
+[1025] 15:49:56.197 | ID 13: Emotion=angry Age=30 Gender=female Pose=Tracked 
+[1026] 15:49:56.253 | ID 13: Emotion=angry Age=30 Gender=female Pose=Tracked 
+[1027] 15:49:56.306 | ID 13: Emotion=angry Age=30 Gender=female Pose=Tracked 
+[1033] 15:49:56.612 | ID 13: Emotion=angry Age=30 Gender=female Pose=Tracked 
+[1034] 15:49:56.663 | ID 13: Emotion=angry Age=30 Gender=female Pose=Tracked 
+[1035] 15:49:56.906 | ID 13: Emotion=angry Age=36 Gender=female Pose=Tracked 
+[1036] 15:49:56.962 | ID 13: Emotion=angry Age=36 Gender=female Pose=Tracked 
+[1037] 15:49:57.017 | ID 13: Emotion=angry Age=36 Gender=female Pose=Tracked 
+[1038] 15:49:57.069 | ID 13: Emotion=angry Age=36 Gender=female Pose=Tracked 
+[1039] 15:49:57.121 | ID 13: Emotion=angry Age=36 Gender=female Pose=Tracked 
+[1040] 15:49:57.383 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1041] 15:49:57.440 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1042] 15:49:57.514 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1043] 15:49:57.565 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1044] 15:49:57.616 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1045] 15:49:57.856 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1046] 15:49:57.908 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1047] 15:49:57.962 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1048] 15:49:58.015 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1049] 15:49:58.066 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1050] 15:49:58.310 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1051] 15:49:58.374 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1052] 15:49:58.433 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked 
+[1053] 15:49:58.502 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked  | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked  | Interaction(13&13): Walking Together
+[1054] 15:49:58.580 | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked  | ID 13: Emotion=angry Age=38 Gender=male Pose=Tracked  | Interaction(13&13): Walking Together
+[1055] 15:49:58.849 | ID 13: Emotion=angry Age=36 Gender=male Pose=Tracked 
+[1056] 15:49:58.929 | ID 13: Emotion=angry Age=36 Gender=male Pose=Tracked 
+[1060] 15:49:59.303 | ID 14: Emotion=sad Age=18 Gender=female Pose=Tracked 
+[1061] 15:49:59.361 | ID 14: Emotion=sad Age=18 Gender=female Pose=Tracked 
+[1062] 15:49:59.443 | ID 14: Emotion=sad Age=18 Gender=female Pose=Tracked  | ID 14: Emotion=sad Age=18 Gender=female Pose=Tracked  | Interaction(14&14): Walking Together
+[1064] 15:49:59.567 | ID 13: Emotion=angry Age=36 Gender=male Pose=Tracked 
+[1065] 15:49:59.797 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1066] 15:49:59.851 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1067] 15:49:59.907 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1068] 15:49:59.960 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1069] 15:50:00.012 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1070] 15:50:00.262 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1071] 15:50:00.329 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1072] 15:50:00.387 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1073] 15:50:00.438 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked 
+[1074] 15:50:00.506 | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked  | ID 13: Emotion=angry Age=35 Gender=male Pose=Tracked  | Interaction(13&13): Walking Together
+[1075] 15:50:00.738 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1076] 15:50:00.792 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1077] 15:50:00.864 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1078] 15:50:00.915 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1079] 15:50:00.968 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1080] 15:50:01.305 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1081] 15:50:01.378 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1082] 15:50:01.478 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked  | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked  | Interaction(13&13): Walking Together
+[1083] 15:50:01.579 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1084] 15:50:01.631 | ID 13: Emotion=angry Age=34 Gender=male Pose=Tracked 
+[1085] 15:50:02.010 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked  | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked  | Interaction(13&13): Walking Together
+[1086] 15:50:02.081 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked 
+[1087] 15:50:02.151 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked 
+[1088] 15:50:02.236 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked  | ID 16: Pose=Tracked 
+[1089] 15:50:02.290 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked 
+[1090] 15:50:02.679 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked 
+[1091] 15:50:02.732 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked 
+[1092] 15:50:02.801 | ID 13: Emotion=angry Age=33 Gender=male Pose=Tracked 
+[1094] 15:50:02.919 | ID 16: Pose=Tracked 
+[1095] 15:50:03.117 | ID 16: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1097] 15:50:03.221 | ID 16: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1100] 15:50:03.539 | ID 16: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1104] 15:50:03.867 | ID 16: Emotion=happy Age=33 Gender=female Pose=Tracked  | ID 16: Emotion=happy Age=33 Gender=female Pose=Tracked  | Interaction(16&16): Walking Together
+[1105] 15:50:04.050 | ID 16: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1106] 15:50:04.118 | ID 16: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1107] 15:50:04.181 | ID 16: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1108] 15:50:04.263 | ID 16: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1109] 15:50:04.342 | ID 16: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1110] 15:50:04.580 | ID 16: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1139] 15:50:06.113 | ID 19: Pose=Tracked 
+[1140] 15:50:06.324 | ID 19: Emotion=sad Age=33 Gender=female Pose=Tracked 
+[1141] 15:50:06.376 | ID 19: Emotion=sad Age=33 Gender=female Pose=Tracked 
+[1142] 15:50:06.447 | ID 19: Emotion=sad Age=33 Gender=female Pose=Tracked 
+[1143] 15:50:06.498 | ID 19: Emotion=sad Age=33 Gender=female Pose=Tracked 
+[1144] 15:50:06.549 | ID 19: Emotion=sad Age=33 Gender=female Pose=Tracked 
+[1145] 15:50:06.761 | ID 19: Emotion=sad Age=29 Gender=female Pose=Tracked 
+[1146] 15:50:06.818 | ID 19: Emotion=sad Age=29 Gender=female Pose=Tracked 
+[1147] 15:50:06.876 | ID 19: Emotion=sad Age=29 Gender=female Pose=Tracked 
+[1148] 15:50:06.936 | ID 19: Emotion=sad Age=29 Gender=female Pose=Tracked 
+[1149] 15:50:06.987 | ID 19: Emotion=sad Age=29 Gender=female Pose=Tracked 
+[1150] 15:50:07.190 | ID 19: Emotion=sad Age=27 Gender=female Pose=Tracked 
+[1151] 15:50:07.252 | ID 19: Emotion=sad Age=27 Gender=female Pose=Tracked 
+[1152] 15:50:07.311 | ID 19: Emotion=sad Age=27 Gender=female Pose=Tracked 
+[1153] 15:50:07.378 | ID 19: Emotion=sad Age=27 Gender=female Pose=Tracked 
+[1154] 15:50:07.428 | ID 19: Emotion=sad Age=27 Gender=female Pose=Tracked 
+[1155] 15:50:07.631 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1156] 15:50:07.700 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1157] 15:50:07.764 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1158] 15:50:07.831 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1159] 15:50:07.917 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1160] 15:50:08.312 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked  | ID 21: Emotion=sad Age=38 Gender=female Pose=Tracked 
+[1161] 15:50:08.382 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1162] 15:50:08.432 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1163] 15:50:08.484 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1164] 15:50:08.535 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1165] 15:50:08.735 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1166] 15:50:08.822 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1167] 15:50:08.874 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1168] 15:50:08.934 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1169] 15:50:09.004 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked  | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked  | Interaction(19&19): Walking Together
+[1170] 15:50:09.356 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1171] 15:50:09.411 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1174] 15:50:09.606 | ID 21: Emotion=sad Age=38 Gender=female Pose=Tracked  | ID 21: Emotion=sad Age=38 Gender=female Pose=Tracked  | Interaction(21&21): Walking Together
+[1175] 15:50:09.839 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1176] 15:50:09.892 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1177] 15:50:09.946 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1181] 15:50:10.354 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1182] 15:50:10.410 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1183] 15:50:10.477 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1184] 15:50:10.560 | ID 21: Emotion=sad Age=39 Gender=female Pose=Tracked 
+[1185] 15:50:10.848 | ID 21: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[1186] 15:50:10.899 | ID 21: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[1187] 15:50:10.949 | ID 21: Emotion=sad Age=37 Gender=female Pose=Tracked 
+[1188] 15:50:11.015 | ID 21: Emotion=sad Age=37 Gender=female Pose=Tracked  | ID 21: Emotion=sad Age=37 Gender=female Pose=Tracked  | Interaction(21&21): Walking Together
+[1193] 15:50:11.650 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1194] 15:50:11.702 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1195] 15:50:11.900 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1196] 15:50:11.956 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1197] 15:50:12.012 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1198] 15:50:12.065 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1199] 15:50:12.116 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1200] 15:50:12.313 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1201] 15:50:12.364 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1202] 15:50:12.421 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1203] 15:50:12.493 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked  | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked  | Interaction(19&19): Walking Together
+[1204] 15:50:12.545 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1205] 15:50:12.740 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1206] 15:50:12.792 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1207] 15:50:12.859 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1208] 15:50:12.925 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked  | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked  | Interaction(19&19): Walking Together
+[1209] 15:50:12.993 | ID 19: Emotion=sad Age=25 Gender=female Pose=Tracked 
+[1210] 15:50:13.358 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1211] 15:50:13.410 | ID 22: Pose=Tracked 
+[1212] 15:50:13.481 | ID 22: Pose=Tracked 
+[1213] 15:50:13.562 | ID 22: Pose=Tracked  | ID 22: Pose=Tracked  | Interaction(22&22): Walking Together
+[1214] 15:50:13.627 | ID 22: Pose=Tracked  | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1221] 15:50:14.312 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1222] 15:50:14.368 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1223] 15:50:14.419 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1224] 15:50:14.485 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked  | ID 19: Emotion=sad Age=26 Gender=female  | Interaction(19&19): Walking Together
+[1225] 15:50:14.679 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1226] 15:50:14.740 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1227] 15:50:14.808 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1228] 15:50:14.873 | ID 19: Emotion=sad Age=26 Gender=female Pose=Tracked 
+[1246] 15:50:16.039 | ID 24: Pose=Tracked 
+[1247] 15:50:16.111 | ID 24: Pose=Tracked 
+[1248] 15:50:16.176 | ID 24: Pose=Tracked 
+[1249] 15:50:16.228 | ID 24: Pose=Tracked 
+[1250] 15:50:16.412 | ID 24: Emotion=happy Age=28 Gender=female Pose=Tracked 
+[1251] 15:50:16.468 | ID 24: Emotion=happy Age=28 Gender=female Pose=Tracked 
+[1252] 15:50:16.528 | ID 24: Emotion=happy Age=28 Gender=female Pose=Tracked 
+[1253] 15:50:16.589 | ID 24: Emotion=happy Age=28 Gender=female Pose=Tracked 
+[1254] 15:50:16.639 | ID 24: Emotion=happy Age=28 Gender=female Pose=Tracked 
+[1255] 15:50:16.841 | ID 24: Emotion=happy Age=35 Gender=female Pose=Tracked 
+[1256] 15:50:16.898 | ID 24: Emotion=happy Age=35 Gender=female Pose=Tracked 
+[1257] 15:50:16.959 | ID 24: Emotion=happy Age=35 Gender=female Pose=Tracked 
+[1258] 15:50:17.009 | ID 24: Emotion=happy Age=35 Gender=female Pose=Tracked 
+[1259] 15:50:17.062 | ID 24: Emotion=happy Age=35 Gender=female Pose=Tracked 
+[1260] 15:50:17.281 | ID 24: Emotion=neutral Age=34 Gender=female Pose=Tracked 
+[1261] 15:50:17.338 | ID 24: Emotion=neutral Age=34 Gender=female Pose=Tracked 
+[1262] 15:50:17.393 | ID 24: Emotion=neutral Age=34 Gender=female Pose=Tracked 
+[1263] 15:50:17.443 | ID 24: Emotion=neutral Age=34 Gender=female Pose=Tracked 
+[1264] 15:50:17.510 | ID 24: Emotion=neutral Age=34 Gender=female Pose=Tracked 
+[1265] 15:50:17.754 | ID 24: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1266] 15:50:17.809 | ID 24: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1267] 15:50:17.881 | ID 24: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1268] 15:50:17.949 | ID 24: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1269] 15:50:18.016 | ID 24: Emotion=happy Age=34 Gender=female Pose=Tracked 
+[1270] 15:50:18.250 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1271] 15:50:18.322 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1272] 15:50:18.374 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1273] 15:50:18.425 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1274] 15:50:18.477 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1275] 15:50:18.727 | ID 24: Emotion=happy Age=31 Gender=female Pose=Tracked 
+[1276] 15:50:18.778 | ID 24: Emotion=happy Age=31 Gender=female Pose=Tracked 
+[1277] 15:50:18.836 | ID 24: Emotion=happy Age=31 Gender=female Pose=Tracked 
+[1278] 15:50:18.887 | ID 24: Emotion=happy Age=31 Gender=female Pose=Tracked 
+[1279] 15:50:18.938 | ID 24: Emotion=happy Age=31 Gender=female Pose=Tracked 
+[1280] 15:50:19.145 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1281] 15:50:19.197 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1282] 15:50:19.251 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1283] 15:50:19.312 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1284] 15:50:19.363 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1285] 15:50:19.578 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1286] 15:50:19.646 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1287] 15:50:19.705 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1288] 15:50:19.755 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1289] 15:50:19.806 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1290] 15:50:20.028 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1291] 15:50:20.082 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1292] 15:50:20.142 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1293] 15:50:20.198 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1294] 15:50:20.253 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 
+[1295] 15:50:20.497 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1296] 15:50:20.551 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1297] 15:50:20.623 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1298] 15:50:20.689 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1299] 15:50:20.757 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1300] 15:50:21.005 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1301] 15:50:21.058 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1302] 15:50:21.133 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1303] 15:50:21.199 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1304] 15:50:21.249 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1305] 15:50:21.486 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1306] 15:50:21.539 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1307] 15:50:21.593 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1308] 15:50:21.647 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1309] 15:50:21.697 | ID 24: Emotion=happy Age=33 Gender=female Pose=Tracked 
+[1310] 15:50:21.942 | ID 24: Emotion=happy Age=32 Gender=female Pose=Tracked 

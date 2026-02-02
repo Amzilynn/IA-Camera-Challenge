@@ -1,4 +1,4 @@
-import torch
-print(torch.cuda.is_available())
-print(torch.cuda.get_device_name(0))
-    
+from ultralytics import YOLO
+
+model = YOLO(r"C:\Users\Dr.console\Desktop\IA-Camera-Challenge\yolov8n-face.pt")
+

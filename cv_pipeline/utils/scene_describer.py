@@ -23,6 +23,10 @@ class SceneDescriber:
             desc = f"ID {track_id}: "
             if 'emotion' in det and det['emotion']:
                 desc += f"Emotion={det['emotion']} "
+            if 'age' in det and det['age']:
+                desc += f"Age={det['age']} "
+            if 'gender' in det and det['gender']:
+                desc += f"Gender={det['gender']} "
             if 'pose_keypoints' in det and det['pose_keypoints'] is not None:
                 desc += "Pose=Tracked "
             descriptions.append(desc)

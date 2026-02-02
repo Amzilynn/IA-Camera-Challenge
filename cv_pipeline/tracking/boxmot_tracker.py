@@ -18,17 +18,20 @@ class PersonTracker:
         self.tracker_type = tracker_type.lower()
         self.device = device
 
+        import logging
+        # Suppress boxmot/BoostTrack verbose logging
+        logging.getLogger("boxmot").setLevel(logging.WARNING)
+
         if self.tracker_type == 'deepocsort':
             self.tracker = BoostTrack(
                 reid_weights=reid_weights,
                 device=device,
                 half=fp16,
-                
             )
         else:
             raise ValueError(
-        f"Tracker '{tracker_type}' not supported. Use 'deepocsort'."
-    )
+                f"Tracker '{tracker_type}' not supported. Use 'deepocsort'."
+            )
 
         # Color palette for consistent track visualization
         self.id_colors = [
@@ -38,7 +41,7 @@ class PersonTracker:
             (0, 255, 128), (128, 0, 255), (0, 128, 255), (192, 192, 192), (128, 128, 128)
         ]
 
-        print(f"✓ PersonTracker initialized with {self.tracker_type.upper()} on {device}")
+        print(f"I: PersonTracker initialized with {self.tracker_type.upper()} on {device}")
 
     def update(self, frame, detections):
         """

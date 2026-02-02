@@ -30,7 +30,7 @@ class YOLODetector:
     def __init__(self,
                  human_model_path="yolov8m.pt",
                  pose_model_path="yolov8m-pose.pt",
-                 face_model_path="yolov8n-face.pt"):
+                 face_model_path="C:/Users/Dr.console/Desktop/IA-Camera-Challenge/cv_pipeline/models/yolov8n-face.pt"):
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"Using device: {self.device}")
@@ -41,7 +41,7 @@ class YOLODetector:
         try:
             self.face_model = YOLO(face_model_path)
         except:
-            print("⚠️ Face model missing → face detection disabled")
+            print("I: YOLO face model not found. Using DeepFace fallback for analysis.")
             self.face_model = None
 
     @staticmethod

@@ -9,6 +9,7 @@ A comprehensive CV pipeline for security camera analysis with real-time person d
 - **Multi-Object Tracking** - BoxMOT (DeepOCSORT) for persistent ID assignment
 - **Pose Estimation** - YOLOv8m-pose for stable, high-speed body tracking
 - **Emotion Analysis** - DeepFace for facial emotion recognition (Every 5 frames)
+- **Age & Gender** - MiVOLO (Face + Body analysis) for accurate demographic estimation
 - **Social Interaction Analysis (STAS)** - Geometry-based detection of social behaviors (Talking, Approaching, Service, etc.)
 - **Scene Logging** - Text-based scene description with timestamps and interactions
 
@@ -59,12 +60,34 @@ pip install -r requirements.txt
 
 # Critical dependency for TensorFlow 2.15 compatibility
 pip install tf-keras
+
+# Install MiVOLO manually if not in pip (or via git)
+# Note: MiVOLO weights need to be downloaded manually (see Troubleshooting)
 ```
 
 ### Usage
 **Run the full pipeline:**
 ```bash
+# Run on default video (vd2.mp4)
 python scripts/run_full_pipeline.py
+
+# Run on webcam (Index 0)
+python scripts/run_full_pipeline.py 0
+
+# Run on specific video file
+python scripts/run_full_pipeline.py path/to/video.mp4
+```
+
+### Troubleshooting
+**MiVOLO Weights Missing**:
+Download `model_imdb_cross_person_4.24_99.46.pth.tar` from [MiVOLO Releases](https://github.com/WildChlamydia/MiVOLO/releases) and place it in `models/mivolo_imbd.pth.tar`.
+
+**Protobuf/TensorFlow Error**:
+If you see `ImportError: cannot import name 'runtime_version' from 'google.protobuf'`, upgrade protobuf:
+```bash
+pip install protobuf==4.25.3
+# or
+pip install --upgrade protobuf
 ```
 
 **Outputs:**
@@ -78,11 +101,14 @@ graph LR
     A[Video Input] --> B[YOLOv8 Detection]
     B --> C[BoxMOT Tracking]
     C --> D[YOLO-Pose Estimation]
+    C --> D[YOLO-Pose Estimation]
     D --> E[DeepFace Emotion]
-    E --> F[STAS Social Analysis]
-    F --> G[Visualization]
-    G --> H[Output Video]
-    F --> I[Scene Log]
+    D --> F[MiVOLO Age/Gender]
+    E --> G[STAS Social Analysis]
+    F --> G
+    G --> H[Visualization]
+    H --> I[Output Video]
+    G --> J[Scene Log]
 ```
 
 ##  Technical Details
@@ -110,6 +136,7 @@ graph LR
 - **Boxes**: ID-specific colors for tracked persons.
 - **Skeletons**: Stable body keypoints.
 - **Emotions**: Red labels above heads.
+- **Age/Gender**: Displayed next to emotion.
 - **Interactions**: Green `<< Label >>` tags between interacting people with connecting lines.
 
 ### Text Output (`scene_log.txt`)

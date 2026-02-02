@@ -11,8 +11,9 @@ sys.path.insert(0, str(project_root))
 
 from cv_pipeline.detection.yolo_detector import YOLODetector
 from cv_pipeline.tracking.boxmot_tracker import PersonTracker
-from cv_pipeline.pose_estimation.pose_estimator import PoseEstimator
+# from cv_pipeline.pose_estimation.pose_estimator import PoseEstimator
 from cv_pipeline.emotion_analysis.emotion_analyzer import EmotionAnalyzer
+from cv_pipeline.emotion_analysis.mivolo_analyzer import MivoloAnalyzer
 from cv_pipeline.social_interaction.social_analyzer import SocialAnalyzer
 from cv_pipeline.utils.scene_describer import SceneDescriber
 
@@ -20,6 +21,10 @@ def run_pipeline(video_path, output_path="output.avi"):
     # 1. Initialization
     print(f"I: Initializing pipeline for {video_path}...")
     
+    # Handle webcam input (integer)
+    if str(video_path).isdigit():
+        video_path = int(video_path)
+        
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         print(f"E: Could not open video: {video_path}")
@@ -53,6 +58,7 @@ def run_pipeline(video_path, output_path="output.avi"):
         
     # pose_estimator = PoseEstimator() # DISABLED: Unstable on crops. Using YOLO native.
     emotion_analyzer = EmotionAnalyzer()
+    mivolo_analyzer = MivoloAnalyzer()
     social_analyzer = SocialAnalyzer(fps=fps)
     scene_describer = SceneDescriber(log_file="scene_log.txt")
 
@@ -60,6 +66,13 @@ def run_pipeline(video_path, output_path="output.avi"):
 
     frame_count = 0
     start_time = time.time()
+    
+    from collections import deque, Counter
+    
+    # Store persistent attributes for tracked persons to prevent flickering
+    # Structure: {track_id: {'emotion_history': deque, 'age_history': deque, 'gender_history': deque, 'stable': {}}}
+    person_history = {} 
+    MAX_HISTORY = 15
 
     while True:
         ret, frame = cap.read()
@@ -76,24 +89,72 @@ def run_pipeline(video_path, output_path="output.avi"):
         
         # 4 & 5. Pose & Emotion for each tracked person
         for det in detections:
-            bbox = det['bbox']
+            track_id = det.get('track_id', -1)
             
-            # --- Pose Estimation ---
-            # Using YOLOv8-pose native keypoints (already in det['pose_keypoints'])
+            # Initialize history if new track
+            if track_id != -1 and track_id not in person_history:
+                person_history[track_id] = {
+                    'emotion_history': deque(maxlen=MAX_HISTORY),
+                    'age_history': deque(maxlen=MAX_HISTORY),
+                    'gender_history': deque(maxlen=MAX_HISTORY),
+                    'stable': {}
+                }
             
-            # --- Emotion Analysis ---
+            # --- Emotion/Age/Gender Analysis ---
             if frame_count % 5 == 0:
                  # Prefer face detection box if available
+                 analysis_bbox = None
                  if det['faces']:
-                     face_bbox = det['faces'][0]['bbox']
-                     dom_emotion, scores = emotion_analyzer.analyze(frame, face_bbox)
-                     if dom_emotion:
-                         det['emotion'] = dom_emotion
+                     analysis_bbox = det['faces'][0]['bbox']
                  else:
-                     pass
+                     analysis_bbox = det['bbox']
+                 
+                 
+                 # 1. Emotion (DeepFace)
+                 emotion_results = emotion_analyzer.analyze(frame, analysis_bbox)
+                 
+                 # 2. Age & Gender (MiVOLO)
+                 # Note: MiVOLO needs person bbox (det['bbox']) AND face bbox (analysis_bbox if it is a face)
+                 person_bbox = det['bbox']
+                 # Ensure proper bbox format for MiVOLO
+                 mivolo_results = mivolo_analyzer.analyze(frame, person_bbox, det['faces'][0]['bbox'] if det['faces'] else None)
+
+                 if track_id != -1:
+                     hist = person_history[track_id]
+                     
+                     if emotion_results:
+                        hist['emotion_history'].append(emotion_results['emotion'])
+                     
+                     if mivolo_results:
+                        hist['age_history'].append(mivolo_results['age'])
+                        hist['gender_history'].append(mivolo_results['gender'])
+
+                     
+                     # Calculate stable results
+                     if len(hist['gender_history']) > 0:
+                         # Majority vote for gender
+                         gender_counts = Counter(hist['gender_history'])
+                         hist['stable']['gender'] = gender_counts.most_common(1)[0][0]
+                         
+                         # Moving average for age
+                         hist['stable']['age'] = int(np.mean(hist['age_history']))
+                         
+                         # Majority vote for emotion (or just most recent)
+                         emotion_counts = Counter(hist['emotion_history'])
+                         hist['stable']['emotion'] = emotion_counts.most_common(1)[0][0]
+                         
+                 # Apply results to current detection immediately as well
+                 if emotion_results:
+                     det.update(emotion_results)
+                 if mivolo_results:
+                     det.update(mivolo_results)
+
+            # Assign from stable history if available
+            if track_id != -1 and track_id in person_history:
+                det.update(person_history[track_id]['stable'])
 
         # 6. Social Interaction Analysis (STAS)
-        interactions = social_analyzer.analyze(detections)
+        interactions, _ = social_analyzer.analyze(detections)
 
         # 7. Scene Description
         desc_text = scene_describer.describe(detections, frame_count, interactions)
@@ -118,11 +179,15 @@ def run_pipeline(video_path, output_path="output.avi"):
             cv2.line(drawn_frame, (int(c1[0]), int(c1[1])), (int(c2[0]), int(c2[1])), (0, 255, 0), 1)
 
         for det in detections:
-            # Draw Emotion
+            # Draw Emotion, Age, Gender
             if 'emotion' in det:
                 x1, y1, x2, y2 = map(int, det['bbox'])
-                cv2.putText(drawn_frame, det['emotion'], (x1, y1 - 25), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+                text = f"{det['emotion']} | {det['age']} | {det['gender']}"
+                
+                # Position text above person ID label if it exists
+                text_y = y1 - 35
+                cv2.putText(drawn_frame, text, (x1, text_y), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 0, 255), 2)
 
         # 8. Output
         # Resize for display to fit 1080p screens better (1280x720)
