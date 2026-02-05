@@ -147,7 +147,12 @@ class YOLODetector:
             conf = det["conf"]
 
             # Determine color and label based on tracking
-            if 'track_id' in det and det['track_id'] >= 0:
+            if 'track_id_display' in det:
+                track_id = det['track_id_display']
+                # Use track color if available
+                color = det.get('track_color', (0, 255, 0))
+                label = f"ID:{track_id} {conf:.2f}"
+            elif 'track_id' in det and det['track_id'] >= 0:
                 # Use track color if available
                 color = det.get('track_color', (0, 255, 0))
                 label = f"ID:{det['track_id']} {conf:.2f}"

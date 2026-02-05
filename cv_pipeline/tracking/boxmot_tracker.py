@@ -20,7 +20,7 @@ class PersonTracker:
 
         import logging
         # Suppress boxmot/BoostTrack verbose logging
-        logging.getLogger("boxmot").setLevel(logging.WARNING)
+        logging.getLogger("boxmot").setLevel(logging.ERROR)
 
         if self.tracker_type == 'deepocsort':
             self.tracker = BoostTrack(
@@ -81,6 +81,11 @@ class PersonTracker:
                     track_id = int(tracks[best_idx, 4])
                     det['track_id'] = track_id
                     det['track_color'] = self.id_colors[track_id % len(self.id_colors)]
+                    
+                    # Store features if available in the tracker
+                    # BoxMOT trackers usually store features in trk[...] if configured
+                    # but here we might need to rely on the fact that BoostTrack uses ReID internally.
+                    # As a fallback, we'll signal that this track is 'active'
                 else:
                     det['track_id'] = -1
                     det['track_color'] = (128, 128, 128)
