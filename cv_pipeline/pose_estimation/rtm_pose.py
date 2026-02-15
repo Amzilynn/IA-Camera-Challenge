@@ -13,8 +13,20 @@ class RTMPoseEstimator:
         if not os.path.exists(model_path):
             self._download_model()
             
-        providers = ['CUDAExecutionProvider', 'CPUExecutionProvider'] if device == "cuda" else ['CPUExecutionProvider']
-        self.session = ort.InferenceSession(model_path, providers=providers)
+        # Smarter provider selection to avoid DLL load errors
+        available_providers = ort.get_available_providers()
+        print(f"I: Available ONNX providers: {available_providers}")
+        
+        if device == "cuda" and "CUDAExecutionProvider" in available_providers:
+            providers = ["CUDAExecutionProvider", "CPUExecutionProvider"]
+        else:
+            providers = ["CPUExecutionProvider"]
+            
+        try:
+            self.session = ort.InferenceSession(model_path, providers=providers)
+        except Exception as e:
+            print(f"W: Failed to load ONNX with {providers}: {e}. Falling back to CPU.")
+            self.session = ort.InferenceSession(model_path, providers=["CPUExecutionProvider"])
         self.input_name = self.session.get_inputs()[0].name
         
         # RTMPose-m default input size

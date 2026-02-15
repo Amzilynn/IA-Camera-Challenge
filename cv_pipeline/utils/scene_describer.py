@@ -33,6 +33,14 @@ class SceneDescriber:
                 desc += f"Pos={det['posture']} "
             if 'activity' in det:
                 desc += f"Act={det['activity']} "
+            if 'role' in det:
+                desc += f"Role={det['role']} "
+            if 'mood_trend' in det:
+                desc += f"Mood={det['mood_trend']} "
+            if 'group_id' in det and det['group_id'] != -1:
+                desc += f"Group={det['group_id']} "
+            if det.get('space_violated'):
+                desc += "!SPACE_VIOLATION! "
             
             # Spatial Position (Normalized % of frame)
             x1, y1, x2, y2 = det['bbox']

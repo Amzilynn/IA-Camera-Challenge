@@ -52,7 +52,7 @@ def run_pipeline(video_path, output_path="output.avi"):
     detector = YOLODetector(
         human_model_path="yolov8m.pt",
         pose_model_path="yolov8m-pose.pt",
-        face_model_path="yolov8n-face.pt" # Explicitly use downloaded face model
+        face_model_path="models/yolov8n-face.pt" # Corrected path to models folder
     )
     # Initialize tracker with specific reid_weights path if needed, or default
     # Note: BoxMOT might need some downloads on first run
@@ -217,7 +217,28 @@ def run_pipeline(video_path, output_path="output.avi"):
                                 'age': hist['stable'].get('age')
                             }
                 
-                # Apply results to current detection immediately as well
+                # Calculate Mood Trajectory (Sentiment Trend)
+                if len(hist['emotion_history']) >= 5:
+                    emotion_map = {
+                        'happy': 1.0, 'surprise': 0.5, 'neutral': 0.1,
+                        'sad': -0.5, 'angry': -1.0, 'fear': -0.8, 'disgust': -1.0
+                    }
+                    scores = [emotion_map.get(e, 0) for e in hist['emotion_history']]
+                    
+                    # Compare first half vs second half trend
+                    mid = len(scores) // 2
+                    first_half = np.mean(scores[:mid])
+                    second_half = np.mean(scores[mid:])
+                    trend = second_half - first_half
+                    
+                    if trend > 0.15:
+                        hist['stable']['mood_trend'] = "Improving ↗"
+                    elif trend < -0.15:
+                        hist['stable']['mood_trend'] = "Declining ↘"
+                    else:
+                        hist['stable']['mood_trend'] = "Stable →"
+                
+                # Apply results to current detection immediately
                 if emotion_results:
                     det.update(emotion_results)
                 if mivolo_results:
@@ -272,12 +293,23 @@ def run_pipeline(video_path, output_path="output.avi"):
             # Draw Emotion, Age, Gender
             if 'emotion' in det:
                 x1, y1, x2, y2 = map(int, det['bbox'])
-                text = f"{det['emotion']} | {det['age']} | {det['gender']}"
-                
-                # Position text above person ID label if it exists
+                text = f"{det.get('emotion', 'N/A')} | {det.get('age', 'N/A')} | {det.get('gender', 'N/A')}"
+                # Position text above person ID label
                 text_y = y1 - 35
-                cv2.putText(drawn_frame, text, (x1, text_y), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 0, 255), 2)
+                
+                # Add Role, Group, and Mood Trend to the display text
+                role = det.get('role', 'Analyzing...')
+                group_id = det.get('group_id', -1)
+                group_text = f" | Group {group_id}" if group_id != -1 else ""
+                mood_trend = det.get('mood_trend', "")
+                
+                # Space Alert
+                space_alert = " ! SPACE !" if det.get('space_violated') else ""
+                
+                full_text = f"{text} | {role}{group_text} | {mood_trend}{space_alert}"
+                
+                cv2.putText(drawn_frame, full_text, (x1, text_y), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 0, 255), 2)
 
         # 8. Output
         # Resize for display to fit 1080p screens better (1280x720)

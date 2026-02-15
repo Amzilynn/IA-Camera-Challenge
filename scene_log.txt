@@ -1,640 +1,304 @@
-Scene Log Started: 2026-02-15 20:33:47.493836
+Scene Log Started: 2026-02-16 00:02:45.998920
 --------------------------------------------------
-[1] 20:33:48.850 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[2] 20:33:49.050 | ID 2: Pose=Tracked | ID 1: Pose=Tracked | ID 3:
-[3] 20:33:49.261 | ID 2: Pose=Tracked | ID 1: Pose=Tracked | ID 3:
-[4] 20:33:49.425 | ID 2: Pose=Tracked | ID 1: Pose=Tracked | ID 3:
-[5] 20:33:49.590 | ID 2: Pose=Tracked | ID 1: Pose=Tracked | ID 3:
-[6] 20:33:49.752 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[7] 20:33:49.908 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[8] 20:33:50.054 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[9] 20:33:50.193 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[10] 20:33:50.333 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[11] 20:33:50.495 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 3:
-[12] 20:33:50.616 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
-[13] 20:33:50.753 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
-[14] 20:33:51.027 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
-[15] 20:33:52.061 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[16] 20:33:52.268 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[17] 20:33:52.406 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[18] 20:33:52.541 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[19] 20:33:52.695 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[20] 20:33:52.823 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[21] 20:33:52.950 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[22] 20:33:53.084 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[23] 20:33:53.250 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[24] 20:33:53.380 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[25] 20:33:53.523 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[26] 20:33:53.650 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[27] 20:33:53.782 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[28] 20:33:53.917 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[29] 20:33:54.061 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[30] 20:33:54.394 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[31] 20:33:54.602 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[32] 20:33:54.747 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[33] 20:33:54.919 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[34] 20:33:55.121 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[35] 20:33:55.252 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[36] 20:33:55.517 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[37] 20:33:55.641 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[38] 20:33:55.796 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[39] 20:33:55.955 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[40] 20:33:56.092 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[41] 20:33:56.263 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[42] 20:33:56.422 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[43] 20:33:56.550 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[44] 20:33:56.692 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[45] 20:33:57.091 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[46] 20:33:57.257 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[47] 20:33:57.389 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[48] 20:33:57.519 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[49] 20:33:57.653 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[50] 20:33:57.773 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[51] 20:33:57.915 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[52] 20:33:58.048 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[53] 20:33:58.192 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[54] 20:33:58.340 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[55] 20:33:58.462 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[56] 20:33:58.593 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[57] 20:33:58.763 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[58] 20:33:58.893 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[59] 20:33:59.043 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[60] 20:33:59.371 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[61] 20:33:59.532 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[62] 20:33:59.694 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[63] 20:33:59.822 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[64] 20:33:59.954 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[65] 20:34:00.091 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[66] 20:34:00.219 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[67] 20:34:00.351 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[68] 20:34:00.539 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[69] 20:34:00.661 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[70] 20:34:00.796 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[71] 20:34:00.961 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[72] 20:34:01.088 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[73] 20:34:01.227 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[74] 20:34:01.513 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[75] 20:34:01.853 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[76] 20:34:02.033 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[77] 20:34:02.196 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[78] 20:34:02.334 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[79] 20:34:02.460 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[80] 20:34:02.590 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[81] 20:34:02.722 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[82] 20:34:02.876 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[83] 20:34:02.997 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[84] 20:34:03.119 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[85] 20:34:03.242 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[86] 20:34:03.387 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[87] 20:34:03.508 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[88] 20:34:03.668 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[89] 20:34:03.786 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[90] 20:34:04.110 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[91] 20:34:04.254 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[92] 20:34:04.442 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[93] 20:34:04.656 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[94] 20:34:04.819 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[95] 20:34:05.120 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[96] 20:34:05.245 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[97] 20:34:05.512 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[98] 20:34:05.653 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[99] 20:34:05.939 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[100] 20:34:06.058 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[101] 20:34:06.254 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[102] 20:34:06.380 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[103] 20:34:06.520 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[104] 20:34:06.669 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[105] 20:34:07.860 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[106] 20:34:08.021 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[107] 20:34:08.333 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[108] 20:34:08.483 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[109] 20:34:08.655 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[110] 20:34:08.819 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[111] 20:34:08.971 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[112] 20:34:09.128 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[113] 20:34:09.264 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[114] 20:34:09.463 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[115] 20:34:09.584 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[116] 20:34:09.707 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[117] 20:34:09.860 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[118] 20:34:10.020 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[119] 20:34:10.145 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[120] 20:34:10.481 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[121] 20:34:10.627 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[122] 20:34:10.793 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[123] 20:34:10.917 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[124] 20:34:11.042 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[125] 20:34:11.169 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[126] 20:34:11.305 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[127] 20:34:11.445 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[128] 20:34:11.572 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[129] 20:34:11.717 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[130] 20:34:11.865 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[131] 20:34:12.002 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[132] 20:34:12.141 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[133] 20:34:12.277 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[134] 20:34:12.406 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[135] 20:34:12.763 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[136] 20:34:12.930 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[137] 20:34:13.077 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[138] 20:34:13.205 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[139] 20:34:13.333 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[140] 20:34:13.478 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[141] 20:34:13.603 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[142] 20:34:13.733 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[143] 20:34:13.911 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[144] 20:34:14.084 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[145] 20:34:14.217 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[146] 20:34:14.349 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[147] 20:34:14.489 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[148] 20:34:14.619 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[149] 20:34:14.761 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[150] 20:34:15.098 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[151] 20:34:15.342 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[152] 20:34:15.508 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[153] 20:34:15.705 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[154] 20:34:15.867 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[155] 20:34:16.014 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[156] 20:34:16.191 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[157] 20:34:16.360 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[158] 20:34:16.484 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[159] 20:34:16.641 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[160] 20:34:16.789 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[161] 20:34:16.918 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[162] 20:34:17.055 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[163] 20:34:17.192 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[164] 20:34:17.344 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[165] 20:34:17.680 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[166] 20:34:17.845 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[167] 20:34:18.005 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[168] 20:34:18.173 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[169] 20:34:18.321 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[170] 20:34:18.444 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[171] 20:34:18.593 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[172] 20:34:18.712 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[173] 20:34:18.834 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[174] 20:34:19.130 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[175] 20:34:19.250 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[176] 20:34:19.416 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[177] 20:34:19.572 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[178] 20:34:19.727 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[179] 20:34:19.857 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[180] 20:34:20.244 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[181] 20:34:20.516 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[182] 20:34:20.656 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[183] 20:34:20.815 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[184] 20:34:20.980 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[185] 20:34:21.142 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[186] 20:34:21.295 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[187] 20:34:21.425 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[188] 20:34:21.556 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[189] 20:34:21.775 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[190] 20:34:21.897 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[191] 20:34:22.034 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[192] 20:34:22.220 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[193] 20:34:22.386 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[194] 20:34:22.515 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[195] 20:34:22.858 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[196] 20:34:23.021 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[197] 20:34:23.182 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[198] 20:34:23.346 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[199] 20:34:23.480 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[200] 20:34:23.610 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[201] 20:34:23.749 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[202] 20:34:23.887 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[203] 20:34:24.013 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[204] 20:34:24.292 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[205] 20:34:24.449 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[206] 20:34:24.736 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[207] 20:34:24.865 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[208] 20:34:25.004 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[209] 20:34:25.138 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[210] 20:34:25.500 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[211] 20:34:25.671 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[212] 20:34:25.800 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[213] 20:34:25.995 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[214] 20:34:26.153 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[215] 20:34:26.289 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[216] 20:34:26.433 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[217] 20:34:26.572 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[218] 20:34:26.708 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[219] 20:34:26.864 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[220] 20:34:27.031 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[221] 20:34:27.227 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[222] 20:34:27.358 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[223] 20:34:27.487 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[224] 20:34:27.632 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[225] 20:34:27.974 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[226] 20:34:28.143 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[227] 20:34:28.321 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[228] 20:34:28.615 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[229] 20:34:28.798 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[230] 20:34:28.967 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[231] 20:34:29.100 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[232] 20:34:29.234 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[233] 20:34:29.361 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[234] 20:34:29.495 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[235] 20:34:29.630 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[236] 20:34:29.777 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[237] 20:34:29.959 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[238] 20:34:30.112 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[239] 20:34:30.259 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=35 Gen=female Pose=Tracked
-[240] 20:34:30.639 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[241] 20:34:30.813 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[242] 20:34:30.976 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[243] 20:34:31.113 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[244] 20:34:31.258 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[245] 20:34:31.386 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[246] 20:34:31.542 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[247] 20:34:31.670 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[248] 20:34:31.793 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[249] 20:34:31.938 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[250] 20:34:32.125 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[251] 20:34:32.266 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[252] 20:34:32.402 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[253] 20:34:32.543 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[254] 20:34:32.671 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[255] 20:34:33.036 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[256] 20:34:33.341 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[257] 20:34:33.528 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[258] 20:34:33.695 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[259] 20:34:33.997 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[260] 20:34:34.136 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[261] 20:34:34.271 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[262] 20:34:34.410 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[263] 20:34:34.537 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[264] 20:34:34.674 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[265] 20:34:34.800 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[266] 20:34:34.950 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=sad Age=37 Gen=male Pose=Tracked
-[267] 20:34:35.213 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[268] 20:34:35.353 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[269] 20:34:35.492 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[270] 20:34:35.843 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[271] 20:34:36.057 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[272] 20:34:36.200 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[273] 20:34:36.345 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[274] 20:34:36.523 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[275] 20:34:36.678 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[276] 20:34:36.857 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[277] 20:34:36.989 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[278] 20:34:37.116 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[279] 20:34:37.254 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[280] 20:34:37.388 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[281] 20:34:37.522 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[282] 20:34:37.655 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[283] 20:34:37.782 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[284] 20:34:37.905 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[285] 20:34:38.242 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[286] 20:34:38.414 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[287] 20:34:38.621 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[288] 20:34:38.808 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[289] 20:34:38.986 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[290] 20:34:39.146 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[291] 20:34:39.307 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[292] 20:34:39.474 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[293] 20:34:39.617 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[294] 20:34:39.751 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[295] 20:34:39.881 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[296] 20:34:40.010 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[297] 20:34:40.148 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[298] 20:34:40.324 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[299] 20:34:40.447 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[300] 20:34:40.815 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[301] 20:34:40.983 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[302] 20:34:41.109 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[303] 20:34:41.240 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[304] 20:34:41.380 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[305] 20:34:41.528 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[306] 20:34:41.654 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[307] 20:34:41.855 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[308] 20:34:41.984 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[309] 20:34:42.158 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[310] 20:34:42.433 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[311] 20:34:42.569 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[312] 20:34:42.710 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[313] 20:34:42.889 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[314] 20:34:43.030 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[315] 20:34:43.401 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[316] 20:34:43.574 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[317] 20:34:43.729 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[318] 20:34:43.871 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[319] 20:34:44.000 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[320] 20:34:44.132 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[321] 20:34:44.283 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[322] 20:34:44.409 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[323] 20:34:44.577 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[324] 20:34:44.700 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[325] 20:34:44.829 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[326] 20:34:44.961 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[327] 20:34:45.085 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[328] 20:34:45.208 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[329] 20:34:45.350 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[330] 20:34:45.708 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[331] 20:34:45.871 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[332] 20:34:46.047 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[333] 20:34:46.208 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[334] 20:34:46.374 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[335] 20:34:46.671 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[336] 20:34:46.827 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[337] 20:34:46.955 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[338] 20:34:47.093 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[339] 20:34:47.237 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[340] 20:34:47.358 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[341] 20:34:47.515 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[342] 20:34:47.641 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[343] 20:34:47.797 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[344] 20:34:47.927 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[345] 20:34:48.303 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[346] 20:34:48.501 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[347] 20:34:48.648 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[348] 20:34:48.825 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[349] 20:34:48.959 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[350] 20:34:49.103 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[351] 20:34:49.239 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[352] 20:34:49.371 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[353] 20:34:49.506 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[354] 20:34:49.638 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[355] 20:34:49.767 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[356] 20:34:49.977 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[357] 20:34:50.177 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[358] 20:34:50.348 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[359] 20:34:50.516 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[360] 20:34:50.889 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[361] 20:34:51.111 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[362] 20:34:51.300 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[363] 20:34:51.525 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[364] 20:34:51.689 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[365] 20:34:52.058 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[366] 20:34:52.221 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[367] 20:34:52.383 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[368] 20:34:52.523 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[369] 20:34:52.653 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[370] 20:34:52.791 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[371] 20:34:52.923 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[372] 20:34:53.071 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[373] 20:34:53.196 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[374] 20:34:53.330 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[375] 20:34:53.755 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[376] 20:34:53.923 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[377] 20:34:54.223 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[378] 20:34:54.365 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[379] 20:34:54.529 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[380] 20:34:54.658 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[381] 20:34:54.834 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[382] 20:34:54.973 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[383] 20:34:55.099 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[384] 20:34:55.324 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked
-[385] 20:34:55.483 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[386] 20:34:55.775 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[387] 20:34:55.907 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[388] 20:34:56.055 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[389] 20:34:56.193 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=39 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[390] 20:34:56.567 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[391] 20:34:56.732 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[392] 20:34:56.908 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[393] 20:34:57.057 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[394] 20:34:57.191 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[395] 20:34:57.373 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[396] 20:34:57.517 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[397] 20:34:57.649 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[398] 20:34:57.805 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[399] 20:34:57.929 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[400] 20:34:58.059 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[401] 20:34:58.206 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[402] 20:34:58.341 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[403] 20:34:58.621 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[404] 20:34:58.750 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[405] 20:34:59.133 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[406] 20:34:59.302 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[407] 20:34:59.456 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[408] 20:34:59.677 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[409] 20:34:59.870 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[410] 20:35:00.004 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[411] 20:35:00.178 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[412] 20:35:00.327 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[413] 20:35:00.483 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[414] 20:35:00.615 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[415] 20:35:00.745 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[416] 20:35:00.882 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[417] 20:35:01.008 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[418] 20:35:01.142 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[419] 20:35:01.317 | ID 1: FER=sad Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[420] 20:35:01.661 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[421] 20:35:01.833 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | Interaction(1&2): Physical Contact
-[422] 20:35:02.011 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[423] 20:35:02.141 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[424] 20:35:02.277 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[425] 20:35:02.407 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[426] 20:35:02.533 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[427] 20:35:02.673 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[428] 20:35:02.819 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[429] 20:35:02.977 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[430] 20:35:03.107 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[431] 20:35:03.247 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[432] 20:35:03.385 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[433] 20:35:03.532 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[434] 20:35:03.667 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[435] 20:35:04.058 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[436] 20:35:04.222 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[437] 20:35:04.393 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[438] 20:35:04.543 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[439] 20:35:04.689 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[440] 20:35:04.844 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[441] 20:35:05.122 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[442] 20:35:05.273 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[443] 20:35:05.434 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[444] 20:35:05.569 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[445] 20:35:05.707 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[446] 20:35:05.847 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[447] 20:35:05.993 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[448] 20:35:06.138 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[449] 20:35:06.311 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=41 Gen=female Pose=Tracked
-[450] 20:35:06.719 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[451] 20:35:06.887 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[452] 20:35:07.027 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[453] 20:35:07.163 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[454] 20:35:07.290 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[455] 20:35:07.569 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[456] 20:35:07.745 | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[457] 20:35:07.879 | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[458] 20:35:08.019 | ID 2: FER=sad Age=40 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[459] 20:35:08.180 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[460] 20:35:08.345 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[461] 20:35:08.478 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[462] 20:35:08.598 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[463] 20:35:08.744 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[464] 20:35:08.886 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=40 Gen=female Pose=Tracked
-[465] 20:35:09.369 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[466] 20:35:09.535 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[467] 20:35:09.697 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[468] 20:35:09.827 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[469] 20:35:09.985 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[470] 20:35:10.114 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[471] 20:35:10.246 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[472] 20:35:10.373 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[473] 20:35:10.513 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[474] 20:35:10.647 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[475] 20:35:10.790 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[476] 20:35:10.923 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[477] 20:35:11.090 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[478] 20:35:11.238 | ID 1: FER=sad Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=38 Gen=female Pose=Tracked
-[479] 20:35:11.374 | ID 2: FER=sad Age=38 Gen=female Pose=Tracked | ID 1: FER=sad Age=38 Gen=male Pose=Tracked
-[480] 20:35:11.745 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[481] 20:35:11.925 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[482] 20:35:12.109 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[483] 20:35:12.292 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[484] 20:35:12.418 | ID 1: FER=sad Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=37 Gen=female Pose=Tracked
-[485] 20:35:12.553 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[486] 20:35:12.742 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[487] 20:35:12.876 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[488] 20:35:13.080 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[489] 20:35:13.219 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[490] 20:35:13.379 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[491] 20:35:13.550 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[492] 20:35:13.680 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[493] 20:35:13.804 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[494] 20:35:13.946 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[495] 20:35:14.315 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[496] 20:35:14.469 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[497] 20:35:14.635 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[498] 20:35:14.893 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[499] 20:35:15.051 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[500] 20:35:15.234 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[501] 20:35:15.383 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[502] 20:35:15.524 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[503] 20:35:15.700 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[504] 20:35:15.832 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[505] 20:35:15.963 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[506] 20:35:16.098 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[507] 20:35:16.225 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[508] 20:35:16.391 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[509] 20:35:16.517 | ID 2: FER=sad Age=37 Gen=female Pose=Tracked | ID 1: FER=sad Age=39 Gen=male Pose=Tracked
-[510] 20:35:16.906 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[511] 20:35:17.067 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[512] 20:35:17.195 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[513] 20:35:17.341 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[514] 20:35:17.512 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[515] 20:35:17.644 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[516] 20:35:17.773 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[517] 20:35:17.906 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[518] 20:35:18.069 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[519] 20:35:18.214 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[520] 20:35:18.360 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[521] 20:35:18.534 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[522] 20:35:18.695 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[523] 20:35:18.849 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
-[524] 20:35:18.981 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[525] 20:35:19.352 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[526] 20:35:19.540 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[527] 20:35:19.723 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[528] 20:35:19.921 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[529] 20:35:20.107 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[530] 20:35:20.271 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[531] 20:35:20.442 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[532] 20:35:20.573 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[533] 20:35:20.736 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[534] 20:35:20.878 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[535] 20:35:21.025 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[536] 20:35:21.153 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[537] 20:35:21.285 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[538] 20:35:21.419 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=34 Gen=female Pose=Tracked
-[539] 20:35:21.617 | ID 2: FER=sad Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[540] 20:35:22.019 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[541] 20:35:22.186 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[542] 20:35:22.358 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[543] 20:35:22.522 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[544] 20:35:22.659 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[545] 20:35:22.787 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[546] 20:35:22.912 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[547] 20:35:23.069 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[548] 20:35:23.204 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[549] 20:35:23.361 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[550] 20:35:23.483 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[551] 20:35:23.633 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=33 Gen=female Pose=Tracked
-[552] 20:35:23.762 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[553] 20:35:23.913 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[554] 20:35:24.041 | ID 2: FER=sad Age=33 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[555] 20:35:24.410 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[556] 20:35:24.574 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[557] 20:35:24.726 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[558] 20:35:24.884 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[559] 20:35:25.073 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[560] 20:35:25.227 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[561] 20:35:25.353 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[562] 20:35:25.499 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[563] 20:35:25.655 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[564] 20:35:25.796 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[565] 20:35:25.923 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[566] 20:35:26.085 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[567] 20:35:26.216 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[568] 20:35:26.352 | ID 2: FER=sad Age=31 Gen=female Pose=Tracked | ID 1: FER=happy Age=39 Gen=male Pose=Tracked
-[569] 20:35:26.483 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=31 Gen=female Pose=Tracked
-[570] 20:35:26.871 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[571] 20:35:27.037 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[572] 20:35:27.294 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[573] 20:35:27.445 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[574] 20:35:27.572 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[575] 20:35:27.718 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[576] 20:35:28.119 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[577] 20:35:28.407 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[578] 20:35:28.606 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[579] 20:35:28.747 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[580] 20:35:28.921 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[581] 20:35:29.225 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[582] 20:35:29.381 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[583] 20:35:29.552 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[584] 20:35:29.736 | ID 1: FER=happy Age=39 Gen=male Pose=Tracked | ID 2: FER=sad Age=30 Gen=female Pose=Tracked
-[585] 20:35:30.146 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[586] 20:35:30.337 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[587] 20:35:30.532 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[588] 20:35:30.948 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[589] 20:35:31.134 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[590] 20:35:31.302 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[591] 20:35:31.450 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[592] 20:35:31.684 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[593] 20:35:32.014 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[594] 20:35:32.207 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[595] 20:35:32.408 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[596] 20:35:32.565 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[597] 20:35:32.724 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[598] 20:35:32.897 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[599] 20:35:33.702 | ID 1: FER=happy Age=38 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[600] 20:35:34.503 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[601] 20:35:34.687 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[602] 20:35:34.886 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[603] 20:35:35.060 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[604] 20:35:35.243 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[605] 20:35:35.407 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[606] 20:35:35.718 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[607] 20:35:35.898 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[608] 20:35:36.056 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[609] 20:35:36.190 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[610] 20:35:36.352 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[611] 20:35:36.497 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[612] 20:35:36.706 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[613] 20:35:36.859 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[614] 20:35:37.004 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=29 Gen=female Pose=Tracked
-[615] 20:35:37.389 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[616] 20:35:37.583 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[617] 20:35:37.741 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[618] 20:35:37.886 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[619] 20:35:38.050 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[620] 20:35:38.213 | ID 1: FER=happy Age=37 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[621] 20:35:38.372 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[622] 20:35:38.509 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[623] 20:35:38.665 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[624] 20:35:38.813 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[625] 20:35:38.995 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[626] 20:35:39.302 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[627] 20:35:39.442 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[628] 20:35:39.593 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[629] 20:35:39.753 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=37 Gen=male Pose=Tracked
-[630] 20:35:40.249 | ID 1: FER=happy Age=36 Gen=male Pose=Tracked | ID 2: FER=sad Age=27 Gen=female Pose=Tracked
-[631] 20:35:40.416 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[632] 20:35:40.605 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[633] 20:35:40.801 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[634] 20:35:40.985 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[635] 20:35:41.216 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[636] 20:35:41.417 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[637] 20:35:41.578 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
-[638] 20:35:41.730 | ID 2: FER=sad Age=27 Gen=female Pose=Tracked | ID 1: FER=happy Age=36 Gen=male Pose=Tracked
+[1] 00:02:49.577 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[2] 00:02:49.743 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[3] 00:02:49.893 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[4] 00:02:50.066 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[5] 00:02:50.222 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[6] 00:02:50.438 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[7] 00:02:50.632 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[8] 00:02:50.859 | ID 2: Pose=Tracked | ID 1: Pose=Tracked
+[9] 00:02:51.000 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[10] 00:02:51.217 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[11] 00:02:51.438 | ID 1: Pose=Tracked | ID 2: Pose=Tracked
+[12] 00:02:51.609 | ID 2: Pose=Tracked | ID 1: Pose=Tracked | ID 4: Pose=Tracked
+[13] 00:02:51.908 | ID 2: Pose=Tracked | ID 1: Pose=Tracked | ID 4: Pose=Tracked
+[14] 00:02:52.067 | ID 1: Pose=Tracked | ID 2: Pose=Tracked | ID 4: Pose=Tracked
+[15] 00:02:52.913 | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked
+[16] 00:02:53.137 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked
+[17] 00:02:53.301 | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked
+[18] 00:02:53.453 | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: Pose=Tracked
+[19] 00:02:53.667 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked
+[20] 00:02:53.831 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked
+[21] 00:02:53.999 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked
+[22] 00:02:54.167 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked
+[23] 00:02:54.406 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked | ID 4: Pose=Tracked
+[24] 00:02:54.603 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked | ID 4: Pose=Tracked
+[25] 00:02:54.788 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked | ID 4: Pose=Tracked
+[26] 00:02:54.977 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 5: Pose=Tracked
+[27] 00:02:55.199 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked | ID 5: Pose=Tracked
+[28] 00:02:55.384 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 5: Pose=Tracked | ID 4: Pose=Tracked
+[29] 00:02:55.613 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=32 Gen=female Pose=Tracked | ID 4: Pose=Tracked | ID 5: Pose=Tracked
+[30] 00:02:56.882 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[31] 00:02:57.043 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[32] 00:02:57.241 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[33] 00:02:57.415 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[34] 00:02:57.571 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[35] 00:02:57.767 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[36] 00:02:57.924 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[37] 00:02:58.111 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[38] 00:02:58.284 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[39] 00:02:58.495 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[40] 00:02:58.764 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[41] 00:02:58.982 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[42] 00:02:59.165 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[43] 00:02:59.385 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked | Interaction(1&2): Walking Together
+[44] 00:02:59.556 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=47 Gen=male Pose=Tracked
+[45] 00:03:00.643 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked
+[46] 00:03:00.837 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | Interaction(4&4): Walking Together
+[47] 00:03:01.021 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | Interaction(1&4): Approaching | Interaction(4&4): Walking Together
+[48] 00:03:01.173 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | Interaction(1&4): Approaching
+[49] 00:03:01.326 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked
+[50] 00:03:01.501 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | Interaction(4&4): Walking Together
+[51] 00:03:01.653 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked
+[52] 00:03:01.799 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked
+[53] 00:03:01.968 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
+[54] 00:03:02.114 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked
+[55] 00:03:02.292 | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | ID 4: FER=sad Age=33 Gen=male Pose=Tracked | Interaction(4&4): Walking Together
+[56] 00:03:02.453 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
+[57] 00:03:02.641 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[58] 00:03:02.778 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
+[59] 00:03:02.926 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=sad Age=36 Gen=female Pose=Tracked
+[60] 00:03:03.796 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked
+[61] 00:03:03.960 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked
+[62] 00:03:04.127 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[63] 00:03:04.276 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[64] 00:03:04.441 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked | Interaction(1&2): Walking Together
+[65] 00:03:04.589 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[66] 00:03:04.741 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked | Interaction(1&2): Walking Together
+[67] 00:03:04.880 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked | Interaction(1&2): Walking Together
+[68] 00:03:05.007 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | Interaction(1&2): Walking Together
+[69] 00:03:05.181 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | Interaction(1&2): Walking Together
+[70] 00:03:05.338 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked
+[71] 00:03:05.502 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[72] 00:03:05.648 | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[73] 00:03:05.792 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[74] 00:03:05.963 | ID 2: FER=neutral Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Pose=Tracked | ID 5: FER=angry Age=36 Gen=male Pose=Tracked
+[75] 00:03:06.796 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[76] 00:03:06.946 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked
+[77] 00:03:07.140 | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked
+[78] 00:03:07.292 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked
+[79] 00:03:07.431 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked
+[80] 00:03:07.578 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked
+[81] 00:03:07.740 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked
+[82] 00:03:07.892 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[83] 00:03:08.049 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[84] 00:03:08.215 | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[85] 00:03:08.367 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[86] 00:03:08.523 | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[87] 00:03:08.691 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[88] 00:03:08.853 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[89] 00:03:09.008 | ID 2: FER=neutral Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=35 Gen=male Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[90] 00:03:09.486 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[91] 00:03:09.648 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[92] 00:03:09.851 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[93] 00:03:09.991 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[94] 00:03:10.138 | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[95] 00:03:10.289 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[96] 00:03:10.453 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[97] 00:03:10.603 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[98] 00:03:10.761 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[99] 00:03:10.933 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[100] 00:03:11.105 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[101] 00:03:11.259 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[102] 00:03:11.409 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[103] 00:03:11.569 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[104] 00:03:11.732 | ID 5: FER=angry Age=34 Gen=female Pose=Tracked | ID 2: FER=happy Age=36 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[105] 00:03:12.234 | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[106] 00:03:12.397 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[107] 00:03:12.549 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[108] 00:03:12.709 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked
+[109] 00:03:12.853 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[110] 00:03:13.005 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[111] 00:03:13.156 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked
+[112] 00:03:13.306 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[113] 00:03:13.462 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[114] 00:03:13.631 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[115] 00:03:13.901 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[116] 00:03:14.050 | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[117] 00:03:14.231 | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[118] 00:03:14.426 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[119] 00:03:14.591 | ID 2: FER=happy Age=35 Gen=female Mood=Stable → Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[120] 00:03:15.106 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked
+[121] 00:03:15.277 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked
+[122] 00:03:15.429 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked
+[123] 00:03:15.588 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[124] 00:03:15.748 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked
+[125] 00:03:15.898 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked
+[126] 00:03:16.038 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 5: FER=sad Age=35 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[127] 00:03:16.157 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[128] 00:03:16.276 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[129] 00:03:16.395 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[130] 00:03:16.525 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[131] 00:03:16.642 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[132] 00:03:16.792 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[133] 00:03:16.917 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[134] 00:03:17.038 | ID 2: FER=happy Age=34 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=35 Gen=female Mood=Declining ↘ Pose=Tracked
+[135] 00:03:17.396 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[136] 00:03:17.530 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[137] 00:03:17.653 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[138] 00:03:17.790 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[139] 00:03:17.920 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[140] 00:03:18.056 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[141] 00:03:18.189 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[142] 00:03:18.312 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[143] 00:03:18.449 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[144] 00:03:18.567 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[145] 00:03:18.683 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[146] 00:03:18.799 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[147] 00:03:18.927 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[148] 00:03:19.046 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[149] 00:03:19.163 | ID 2: FER=happy Age=33 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=happy Age=34 Gen=female Mood=Declining ↘ Pose=Tracked
+[150] 00:03:19.491 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[151] 00:03:19.627 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[152] 00:03:19.751 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[153] 00:03:19.873 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[154] 00:03:20.003 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[155] 00:03:20.126 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[156] 00:03:20.257 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[157] 00:03:20.380 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[158] 00:03:20.503 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[159] 00:03:20.626 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[160] 00:03:20.748 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[161] 00:03:20.871 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[162] 00:03:20.992 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[163] 00:03:21.117 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[164] 00:03:21.231 | ID 2: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[165] 00:03:21.530 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[166] 00:03:21.668 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[167] 00:03:21.798 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[168] 00:03:21.923 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[169] 00:03:22.043 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[170] 00:03:22.177 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[171] 00:03:22.299 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[172] 00:03:22.420 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[173] 00:03:22.543 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[174] 00:03:22.682 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[175] 00:03:22.806 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[176] 00:03:22.927 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[177] 00:03:23.050 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[178] 00:03:23.165 | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked
+[179] 00:03:23.288 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[180] 00:03:23.629 | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked
+[181] 00:03:23.771 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[182] 00:03:23.898 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[183] 00:03:24.020 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[184] 00:03:24.177 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[185] 00:03:24.309 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[186] 00:03:24.495 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[187] 00:03:24.611 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[188] 00:03:24.727 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[189] 00:03:24.875 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[190] 00:03:24.999 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[191] 00:03:25.121 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[192] 00:03:25.240 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[193] 00:03:25.370 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[194] 00:03:25.490 | ID 2: FER=happy Age=31 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=fear Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[195] 00:03:25.838 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[196] 00:03:25.974 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[197] 00:03:26.136 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[198] 00:03:26.259 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[199] 00:03:26.380 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[200] 00:03:26.503 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[201] 00:03:26.630 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[202] 00:03:26.760 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[203] 00:03:26.880 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[204] 00:03:27.035 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[205] 00:03:27.161 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[206] 00:03:27.287 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[207] 00:03:27.437 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[208] 00:03:27.574 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[209] 00:03:27.699 | ID 2: FER=happy Age=30 Gen=female Mood=Declining ↘ Pose=Tracked | ID 1: FER=happy Age=33 Gen=female Mood=Declining ↘ Pose=Tracked
+[210] 00:03:28.068 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[211] 00:03:28.223 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[212] 00:03:28.346 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[213] 00:03:28.471 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[214] 00:03:28.604 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[215] 00:03:28.741 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[216] 00:03:28.873 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[217] 00:03:29.035 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[218] 00:03:29.171 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[219] 00:03:29.295 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[220] 00:03:29.415 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[221] 00:03:29.532 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[222] 00:03:29.662 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[223] 00:03:29.789 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[224] 00:03:29.913 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Stable → Pose=Tracked
+[225] 00:03:30.273 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[226] 00:03:30.405 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[227] 00:03:30.526 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[228] 00:03:30.663 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[229] 00:03:30.799 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[230] 00:03:30.939 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[231] 00:03:31.064 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[232] 00:03:31.192 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[233] 00:03:31.310 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[234] 00:03:31.426 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[235] 00:03:31.574 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[236] 00:03:31.802 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[237] 00:03:31.946 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[238] 00:03:32.099 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[239] 00:03:32.297 | ID 2: FER=happy Age=30 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=happy Age=32 Gen=female Mood=Declining ↘ Pose=Tracked
+[240] 00:03:32.717 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[241] 00:03:32.887 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[242] 00:03:33.103 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[243] 00:03:33.242 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[244] 00:03:33.359 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[245] 00:03:33.477 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[246] 00:03:33.598 | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked
+[247] 00:03:33.724 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[248] 00:03:33.849 | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked
+[249] 00:03:33.976 | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked
+[250] 00:03:34.093 | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked
+[251] 00:03:34.217 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[252] 00:03:34.334 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[253] 00:03:34.452 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[254] 00:03:34.571 | ID 2: FER=happy Age=29 Gen=female Mood=Stable → Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Stable → Pose=Tracked
+[255] 00:03:34.917 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[256] 00:03:35.059 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[257] 00:03:35.177 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[258] 00:03:35.296 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[259] 00:03:35.417 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[260] 00:03:35.537 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[261] 00:03:35.653 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[262] 00:03:35.781 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[263] 00:03:35.899 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[264] 00:03:36.023 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[265] 00:03:36.142 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[266] 00:03:36.262 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[267] 00:03:36.386 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[268] 00:03:36.506 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[269] 00:03:36.627 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[270] 00:03:36.960 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[271] 00:03:37.099 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[272] 00:03:37.219 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[273] 00:03:37.337 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[274] 00:03:37.452 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[275] 00:03:37.567 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[276] 00:03:37.689 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[277] 00:03:37.809 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[278] 00:03:37.930 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[279] 00:03:38.053 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[280] 00:03:38.184 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[281] 00:03:38.299 | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked
+[282] 00:03:38.418 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[283] 00:03:38.534 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[284] 00:03:38.659 | ID 2: FER=happy Age=28 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=32 Gen=female Mood=Improving ↗ Pose=Tracked
+[285] 00:03:38.958 | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked
+[286] 00:03:39.099 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[287] 00:03:39.262 | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked
+[288] 00:03:39.392 | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked
+[289] 00:03:39.513 | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked
+[290] 00:03:39.638 | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked
+[291] 00:03:39.774 | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked
+[292] 00:03:39.903 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[293] 00:03:40.031 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[294] 00:03:40.159 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[295] 00:03:40.280 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[296] 00:03:40.407 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[297] 00:03:40.545 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[298] 00:03:40.663 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[299] 00:03:40.780 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=27 Gen=female Mood=Improving ↗ Pose=Tracked
+[300] 00:03:41.135 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=26 Gen=female Mood=Improving ↗ Pose=Tracked
+[301] 00:03:41.268 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=26 Gen=female Mood=Improving ↗ Pose=Tracked
+[302] 00:03:41.392 | ID 1: FER=fear Age=31 Gen=female Mood=Improving ↗ Pose=Tracked | ID 2: FER=happy Age=26 Gen=female Mood=Improving ↗ Pose=Tracked

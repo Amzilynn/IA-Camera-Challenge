@@ -1,6 +1,6 @@
 import numpy as np
 import time
-from collections import deque
+from collections import deque, defaultdict
 
 class SocialAnalyzer:
     """
@@ -25,8 +25,20 @@ class SocialAnalyzer:
             'interaction_durations': {}, # {(id1, id2, type): total_seconds}
             'approach_times': {},        # {(id1, id2): [durations]}
             'waiting_durations': {},     # {id: total_seconds}
-            'service_counts': {}         # {(id1, id2): count}
+            'service_counts': {},        # {(id1, id2): count}
+            'personal_space_violations': {}, # {id: total_seconds}
+            'emotion_trajectories': {}   # {id: [emotions]}
         }
+        
+        # New: Interaction Smoothing Buffer
+        # {(id1, id2): deque([itype, itype, ...])}
+        self.interaction_buffer = defaultdict(lambda: deque(maxlen=10)) 
+        
+        # New: Group management
+        self.groups = [] # List of sets {id1, id2, ...}
+        
+        # New: Role discovery stats
+        self.role_stats = {} # {id: {'total_distance': 0, 'unique_interactions': set(), 'time_in_scene': 0}}
 
     def _get_center(self, bbox):
         x1, y1, x2, y2 = bbox
@@ -113,10 +125,19 @@ class SocialAnalyzer:
                 pair_ids = tuple(sorted((id1, id2)))
                 
                 interaction_type = self._detect_pair_interaction(det_a, det_b)
-                if interaction_type:
-                    state_key = (pair_ids[0], pair_ids[1], interaction_type)
-                    current_pair_states.add(state_key)
-                    found_interactions.append({'ids': pair_ids, 'type': interaction_type})
+                
+                # 1b. Smooth the interaction (Temporal Consensus)
+                self.interaction_buffer[pair_ids].append(interaction_type)
+                
+                # Only "confirm" the interaction if it appears in > 70% of recent frames
+                recent = [i for i in self.interaction_buffer[pair_ids] if i is not None]
+                if recent:
+                    from collections import Counter
+                    most_common, count = Counter(recent).most_common(1)[0]
+                    if count >= 7: # 7 out of 10 frames
+                        state_key = (pair_ids[0], pair_ids[1], most_common)
+                        current_pair_states.add(state_key)
+                        found_interactions.append({'ids': pair_ids, 'type': most_common})
 
         # 2. Update interaction durations and counts
         # Handle ended interactions
@@ -142,13 +163,31 @@ class SocialAnalyzer:
                     pair = (key[0], key[1])
                     self.metrics['service_counts'][pair] = self.metrics['service_counts'].get(pair, 0) + 1
 
-        # 3. Waiting Duration Logic & Person Statuses
+        # 3. Group Clustering (Connected Components of interactions)
+        self.groups = self._cluster_groups(current_pair_states)
+        
+        # 4. Waiting Duration, Space Violations & Role Stats
         socially_engaged = {tid for (id1, id2, itype) in self.active_interactions if itype in ["Talking", "Service/Helping"] for tid in (id1, id2)}
         
         person_statuses = {}
         for det in tracked_dets:
             tid = det['track_id']
             is_static = self.is_stationary(tid)
+            
+            # Update role stats
+            if tid not in self.role_stats:
+                self.role_stats[tid] = {'total_distance': 0, 'unique_interactions': set(), 'start_time': current_time}
+            
+            # Track distance for role discovery
+            hist = self.history[tid]
+            if len(hist) > 1:
+                dist = np.linalg.norm(hist[-1]['pos'] - hist[-2]['pos'])
+                self.role_stats[tid]['total_distance'] += dist
+            
+            # Track space violations (Social Force lite)
+            space_violation = self._check_space_violation(tid, tracked_dets)
+            if space_violation:
+                self.metrics['personal_space_violations'][tid] = self.metrics['personal_space_violations'].get(tid, 0) + self.dt
             
             # Update waiting duration metrics
             if is_static and tid not in socially_engaged:
@@ -160,13 +199,19 @@ class SocialAnalyzer:
                     self.metrics['waiting_durations'][tid] = self.metrics['waiting_durations'].get(tid, 0) + duration
                     del self.active_waiting[tid]
             
+            # Determine Role (Heuristic)
+            role = self._discover_role(tid, current_time)
+            
             # Compile status for satisfaction analysis
             person_statuses[tid] = {
                 'stationary': is_static,
                 'engaged': tid in socially_engaged,
                 'interaction_type': next((itype for (id1, id2, itype) in self.active_interactions if tid in (id1, id2)), None),
                 'posture': self._detect_posture(det),
-                'activity': self._detect_movement(tid)
+                'activity': self._detect_movement(tid),
+                'space_violated': space_violation,
+                'role': role,
+                'group_id': self._get_group_id(tid)
             }
 
         return found_interactions, person_statuses
@@ -252,9 +297,18 @@ class SocialAnalyzer:
         curr_a, curr_b = hist_a[-1], hist_b[-1]
         prev_a, prev_b = hist_a[-2], hist_b[-2]
         
-        # 1. SPATIAL FEATURES
+        # 1. SPATIAL FEATURES (Perspective Aware)
         pos_a, pos_b = curr_a['pos'], curr_b['pos']
         dist = np.linalg.norm(pos_a - pos_b)
+        
+        # Get average height of the two people to scale thresholds
+        h_a = curr_a['bbox'][3] - curr_a['bbox'][1]
+        h_b = curr_b['bbox'][3] - curr_b['bbox'][1]
+        avg_h = (h_a + h_b) / 2
+        
+        # Thresholds scaled by person height (Social context: 0.8h is close, 1.5h is social)
+        PROXIMITY_THRES = avg_h * 0.8
+        WALKING_THRES = avg_h * 1.2
         
         # Facing logic
         vector_a_to_b = pos_b - pos_a
@@ -264,7 +318,7 @@ class SocialAnalyzer:
         angle_a = self._calculate_angle(facing_a, vector_a_to_b) if facing_a is not None else 180
         angle_b = self._calculate_angle(facing_b, -vector_a_to_b) if facing_b is not None else 180
         
-        facing_each_other = angle_a < 45 and angle_b < 45
+        facing_each_other = angle_a < 50 and angle_b < 50
         
         # 2. TEMPORAL FEATURES
         vel_a = (pos_a - prev_a['pos']) / self.dt
@@ -279,29 +333,101 @@ class SocialAnalyzer:
         recent_a = list(hist_a)[-self.fps:]
         avg_speed_a = np.mean([np.linalg.norm(recent_a[k]['pos'] - recent_a[k-1]['pos'])/self.dt for k in range(1, len(recent_a))]) if len(recent_a)>1 else speed_a
         
-        # 3. HEURISTICS
-        
-        # Rule 1: Talking
-        if dist < 150 and facing_each_other and avg_speed_a < 10:
+        # Rule 1: Talking (Facing + Close + Stationary)
+        if dist < PROXIMITY_THRES and facing_each_other and avg_speed_a < 15:
             return "Talking"
             
-        # Rule 2: Approaching
-        if approach_rate < -50 and (angle_a < 60 or angle_b < 60):
-            return "Approaching"
-            
-        # Rule 3: Walking Together
-        if dist < 200 and speed_a > 20 and speed_b > 20:
+        # Rule 2: Walking Together (Moving fast + same direction + close)
+        if dist < WALKING_THRES and speed_a > 20 and speed_b > 20:
             vel_sim = np.dot(vel_a, vel_b) / (speed_a * speed_b + 1e-6)
-            if vel_sim > 0.8:
+            if vel_sim > 0.85:
                 return "Walking Together"
+
+        # Rule 3: Approaching (Distance is closing fast + facing)
+        if approach_rate < -60 and dist > PROXIMITY_THRES and (angle_a < 45 or angle_b < 45):
+            return "Approaching"
                 
-        # Rule 4: Physical Contact
+        # Rule 4: Physical Contact (IoU Based)
         iou = self._compute_iou(det_a['bbox'], det_b['bbox'])
-        if iou > 0.1:
+        if iou > 0.15: # Increased threshold for less noise
             return "Physical Contact"
             
-        # Rule 5: Service (Heuristic: one stationary, one close/facing)
-        if dist < 180 and (avg_speed_a < 5) and facing_each_other:
+        # Rule 5: Service/Helping
+        if dist < PROXIMITY_THRES * 1.2 and (avg_speed_a < 8) and facing_each_other:
             return "Service/Helping"
 
         return None
+
+    def _cluster_groups(self, pair_states):
+        """Find connected components of interacting people."""
+        adj = defaultdict(set)
+        for id1, id2, itype in pair_states:
+            if itype in ["Talking", "Walking Together", "Physical Contact"]:
+                adj[id1].add(id2)
+                adj[id2].add(id1)
+        
+        groups = []
+        visited = set()
+        for node in adj:
+            if node not in visited:
+                group = set()
+                stack = [node]
+                while stack:
+                    curr = stack.pop()
+                    if curr not in visited:
+                        visited.add(curr)
+                        group.add(curr)
+                        stack.extend(adj[curr] - visited)
+                if len(group) > 1:
+                    groups.append(group)
+        return groups
+
+    def _get_group_id(self, track_id):
+        for i, group in enumerate(self.groups):
+            if track_id in group:
+                return i
+        return -1
+
+    def _check_space_violation(self, track_id, all_detections):
+        """Social Force: Detect if someone is too deep in personal bubble."""
+        if track_id not in self.history: return False
+        pos_self = self.history[track_id][-1]['pos']
+        
+        for det in all_detections:
+            tid = det['track_id']
+            if tid == track_id: continue
+            
+            pos_other = self._get_center(det['bbox'])
+            dist = np.linalg.norm(pos_self - pos_other)
+            
+            # Intimate space (< 50px) is a violation if not in same group
+            if dist < 60:
+                if self._get_group_id(track_id) == -1 or self._get_group_id(track_id) != self._get_group_id(tid):
+                    return True
+        return False
+
+    def _discover_role(self, track_id, current_time):
+        """Unsupervised Role Discovery based on mobility and Social Network centrality."""
+        stats = self.role_stats.get(track_id)
+        if not stats: return "Unknown"
+        
+        # Add current partner to interaction set
+        for (id1, id2, itype) in self.active_interactions:
+            if track_id == id1: stats['unique_interactions'].add(id2)
+            if track_id == id2: stats['unique_interactions'].add(id1)
+            
+        time_elapsed = current_time - stats['start_time']
+        
+        # Heuristic: Staff move a lot and talk to many different people
+        if time_elapsed > 30: # Need at least 30s of data
+            mobility = stats['total_distance'] / time_elapsed
+            social_reach = len(stats['unique_interactions'])
+            
+            if mobility > 40 and social_reach >= 2:
+                return "Staff"
+            elif mobility < 15 and social_reach <= 1:
+                return "Visitor (Stationary)"
+            else:
+                return "Visitor (Mobile)"
+                
+        return "Analyzing..."

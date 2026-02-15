@@ -31,7 +31,7 @@ class YOLODetector:
     def __init__(self,
                  human_model_path="yolov8m.pt",
                  pose_model_path="yolov8m-pose.pt",
-                 face_model_path="C:/Users/Dr.console/Desktop/IA-Camera-Challenge/cv_pipeline/models/yolov8n-face.pt"):
+                 face_model_path="models/yolov8n-face.pt"):
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"Using device: {self.device}")
@@ -98,12 +98,14 @@ class YOLODetector:
                     "faces": []
                 }
 
+                # Prepare crop for Pose Fallback or Face Detection
+                human_crop, offset = self._crop_region(frame, det["bbox"], margin=0.05)
+
                 # 2️⃣ POSE ESTIMATION (RTMPose Primary, YOLO Fallback)
                 if self.rtm_pose:
                     kpts = self.rtm_pose.estimate(frame, det["bbox"])
                     det["pose_keypoints"] = kpts
                 else:
-                    human_crop, offset = self._crop_region(frame, det["bbox"], margin=0.05)
                     if human_crop.size > 0:
                         pose_res = self.pose_model(
                             human_crop,
