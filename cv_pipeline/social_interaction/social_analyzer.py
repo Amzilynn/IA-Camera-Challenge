@@ -164,10 +164,68 @@ class SocialAnalyzer:
             person_statuses[tid] = {
                 'stationary': is_static,
                 'engaged': tid in socially_engaged,
-                'interaction_type': next((itype for (id1, id2, itype) in self.active_interactions if tid in (id1, id2)), None)
+                'interaction_type': next((itype for (id1, id2, itype) in self.active_interactions if tid in (id1, id2)), None),
+                'posture': self._detect_posture(det),
+                'activity': self._detect_movement(tid)
             }
 
         return found_interactions, person_statuses
+
+    def _detect_posture(self, det):
+        """
+        Detect posture (Standing, Sitting, Bending) based on keypoints and bbox aspect ratio.
+        """
+        bbox = det['bbox']
+        kpts = det.get('pose_keypoints')
+        x1, y1, x2, y2 = bbox
+        w, h = x2 - x1, y2 - y1
+        aspect_ratio = h / (w + 1e-6)
+
+        if kpts is not None:
+            # Indices: 11, 12: Hips, 15, 16: Ankles
+            if len(kpts) > 16:
+                hip_y = (kpts[11][1] + kpts[12][1]) / 2
+                ankle_y = (kpts[15][1] + kpts[16][1]) / 2
+                shoulder_y = (kpts[5][1] + kpts[6][1]) / 2
+                
+                torso_h = hip_y - shoulder_y
+                leg_h = ankle_y - hip_y
+                
+                if leg_h < 0.5 * torso_h and aspect_ratio < 1.4:
+                    return "Sitting"
+                elif hip_y > y1 + 0.7 * h: # Hips very low in box
+                    return "Crouching"
+                
+        if aspect_ratio > 1.8:
+            return "Standing"
+        elif aspect_ratio < 0.8:
+            return "Lying Down"
+        elif aspect_ratio < 1.2:
+            return "Sitting/Bending"
+        
+        return "Unknown"
+
+    def _detect_movement(self, track_id):
+        """
+        Classify movement activity (Stationary, Walking, Running).
+        """
+        if track_id not in self.history or len(self.history[track_id]) < self.fps:
+            return "Unknown"
+            
+        recent = list(self.history[track_id])[-self.fps:]
+        speeds = []
+        for k in range(1, len(recent)):
+            d = np.linalg.norm(recent[k]['pos'] - recent[k-1]['pos'])
+            speeds.append(d / self.dt)
+            
+        avg_speed = np.mean(speeds)
+        
+        if avg_speed < 15:
+            return "Stationary"
+        elif avg_speed < 60:
+            return "Walking"
+        else:
+            return "Running"
 
     def is_stationary(self, track_id, threshold=10):
         if track_id not in self.history or len(self.history[track_id]) < self.fps:

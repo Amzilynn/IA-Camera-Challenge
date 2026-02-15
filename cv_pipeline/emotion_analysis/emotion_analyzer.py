@@ -42,7 +42,7 @@ class EmotionAnalyzer:
                 img_path=face_crop,
                 actions=['emotion'],
                 enforce_detection=False, 
-                detector_backend=self.backend,
+                detector_backend='skip', # Redundant detection skipped
                 silent=True
             )
             
@@ -84,7 +84,7 @@ class EmotionAnalyzer:
                 img_path=face_crop,
                 model_name="Facenet",
                 enforce_detection=False,
-                detector_backend=self.backend
+                detector_backend='skip'
             )
             if embeddings:
                 return np.array(embeddings[0]["embedding"])

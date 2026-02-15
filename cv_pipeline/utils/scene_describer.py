@@ -22,14 +22,28 @@ class SceneDescriber:
                 
             desc = f"ID {track_id}: "
             if 'emotion' in det and det['emotion']:
-                desc += f"Emotion={det['emotion']} "
+                desc += f"FER={det['emotion']} "
             if 'age' in det and det['age']:
                 desc += f"Age={det['age']} "
             if 'gender' in det and det['gender']:
-                desc += f"Gender={det['gender']} "
+                desc += f"Gen={det['gender']} "
+            
+            # New attributes from social analyzer
+            if 'posture' in det:
+                desc += f"Pos={det['posture']} "
+            if 'activity' in det:
+                desc += f"Act={det['activity']} "
+            
+            # Spatial Position (Normalized % of frame)
+            x1, y1, x2, y2 = det['bbox']
+            cx, cy = (x1+x2)/2, (y1+y2)/2
+            # Assuming we don't have frame width/height here, 
+            # we can just use raw or pass them. 
+            # For now, let's keep it simple as the user might just want the posture.
+            
             if 'pose_keypoints' in det and det['pose_keypoints'] is not None:
                 desc += "Pose=Tracked "
-            descriptions.append(desc)
+            descriptions.append(desc.strip())
             
         # 2. Social Interactions
         if interactions:

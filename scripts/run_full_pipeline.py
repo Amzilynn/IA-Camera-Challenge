@@ -39,7 +39,13 @@ def run_pipeline(video_path, output_path="output.avi"):
     # Output video writer
     # MJPG (avi) is widely supported on Windows without extra dlls
     fourcc = cv2.VideoWriter_fourcc(*'MJPG') 
-    out_writer = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+    
+    # Adjust output dimensions if we plan to downscale
+    out_width, out_height = width, height
+    if width > 1920:
+        out_width, out_height = 1920, 1080
+        
+    out_writer = cv2.VideoWriter(output_path, fourcc, fps, (out_width, out_height))
 
     # Initialize Modules (Optimized for GTX 1650 / 16GB RAM)
     # Switched from Large/XLarge to Medium (yolov8m) for better balance of speed/accuracy
@@ -57,7 +63,7 @@ def run_pipeline(video_path, output_path="output.avi"):
         return
         
     # pose_estimator = PoseEstimator() # DISABLED: Unstable on crops. Using YOLO native.
-    emotion_analyzer = EmotionAnalyzer()
+    emotion_analyzer = EmotionAnalyzer(backend='opencv') # Fast initialization
     mivolo_analyzer = MivoloAnalyzer()
     social_analyzer = SocialAnalyzer(fps=fps)
     scene_describer = SceneDescriber(log_file="scene_log.txt")
@@ -88,6 +94,10 @@ def run_pipeline(video_path, output_path="output.avi"):
         ret, frame = cap.read()
         if not ret:
             break
+            
+        # Optimization: Downscale 4K to 1080p for significantly faster processing
+        if width > 1920:
+            frame = cv2.resize(frame, (1920, 1080))
             
         frame_count += 1
         
@@ -153,7 +163,8 @@ def run_pipeline(video_path, output_path="output.avi"):
                 }
             
             # --- Emotion/Age/Gender Analysis ---
-            if frame_count % 5 == 0:
+            # Increased stride for 4K/heavy videos
+            if frame_count % 15 == 0:
                 # Prefer face detection box if available
                 analysis_bbox = None
                 if det['faces']:
@@ -227,7 +238,13 @@ def run_pipeline(video_path, output_path="output.avi"):
                 sd['track_id'] = d['track_id_original']
             social_detections.append(sd)
             
-        interactions, _ = social_analyzer.analyze(social_detections)
+        interactions, person_statuses = social_analyzer.analyze(social_detections)
+        
+        # Update original detections with status info (posture, etc.)
+        for det in detections:
+            tid = det.get('track_id_original', det.get('track_id'))
+            if tid in person_statuses:
+                det.update(person_statuses[tid])
 
         # 7. Scene Description
         desc_text = scene_describer.describe(social_detections, frame_count, interactions)

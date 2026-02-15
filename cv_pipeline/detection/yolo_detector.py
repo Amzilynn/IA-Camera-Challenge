@@ -2,6 +2,7 @@ from ultralytics import YOLO
 import cv2
 import numpy as np
 import torch
+from cv_pipeline.pose_estimation.rtm_pose import RTMPoseEstimator
 
 # Configuration constants
 
@@ -43,6 +44,14 @@ class YOLODetector:
         except:
             print("I: YOLO face model not found. Using DeepFace fallback for analysis.")
             self.face_model = None
+
+        # 4️⃣ RTMPose (Absolute Best for this project)
+        try:
+            self.rtm_pose = RTMPoseEstimator(device=self.device)
+            print("I: RTMPose initialized successfully.")
+        except Exception as e:
+            print(f"W: RTMPose failed to init: {e}. Falling back to YOLO-Pose.")
+            self.rtm_pose = None
 
     @staticmethod
     def _crop_region(frame, bbox, margin=0.1):
@@ -89,29 +98,27 @@ class YOLODetector:
                     "faces": []
                 }
 
-                # 2️⃣ POSE ESTIMATION (GPU FORCED)
-                human_crop, offset = self._crop_region(frame, det["bbox"], margin=0.05)
-                if human_crop.size > 0:
-                    pose_res = self.pose_model(
-                        human_crop,
-                        verbose=False,
-                        imgsz=192,
-                        device=self.device,
-                        conf=0.25
-                    )[0]
+                # 2️⃣ POSE ESTIMATION (RTMPose Primary, YOLO Fallback)
+                if self.rtm_pose:
+                    kpts = self.rtm_pose.estimate(frame, det["bbox"])
+                    det["pose_keypoints"] = kpts
+                else:
+                    human_crop, offset = self._crop_region(frame, det["bbox"], margin=0.05)
+                    if human_crop.size > 0:
+                        pose_res = self.pose_model(
+                            human_crop,
+                            verbose=False,
+                            imgsz=192,
+                            device=self.device,
+                            conf=0.25
+                        )[0]
 
-                    if len(pose_res.boxes) > 0 and pose_res.keypoints is not None:
-                        kpts_xy = pose_res.keypoints.xy[0].cpu().numpy()
-
-                        if pose_res.keypoints.conf is not None:
-                            kpts_conf = pose_res.keypoints.conf[0].cpu().numpy()
-                        else:
-                            kpts_conf = np.ones((kpts_xy.shape[0],))
-
-                        kpts_xy[:, 0] += offset[0]
-                        kpts_xy[:, 1] += offset[1]
-
-                        det["pose_keypoints"] = np.column_stack((kpts_xy, kpts_conf))
+                        if len(pose_res.boxes) > 0 and pose_res.keypoints is not None:
+                            kpts_xy = pose_res.keypoints.xy[0].cpu().numpy()
+                            kpts_conf = pose_res.keypoints.conf[0].cpu().numpy() if pose_res.keypoints.conf is not None else np.ones((kpts_xy.shape[0],))
+                            kpts_xy[:, 0] += offset[0]
+                            kpts_xy[:, 1] += offset[1]
+                            det["pose_keypoints"] = np.column_stack((kpts_xy, kpts_conf))
 
                 # 3️⃣ FACE DETECTION (GPU FORCED)
                 if self.face_model and human_crop.size > 0:
