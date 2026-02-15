@@ -58,24 +58,27 @@ class SocialAnalyzer:
 
     def _get_facing_vector(self, kpts):
         """
-        Estimate facing direction using shoulder points (indices 5, 6).
+        Refined Facing Direction: Prioritize Head Orientation (Nose/Eyes)
+        Indices: 0: Nose, 1: L-Eye, 2: R-Eye, 5: L-Shoulder, 6: R-Shoulder
         """
-        if kpts is None or len(kpts) <= 6:
+        if kpts is None or len(kpts) < 7:
             return None
             
-        left_sh = kpts[5][:2]  # [x, y]
-        right_sh = kpts[6][:2]
-        conf_l = kpts[5][2]
-        conf_r = kpts[6][2]
+        # Try Head Vector first (Nose relative to mid-eye)
+        nose = kpts[0]
+        l_eye = kpts[1]
+        r_eye = kpts[2]
         
-        if conf_l < 0.5 or conf_r < 0.5:
-            return None
-            
-        # Shoulder vector (L -> R)
-        sh_vec = right_sh - left_sh
-        # Perpendicular vector (Facing out from chest)
-        # Assuming camera is front-ish, facing is approximately normal to shoulders
-        facing = np.array([-sh_vec[1], sh_vec[0]]) 
+        if nose[2] > 0.5 and l_eye[2] > 0.5 and r_eye[2] > 0.5:
+            mid_eye = (l_eye[:2] + r_eye[:2]) / 2
+            facing = nose[:2] - mid_eye
+        else:
+            # Fallback to Shoulder Vector
+            left_sh = kpts[5][:2]
+            right_sh = kpts[6][:2]
+            sh_vec = right_sh - left_sh
+            facing = np.array([-sh_vec[1], sh_vec[0]]) 
+
         norm = np.linalg.norm(facing)
         return facing / norm if norm > 0 else None
 
@@ -124,7 +127,11 @@ class SocialAnalyzer:
                 id1, id2 = det_a['track_id'], det_b['track_id']
                 pair_ids = tuple(sorted((id1, id2)))
                 
-                interaction_type = self._detect_pair_interaction(det_a, det_b)
+                # Fetch pre-discovered roles for context
+                role_a = self._discover_role(id1, current_time)
+                role_b = self._discover_role(id2, current_time)
+                
+                interaction_type = self._detect_pair_interaction(det_a, det_b, role_a, role_b)
                 
                 # 1b. Smooth the interaction (Temporal Consensus)
                 self.interaction_buffer[pair_ids].append(interaction_type)
@@ -287,7 +294,7 @@ class SocialAnalyzer:
         """Returns a snapshot of accumulated metrics."""
         return self.metrics
 
-    def _detect_pair_interaction(self, det_a, det_b):
+    def _detect_pair_interaction(self, det_a, det_b, role_a="Unknown", role_b="Unknown"):
         hist_a = self.history[det_a['track_id']]
         hist_b = self.history[det_b['track_id']]
         
@@ -333,29 +340,43 @@ class SocialAnalyzer:
         recent_a = list(hist_a)[-self.fps:]
         avg_speed_a = np.mean([np.linalg.norm(recent_a[k]['pos'] - recent_a[k-1]['pos'])/self.dt for k in range(1, len(recent_a))]) if len(recent_a)>1 else speed_a
         
-        # Rule 1: Talking (Facing + Close + Stationary)
+        # Rule 1: Service/Helping (High Priority)
+        # If one is Staff and they are facing each other while close
+        if (role_a == "Staff" or role_b == "Staff") and dist < PROXIMITY_THRES * 1.5:
+            if facing_each_other or (role_a == "Staff" and angle_b < 45) or (role_b == "Staff" and angle_a < 45):
+                return "Service/Helping"
+
+        # Rule 2: Talking (Facing + Close + Stationary)
         if dist < PROXIMITY_THRES and facing_each_other and avg_speed_a < 15:
             return "Talking"
             
-        # Rule 2: Walking Together (Moving fast + same direction + close)
+        # Rule 3: Walking Together
         if dist < WALKING_THRES and speed_a > 20 and speed_b > 20:
             vel_sim = np.dot(vel_a, vel_b) / (speed_a * speed_b + 1e-6)
             if vel_sim > 0.85:
                 return "Walking Together"
 
-        # Rule 3: Approaching (Distance is closing fast + facing)
+        # Rule 4: Approaching
         if approach_rate < -60 and dist > PROXIMITY_THRES and (angle_a < 45 or angle_b < 45):
             return "Approaching"
                 
-        # Rule 4: Physical Contact (IoU Based)
-        iou = self._compute_iou(det_a['bbox'], det_b['bbox'])
-        if iou > 0.15: # Increased threshold for less noise
+        # Rule 5: Physical Contact (Keypoint-based precision)
+        kpts_a = det_a.get('pose_keypoints')
+        kpts_b = det_b.get('pose_keypoints')
+        if kpts_a is not None and kpts_b is not None:
+            # Check if hands of A are near body of B
+            hands_a = [kpts_a[9], kpts_a[10]] # Wrists
+            body_b = kpts_b[5:13] # Torso keypoints
+            for h in hands_a:
+                if h[2] > 0.5:
+                    for b in body_b:
+                        if b[2] > 0.5 and np.linalg.norm(h[:2] - b[:2]) < 30:
+                            return "Physical Contact"
+
+        # Fallback to IoU Physical Contact
+        if self._compute_iou(det_a['bbox'], det_b['bbox']) > 0.2:
             return "Physical Contact"
             
-        # Rule 5: Service/Helping
-        if dist < PROXIMITY_THRES * 1.2 and (avg_speed_a < 8) and facing_each_other:
-            return "Service/Helping"
-
         return None
 
     def _cluster_groups(self, pair_states):
