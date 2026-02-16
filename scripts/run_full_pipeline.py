@@ -216,27 +216,27 @@ def run_pipeline(video_path, output_path="output.avi"):
                                 'gender': hist['stable'].get('gender'),
                                 'age': hist['stable'].get('age')
                             }
-                
-                # Calculate Mood Trajectory (Sentiment Trend)
-                if len(hist['emotion_history']) >= 5:
-                    emotion_map = {
-                        'happy': 1.0, 'surprise': 0.5, 'neutral': 0.1,
-                        'sad': -0.5, 'angry': -1.0, 'fear': -0.8, 'disgust': -1.0
-                    }
-                    scores = [emotion_map.get(e, 0) for e in hist['emotion_history']]
-                    
-                    # Compare first half vs second half trend
-                    mid = len(scores) // 2
-                    first_half = np.mean(scores[:mid])
-                    second_half = np.mean(scores[mid:])
-                    trend = second_half - first_half
-                    
-                    if trend > 0.15:
-                        hist['stable']['mood_trend'] = "Improving ↗"
-                    elif trend < -0.15:
-                        hist['stable']['mood_trend'] = "Declining ↘"
-                    else:
-                        hist['stable']['mood_trend'] = "Stable →"
+
+                    # Calculate Mood Trajectory (Sentiment Trend)
+                    if len(hist['emotion_history']) >= 5:
+                        emotion_map = {
+                            'happy': 1.0, 'surprise': 0.5, 'neutral': 0.1,
+                            'sad': -0.5, 'angry': -1.0, 'fear': -0.8, 'disgust': -1.0
+                        }
+                        scores = [emotion_map.get(e, 0) for e in hist['emotion_history']]
+                        
+                        # Compare first half vs second half trend
+                        mid = len(scores) // 2
+                        first_half = np.mean(scores[:mid])
+                        second_half = np.mean(scores[mid:])
+                        trend = second_half - first_half
+                        
+                        if trend > 0.15:
+                            hist['stable']['mood_trend'] = "Improving ↗"
+                        elif trend < -0.15:
+                            hist['stable']['mood_trend'] = "Declining ↘"
+                        else:
+                            hist['stable']['mood_trend'] = "Stable →"
                 
                 # Apply results to current detection immediately
                 if emotion_results:
