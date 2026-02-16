@@ -1,4 +1,4 @@
-# IA Camera Challenge - Computer Vision Pipeline
+# Computer Vision Pipeline
 A comprehensive CV pipeline for security camera analysis with real-time person detection, tracking, pose estimation, emotion analysis, and social interaction detection.
 ##  Features
 ###  Implemented
