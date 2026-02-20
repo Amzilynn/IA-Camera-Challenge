@@ -95,12 +95,6 @@ Scene Log Started: 2026-01-04 19:37:19
 19:38:02.298 | [Frame 1] ID 1: Pose=Tracked
 19:39:16.701 | [Frame 5] ID 1: Emotion=sad Pose=Tracked | [Frame 5] ID 2: Emotion=happy Pose=Tracked
 ```
-##  Roadmap
-- [ ] Social Interaction Analysis (geometry-based)
-- [ ] Real-time camera stream support
-- [ ] Multi-camera synchronization
-- [ ] Behavioral pattern recognition
-- [ ] Alert system for specific events
 
 
 ## Authors
