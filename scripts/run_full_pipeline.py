@@ -17,7 +17,7 @@ from cv_pipeline.emotion_analysis.mivolo_analyzer import MivoloAnalyzer
 from cv_pipeline.social_interaction.social_analyzer import SocialAnalyzer
 from cv_pipeline.utils.scene_describer import SceneDescriber
 
-def run_pipeline(video_path, output_path="output.avi"):
+def run_pipeline(video_path, output_path="final_output.mp4"):
     # 1. Initialization
     print(f"I: Initializing pipeline for {video_path}...")
     
@@ -37,8 +37,8 @@ def run_pipeline(video_path, output_path="output.avi"):
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
     # Output video writer
-    # MJPG (avi) is widely supported on Windows without extra dlls
-    fourcc = cv2.VideoWriter_fourcc(*'MJPG') 
+    # mp4v is better for MP4 output
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
     
     # Adjust output dimensions if we plan to downscale
     out_width, out_height = width, height
@@ -66,7 +66,7 @@ def run_pipeline(video_path, output_path="output.avi"):
     emotion_analyzer = EmotionAnalyzer(backend='opencv') # Fast initialization
     mivolo_analyzer = MivoloAnalyzer()
     social_analyzer = SocialAnalyzer(fps=fps)
-    scene_describer = SceneDescriber(log_file="scene_log.txt")
+    scene_describer = SceneDescriber(log_file="scene_log.json")
 
     print("I: Pipeline initialized. Starting loop...")
 

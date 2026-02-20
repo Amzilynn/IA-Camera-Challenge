@@ -1,72 +1,73 @@
 import datetime
+import json
+import os
 
 class SceneDescriber:
-    def __init__(self, log_file="scene_log.txt"):
+    def __init__(self, log_file="scene_log.json"):
         self.log_file = log_file
         # Initialize/Clear log file
         with open(self.log_file, "w", encoding="utf-8") as f:
-            f.write(f"Scene Log Started: {datetime.datetime.now()}\n")
-            f.write("--------------------------------------------------\n")
+            # We'll use line-delimited JSON for robust logging
+            pass
 
     def describe(self, detections, frame_idx, interactions=None):
         """
-        Generate a text simple description of the scene based on detections.
+        Generate a data dictionary of the scene based on detections.
         """
-        descriptions = []
-        timestamp = datetime.datetime.now().strftime("%H:%M:%S.%f")[:-3]
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+        
+        frame_data = {
+            "frame_idx": frame_idx,
+            "timestamp": timestamp,
+            "persons": [],
+            "interactions": []
+        }
         
         # 1. Individual Status
         for det in detections:
             track_id = det.get('track_id', -1)
             if track_id == -1: continue
                 
-            desc = f"ID {track_id}: "
-            if 'emotion' in det and det['emotion']:
-                desc += f"FER={det['emotion']} "
-            if 'age' in det and det['age']:
-                desc += f"Age={det['age']} "
-            if 'gender' in det and det['gender']:
-                desc += f"Gen={det['gender']} "
+            person = {
+                "id": track_id,
+                "bbox": [round(float(x), 2) for x in det['bbox']],
+                "attributes": {}
+            }
             
-            # New attributes from social analyzer
-            if 'posture' in det:
-                desc += f"Pos={det['posture']} "
-            if 'activity' in det:
-                desc += f"Act={det['activity']} "
-            if 'role' in det:
-                desc += f"Role={det['role']} "
-            if 'mood_trend' in det:
-                desc += f"Mood={det['mood_trend']} "
-            if 'group_id' in det and det['group_id'] != -1:
-                desc += f"Group={det['group_id']} "
-            if det.get('space_violated'):
-                desc += "!SPACE_VIOLATION! "
-            
-            # Spatial Position (Normalized % of frame)
-            x1, y1, x2, y2 = det['bbox']
-            cx, cy = (x1+x2)/2, (y1+y2)/2
-            # Assuming we don't have frame width/height here, 
-            # we can just use raw or pass them. 
-            # For now, let's keep it simple as the user might just want the posture.
+            # Extract attributes
+            attrs = person["attributes"]
+            if 'emotion' in det and det['emotion']: attrs['emotion'] = det['emotion']
+            if 'age' in det and det['age']: attrs['age'] = det['age']
+            if 'gender' in det and det['gender']: attrs['gender'] = det['gender']
+            if 'posture' in det: attrs['posture'] = det['posture']
+            if 'activity' in det: attrs['activity'] = det['activity']
+            if 'role' in det: attrs['role'] = det['role']
+            if 'mood_trend' in det: attrs['mood_trend'] = det['mood_trend']
+            if 'group_id' in det and det['group_id'] != -1: attrs['group_id'] = det['group_id']
+            if det.get('space_violated'): attrs['space_violation'] = True
             
             if 'pose_keypoints' in det and det['pose_keypoints'] is not None:
-                desc += "Pose=Tracked "
-            descriptions.append(desc.strip())
+                attrs['pose_tracked'] = True
+                
+            frame_data["persons"].append(person)
             
         # 2. Social Interactions
         if interactions:
             for inter in interactions:
-                ids = inter['ids']
-                itype = inter['type']
-                descriptions.append(f"Interaction({ids[0]}&{ids[1]}): {itype}")
+                frame_data["interactions"].append({
+                    "ids": inter['ids'],
+                    "type": inter['type']
+                })
 
-        if not descriptions:
-            return None
-            
-        full_text = f"[{frame_idx}] {timestamp} | " + " | ".join(descriptions)
-        return full_text
+        return frame_data
 
-    def save_log(self, text):
-        if text:
-            with open(self.log_file, "a", encoding="utf-8") as f:
-                f.write(text + "\n")
+    def save_log(self, data):
+        """
+        Save the data dictionary to the log file in JSONL format.
+        """
+        if data:
+            try:
+                with open(self.log_file, "a", encoding="utf-8") as f:
+                    f.write(json.dumps(data) + "\n")
+            except Exception as e:
+                print(f"E: Failed to save scene log: {e}")
