@@ -37,12 +37,12 @@ class EmotionAnalyzer:
                 return None
             
         try:
-            # DeepFace focuses ONLY on emotion now, MiVOLO handles age/gender
+            # DeepFace can handle emotion, age, and gender
             results = DeepFace.analyze(
                 img_path=face_crop,
-                actions=['emotion'],
+                actions=['emotion', 'age', 'gender'],
                 enforce_detection=False, 
-                detector_backend='skip', # Redundant detection skipped
+                detector_backend='skip',
                 silent=True
             )
             
@@ -51,8 +51,16 @@ class EmotionAnalyzer:
                 
             res = results[0]
             
+            # Normalize age and gender
+            age = int(res['age'])
+            gender = res['dominant_gender'].lower() # 'man' or 'woman'
+            # Map DeepFace gender to our pipeline's expected values
+            gender = "male" if gender in ["man", "male"] else "female"
+            
             return {
-                'emotion': res['dominant_emotion']
+                'emotion': res['dominant_emotion'],
+                'age': age,
+                'gender': gender
             }
             
         except Exception as e:

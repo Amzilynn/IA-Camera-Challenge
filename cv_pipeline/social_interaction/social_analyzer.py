@@ -440,7 +440,7 @@ class SocialAnalyzer:
         time_elapsed = current_time - stats['start_time']
         
         # Heuristic: Staff move a lot and talk to many different people
-        if time_elapsed > 30: # Need at least 30s of data
+        if time_elapsed > 15: # Reduced from 30s to 15s for faster feedback
             mobility = stats['total_distance'] / time_elapsed
             social_reach = len(stats['unique_interactions'])
             

@@ -3,7 +3,7 @@ import os
 import sys
 
 URL = "https://github.com/WildChlamydia/MiVOLO/releases/download/v1.0/model_imdb_cross_person_4.24_99.46.pth.tar"
-DEST = "models/mivolo_imbd.pth.tar"
+DEST = "cv_pipeline/models/mivolo_imbd.pth.tar"
 
 def download_file():
     print(f"Downloading {URL} to {DEST}...")

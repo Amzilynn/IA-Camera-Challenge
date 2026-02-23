@@ -6,8 +6,8 @@ from tqdm import tqdm
 
 def download_and_extract_rtmpose():
     url = "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/onnx_sdk/rtmpose-m_simcc-body7_pt-body7_420e-256x192-e48f03d0_20230504.zip"
-    dest_path = "models/rtmpose-m.onnx"
-    os.makedirs("models", exist_ok=True)
+    dest_path = "cv_pipeline/models/rtmpose-m.onnx"
+    os.makedirs("cv_pipeline/models", exist_ok=True)
     
     print(f"Downloading RTMPose-m ZIP from {url}...")
     try:

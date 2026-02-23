@@ -9,7 +9,7 @@ from cv_pipeline.pose_estimation.rtm_pose import RTMPoseEstimator
 MIN_HEIGHT_RATIO = 0.2
 CONF_HUMAN = 0.35
 CONF_POSE = 0.30
-CONF_FACE = 0.40
+CONF_FACE = 0.30
 IOU_HUMAN = 0.45
 IMG_SIZE = 800
 
@@ -29,24 +29,54 @@ POSE_CONNECTIONS = [
 
 class YOLODetector:
     def __init__(self,
-                 human_model_path="yolov8m.pt",
-                 pose_model_path="yolov8m-pose.pt",
-                 face_model_path="models/yolov8n-face.pt"):
+                 human_model_path="cv_pipeline/models/yolov8m.pt",
+                 pose_model_path="cv_pipeline/models/yolov8m-pose.pt",
+                 face_model_path="cv_pipeline/models/yolov8n-face.pt"):
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        print(f"Using device: {self.device}")
+        print(f"I: Using device: {self.device}")
 
-        self.human_model = YOLO(human_model_path)
-        self.pose_model = YOLO(pose_model_path)
+        # Helper to load model with automatic download support
+        def load_yolo_model(model_path):
+            import os
+            try:
+                # If path doesn't exist, try loading by basename to trigger automatic download
+                basename = os.path.basename(model_path)
+                if not os.path.exists(model_path):
+                    print(f"I: Model {model_path} not found. Attempting to load/download {basename}...")
+                    model = YOLO(basename)
+                    
+                    # If it was downloaded to current dir, move it to our project's models folder
+                    if os.path.exists(basename):
+                        os.makedirs(os.path.dirname(model_path), exist_ok=True)
+                        import shutil
+                        shutil.move(basename, model_path)
+                        print(f"I: Successfully downloaded and moved {basename} to {model_path}")
+                    return model
+                else:
+                    return YOLO(model_path)
+            except Exception as e:
+                print(f"W: Failed to load model {model_path} or {basename}: {e}")
+                return None
+
+        self.human_model = load_yolo_model(human_model_path)
+        self.pose_model = load_yolo_model(pose_model_path)
+
+        # Fallback to YOLOv8m if YOLOv12 fails (e.g. if URLs are still propagating)
+        if self.human_model is None:
+            self.human_model = YOLO("yolov8m.pt")
+        if self.pose_model is None:
+            self.pose_model = YOLO("yolov8m-pose.pt")
 
         try:
             self.face_model = YOLO(face_model_path)
         except:
-            print("I: YOLO face model not found. Using DeepFace fallback for analysis.")
+            print("I: YOLO face model not found. Using fallback for analysis.")
             self.face_model = None
 
         # 4️⃣ RTMPose (Absolute Best for this project)
         try:
+            # RTMPose is handled in its own class, ensuring consistency
             self.rtm_pose = RTMPoseEstimator(device=self.device)
             print("I: RTMPose initialized successfully.")
         except Exception as e:

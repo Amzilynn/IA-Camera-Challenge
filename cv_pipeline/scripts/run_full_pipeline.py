@@ -6,7 +6,7 @@ import numpy as np
 from pathlib import Path
 
 # Add project root to Python path
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from cv_pipeline.detection.yolo_detector import YOLODetector
@@ -47,12 +47,11 @@ def run_pipeline(video_path, output_path="final_output.mp4"):
         
     out_writer = cv2.VideoWriter(output_path, fourcc, fps, (out_width, out_height))
 
-    # Initialize Modules (Optimized for GTX 1650 / 16GB RAM)
-    # Switched from Large/XLarge to Medium (yolov8m) for better balance of speed/accuracy
+    # Initialize Modules (Absolute State-of-Art for 2025/2026)
     detector = YOLODetector(
-        human_model_path="yolov8m.pt",
-        pose_model_path="yolov8m-pose.pt",
-        face_model_path="models/yolov8n-face.pt" # Corrected path to models folder
+        human_model_path="cv_pipeline/models/yolov12m.pt",
+        pose_model_path="cv_pipeline/models/yolov12m-pose.pt",
+        face_model_path="cv_pipeline/models/yolov8n-face.pt"
     )
     # Initialize tracker with specific reid_weights path if needed, or default
     # Note: BoxMOT might need some downloads on first run
@@ -78,7 +77,7 @@ def run_pipeline(video_path, output_path="final_output.mp4"):
     # Store persistent attributes for tracked persons to prevent flickering
     # Structure: {track_id: {'emotion_history': deque, 'age_history': deque, 'gender_history': deque, 'stable': {}}}
     person_history = {} 
-    MAX_HISTORY = 15
+    MAX_HISTORY = 30 # Increased for better temporal smoothing
     
     # --- Cross-Scene ID Tracking ---
     # gallery: {original_id: {'embedding': np.array, 'gender': str, 'age': int}}
@@ -184,23 +183,40 @@ def run_pipeline(video_path, output_path="final_output.mp4"):
                     
                     if emotion_results:
                         hist['emotion_history'].append(emotion_results['emotion'])
+                        # Fallback for Age/Gender if MiVOLO fails
+                        if not mivolo_results:
+                            hist['age_history'].append(emotion_results['age'])
+                            hist['gender_history'].append(emotion_results['gender'])
                     
                     if mivolo_results:
                         hist['age_history'].append(mivolo_results['age'])
                         hist['gender_history'].append(mivolo_results['gender'])
 
-                    # Calculate stable results
+                    # --- Temporal Smoothing (Independent) ---
+                    
+                    # 1. Gender: High-consensus majority vote
                     if len(hist['gender_history']) > 0:
-                        # Majority vote for gender
                         gender_counts = Counter(hist['gender_history'])
-                        hist['stable']['gender'] = gender_counts.most_common(1)[0][0]
-                        
-                        # Moving average for age
+                        most_common_gender, count = gender_counts.most_common(1)[0]
+                        if count >= 3: # Require at least 3 detections for stability
+                             hist['stable']['gender'] = most_common_gender
+                    
+                    # 2. Age: Moving average (EMA-like)
+                    if len(hist['age_history']) > 0:
                         hist['stable']['age'] = int(np.mean(hist['age_history']))
                         
-                        # Majority vote for emotion (or just most recent)
+                    # 3. Emotion: Hysteresis-based switching
+                    if len(hist['emotion_history']) > 0:
                         emotion_counts = Counter(hist['emotion_history'])
-                        hist['stable']['emotion'] = emotion_counts.most_common(1)[0][0]
+                        most_common_emo, count = emotion_counts.most_common(1)[0]
+                        
+                        current_stable_emo = hist['stable'].get('emotion')
+                        if current_stable_emo is None:
+                            hist['stable']['emotion'] = most_common_emo
+                        else:
+                            # Requirement: New emotion must have at least 40% dominance to override
+                            if count > (len(hist['emotion_history']) * 0.4) and most_common_emo != current_stable_emo:
+                                hist['stable']['emotion'] = most_common_emo
                     
                     # Update Gallery with average embedding and attributes
                     if det['faces'] and len(hist['embeddings']) < 5:
@@ -238,11 +254,9 @@ def run_pipeline(video_path, output_path="final_output.mp4"):
                         else:
                             hist['stable']['mood_trend'] = "Stable →"
                 
-                # Apply results to current detection immediately
-                if emotion_results:
-                    det.update(emotion_results)
-                if mivolo_results:
-                    det.update(mivolo_results)
+                # NOTE: We do NOT apply results to det immediately to prevent flickering.
+                # We wait for the 'stable' update below.
+                pass
 
             # Assign from stable history if available
             if orig_id != -1 and orig_id in person_history:
@@ -289,27 +303,50 @@ def run_pipeline(video_path, output_path="final_output.mp4"):
                        cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
             cv2.line(drawn_frame, (int(c1[0]), int(c1[1])), (int(c2[0]), int(c2[1])), (0, 255, 0), 1)
 
+        # Helper for drawing badge labels
+        def draw_badge(img, text, pos, bg_color, text_color=(255, 255, 255)):
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            font_scale = 0.5
+            thickness = 1
+            (w, h), baseline = cv2.getTextSize(text, font, font_scale, thickness)
+            x, y = pos
+            # Background rectangle
+            cv2.rectangle(img, (x, y - h - 10), (x + w + 10, y + 5), bg_color, -1)
+            # Text
+            cv2.putText(img, text, (x + 5, y - 5), font, font_scale, text_color, thickness, cv2.LINE_AA)
+            return h + 15 # Return height used to stack next badge
+
         for det in detections:
-            # Draw Emotion, Age, Gender
-            if 'emotion' in det:
-                x1, y1, x2, y2 = map(int, det['bbox'])
-                text = f"{det.get('emotion', 'N/A')} | {det.get('age', 'N/A')} | {det.get('gender', 'N/A')}"
-                # Position text above person ID label
-                text_y = y1 - 35
-                
-                # Add Role, Group, and Mood Trend to the display text
-                role = det.get('role', 'Analyzing...')
-                group_id = det.get('group_id', -1)
-                group_text = f" | Group {group_id}" if group_id != -1 else ""
-                mood_trend = det.get('mood_trend', "")
-                
-                # Space Alert
-                space_alert = " ! SPACE !" if det.get('space_violated') else ""
-                
-                full_text = f"{text} | {role}{group_text} | {mood_trend}{space_alert}"
-                
-                cv2.putText(drawn_frame, full_text, (x1, text_y), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 0, 255), 2)
+            x1, y1, x2, y2 = map(int, det['bbox'])
+            
+            # --- Draw Emotion & Role Badges ---
+            curr_y = y1 - 10
+            
+            # 1. Role Badge
+            role = det.get('role', 'Analyzing...')
+            role_color = (255, 100, 0) if "Staff" in role else (100, 100, 100)
+            curr_y -= draw_badge(drawn_frame, f"ROLE: {role}", (x1, curr_y), role_color)
+            
+            # 2. Emotion Badge
+            emotion = det.get('emotion', 'N/A')
+            emo_colors = {
+                'happy': (0, 200, 0),        # Green
+                'sad': (200, 0, 0),          # Blue
+                'angry': (0, 0, 200),        # Red
+                'surprise': (0, 200, 200),   # Yellow
+                'fear': (150, 0, 150),       # Purple
+                'neutral': (150, 150, 150),  # Gray
+            }
+            emo_color = emo_colors.get(emotion.lower(), (100, 100, 100))
+            mood_trend = det.get('mood_trend', "")
+            display_emo = f"EMO: {emotion} {mood_trend}"
+            curr_y -= draw_badge(drawn_frame, display_emo, (x1, curr_y), emo_color)
+
+            # 3. Secondary Info (Age/Gender) - Smaller/Subtle
+            age = det.get('age', 'N/A')
+            gender = det.get('gender', 'N/A')
+            info_text = f"{gender} | Age: {age}"
+            draw_badge(drawn_frame, info_text, (x1, curr_y), (50, 50, 50))
 
         # 8. Output
         # Resize for display to fit 1080p screens better (1280x720)

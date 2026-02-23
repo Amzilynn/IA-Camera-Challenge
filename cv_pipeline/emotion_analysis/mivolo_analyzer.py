@@ -10,11 +10,11 @@ project_root = Path(__file__).parent.parent.parent
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
-from mivolo.model.mi_volo import MiVOLO
-from mivolo.data.misc import prepare_classification_images
+from cv_pipeline.mivolo.model.mi_volo import MiVOLO
+from cv_pipeline.mivolo.data.misc import prepare_classification_images
 
 class MivoloAnalyzer:
-    def __init__(self, checkpoint_path="models/mivolo_imbd.pth.tar", device="cuda"):
+    def __init__(self, checkpoint_path="cv_pipeline/models/mivolo_imbd.pth.tar", device="cuda"):
         self.device = device if torch.cuda.is_available() else "cpu"
         
         if not os.path.exists(checkpoint_path):

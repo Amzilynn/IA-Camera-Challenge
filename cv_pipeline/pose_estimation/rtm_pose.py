@@ -6,7 +6,7 @@ import requests
 from tqdm import tqdm
 
 class RTMPoseEstimator:
-    def __init__(self, model_path="models/rtmpose-m.onnx", device="cuda"):
+    def __init__(self, model_path="cv_pipeline/models/rtmpose-m.onnx", device="cuda"):
         self.model_path = model_path
         self.device = device
         

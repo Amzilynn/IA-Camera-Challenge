@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 
 # Add project root to path
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).parent.parent.parent
 os.chdir(project_root) # Ensure relative paths to 'models/' work
 sys.path.insert(0, str(project_root))
 
