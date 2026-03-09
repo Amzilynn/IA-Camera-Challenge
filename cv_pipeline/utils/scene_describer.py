@@ -10,7 +10,7 @@ class SceneDescriber:
             # We'll use line-delimited JSON for robust logging
             pass
 
-    def describe(self, detections, frame_idx, interactions=None):
+    def describe(self, detections, frame_idx, width=1920, height=1080, interactions=None):
         """
         Generate a data dictionary of the scene based on detections.
         """
@@ -19,6 +19,8 @@ class SceneDescriber:
         frame_data = {
             "frame_idx": frame_idx,
             "timestamp": timestamp,
+            "width": width,
+            "height": height,
             "persons": [],
             "interactions": []
         }

@@ -36,7 +36,7 @@ function drawOverlay(canvas, frame, selectedPerson) {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const srcW = 1920, srcH = 1080;
+    const srcW = frame.width || 1920, srcH = frame.height || 1080;
     const cw = canvas.width, ch = canvas.height;
     const cAspect = cw / ch, sAspect = srcW / srcH;
     let rW, rH, ox, oy;
@@ -44,8 +44,6 @@ function drawOverlay(canvas, frame, selectedPerson) {
     else { rW = cw; rH = rW / sAspect; ox = 0; oy = (ch - rH) / 2; }
     const tx = v => ox + (v / srcW) * rW;
     const ty = v => oy + (v / srcH) * rH;
-
-    const bgrToRgb = (bgr) => `rgb(${bgr[2]}, ${bgr[1]}, ${bgr[0]})`;
 
     (frame.persons || []).forEach(p => {
         const [bx1, by1, bx2, by2] = p.bbox;
@@ -56,22 +54,21 @@ function drawOverlay(canvas, frame, selectedPerson) {
         const colorBGR = p.color || [0, 255, 0];
         const color = bgrToRgb(colorBGR);
 
-        // 1. Human Bounding Box (cv2.rectangle style)
+        // 1. Human Bounding Box - Thin & Subtle
         ctx.strokeStyle = color;
-        ctx.lineWidth = isSelected ? 4 : 2;
+        ctx.lineWidth = isSelected ? 3 : 1;
         ctx.strokeRect(cx1, cy1, bw, bh);
 
-        // 2. ID Label (cv2.putText style)
+        // 2. ID Label - Professional Orbitron font
         ctx.fillStyle = color;
-        ctx.font = `600 ${isSelected ? 16 : 13}px "Inter", sans-serif`;
-        ctx.fillText(`ID:${p.id}`, cx1, cy1 - 5);
+        ctx.font = `700 ${isSelected ? 13 : 11}px "Orbitron", sans-serif`;
+        ctx.fillText(`ID:${p.id}`, cx1, cy1 - 4);
 
-        // 3. Skeleton (replicate cv2.line and cv2.circle)
+        // 3. Skeleton - High-end visual
         if (p.pose_keypoints) {
             const kpts = p.pose_keypoints;
-            // Bones
-            ctx.strokeStyle = '#ffff00'; // Yellow lines
-            ctx.lineWidth = 2;
+            ctx.strokeStyle = 'rgba(255, 255, 0, 0.5)'; // Yellow semi-trans
+            ctx.lineWidth = 1.2;
             POSE_CONNECTIONS.forEach(([s, e]) => {
                 if (kpts[s] && kpts[e] && kpts[s][2] > 0.4 && kpts[e][2] > 0.4) {
                     ctx.beginPath();
@@ -80,50 +77,36 @@ function drawOverlay(canvas, frame, selectedPerson) {
                     ctx.stroke();
                 }
             });
-            // Joints
             kpts.forEach((kp, i) => {
-                if (i >= 5 && kp[2] > 0.4) {
+                if (i >= 5 && kp[2] > 0.5) {
                     const kpx = tx(kp[0]), kpy = ty(kp[1]);
-                    ctx.fillStyle = '#ff0000'; // Red fill
-                    ctx.beginPath(); ctx.arc(kpx, kpy, 4, 0, Math.PI * 2); ctx.fill();
-                    ctx.strokeStyle = '#ffffff'; // White border
-                    ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(kpx, kpy, 5, 0, Math.PI * 2); ctx.stroke();
+                    ctx.fillStyle = '#ff0000';
+                    ctx.beginPath(); ctx.arc(kpx, kpy, 2.5, 0, Math.PI * 2); ctx.fill();
+                    ctx.strokeStyle = '#fff'; ctx.lineWidth = 1;
+                    ctx.beginPath(); ctx.arc(kpx, kpy, 3, 0, Math.PI * 2); ctx.stroke();
                 }
             });
         }
 
-        // 4. Faces (Blue boxes)
-        if (p.faces) {
-            p.faces.forEach(f => {
-                const [fx1, fy1, fx2, fy2] = f.bbox;
-                const fcx1 = tx(fx1), fcy1 = ty(fy1), fcx2 = tx(fx2), fcy2 = ty(fy2);
-                ctx.strokeStyle = '#0000ff';
-                ctx.lineWidth = 2;
-                ctx.strokeRect(fcx1, fcy1, fcx2 - fcx1, fcy2 - fcy1);
-            });
-        }
-
-        // 5. Retail Badges (replicate run_full_pipeline.py draw_badge style)
-        let by = cy1 - 25;
-        const badges = [];
+        // 4. Retail Badges - Compact & Corner-aligned
+        let by = cy1 - 20;
         const attrs = p.attributes || {};
-        if (attrs.role) badges.push({ text: `ROLE: ${attrs.role}`, bg: attrs.role.includes('Staff') ? 'rgb(255, 100, 0)' : 'rgb(100, 100, 100)' });
-        if (attrs.intent) badges.push({ text: `INTENT: ${attrs.intent}`, bg: attrs.intent !== 'Normal' ? 'rgb(0, 0, 255)' : 'rgb(50, 50, 50)' });
-        if (attrs.emotion) badges.push({ text: `EMO: ${attrs.emotion} ${attrs.mood_trend || ''}`, bg: EMO_COLORS[attrs.emotion.toLowerCase()] || 'rgb(100, 100, 100)' });
-        if (attrs.gender) badges.push({ text: `${attrs.gender} | Age: ${attrs.age || 'N/A'}`, bg: 'rgb(50, 50, 50)' });
+        const badges = [];
+        if (attrs.role) badges.push({ text: attrs.role.toUpperCase(), bg: attrs.role.includes('Staff') ? '#10b981' : '#4b5563' });
+        if (attrs.emotion) badges.push({ text: (attrs.emotion).toUpperCase(), bg: EMO_COLORS[attrs.emotion.toLowerCase()] || '#4b5563' });
 
-        ctx.font = '700 11px "Inter", sans-serif';
-        badges.forEach(b => {
+        ctx.font = '800 8px "Inter", sans-serif';
+        badges.reverse().forEach(b => {
             const tw = ctx.measureText(b.text).width;
-            ctx.fillStyle = b.bg;
-            ctx.fillRect(cx1, by - 18, tw + 10, 15);
-            ctx.fillStyle = '#ffffff';
-            ctx.fillText(b.text, cx1 + 5, by - 7);
-            by -= 18;
+            ctx.fillStyle = b.bg + 'dd';
+            ctx.beginPath(); ctx.roundRect?.(cx1, by - 12, tw + 6, 11, 2); ctx.fill();
+            ctx.fillStyle = '#fff';
+            ctx.fillText(b.text, cx1 + 3, by - 4);
+            by -= 13;
         });
     });
 
-    // 6. Interaction Lines (Green dashed lines)
+    // 5. Interaction Lines - Emerald/Green dashed
     (frame.interactions || []).forEach(inter => {
         const pts = inter.ids.map(id => {
             const p = (frame.persons || []).find(x => x.id === id);
@@ -131,17 +114,11 @@ function drawOverlay(canvas, frame, selectedPerson) {
         }).filter(Boolean);
         if (pts.length < 2) return;
 
-        ctx.strokeStyle = '#00ff00';
+        ctx.strokeStyle = 'rgba(16, 185, 129, 0.4)';
         ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(pts[0][0], pts[0][1]);
-        ctx.lineTo(pts[1][0], pts[1][1]);
-        ctx.stroke();
-
-        const mx = (pts[0][0] + pts[1][0]) / 2, my = (pts[0][1] + pts[1][1]) / 2;
-        ctx.fillStyle = '#00ff00';
-        ctx.font = '700 16px "Inter", sans-serif';
-        ctx.fillText(`<< ${inter.type} >>`, mx - 50, my);
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); ctx.lineTo(pts[1][0], pts[1][1]);
+        ctx.stroke(); ctx.setLineDash([]);
     });
 }
 
@@ -422,12 +399,6 @@ export default function App() {
                             {/* Processing overlay */}
                             {isProcessing && (
                                 <div className="processing-overlay">
-                                    <div className="hud-corners" />
-                                    <div className="hud-data top-left"><Activity size={12} /> AI SENSORS: ONLINE</div>
-                                    <div className="hud-data top-right"><Zap size={12} /> TRACKING: {processPct}%</div>
-                                    <div className="hud-data bottom-left"><Brain size={12} /> RETAIL INTELLIGENCE v4.0</div>
-                                    <div className="hud-data bottom-right"><ShieldCheck size={12} /> GDPR COMPLIANT</div>
-
                                     {showIntro && (
                                         <div className="intro-splash">
                                             <div className="splash-content">

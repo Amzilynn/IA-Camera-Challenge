@@ -222,7 +222,7 @@ def run_pipeline(video_path, output_path="final_output.mp4", headless=False, log
                 det.update(person_statuses[tid])
 
         # 7. Scene Description
-        desc_text = scene_describer.describe(social_detections, frame_count, interactions)
+        desc_text = scene_describer.describe(social_detections, frame_count, width=frame.shape[1], height=frame.shape[0], interactions=interactions)
         scene_describer.save_log(desc_text)
 
         # 8. Visualization
