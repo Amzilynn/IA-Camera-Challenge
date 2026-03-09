@@ -27,99 +27,100 @@ const POSE_CONNECTIONS = [
 
 function drawOverlay(canvas, frame, selectedPerson) {
     if (!canvas || !frame) return;
-    const ctx = canvas.getContext('2d');
-    const container = canvas.parentNode?.getBoundingClientRect();
-    if (!container) return;
+    try {
+        const ctx = canvas.getContext('2d');
+        const container = canvas.parentNode?.getBoundingClientRect();
+        if (!container) return;
 
-    if (canvas.width !== Math.round(container.width)) canvas.width = Math.round(container.width);
-    if (canvas.height !== Math.round(container.height)) canvas.height = Math.round(container.height);
+        if (canvas.width !== Math.round(container.width)) canvas.width = Math.round(container.width);
+        if (canvas.height !== Math.round(container.height)) canvas.height = Math.round(container.height);
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const srcW = frame.width || 1920, srcH = frame.height || 1080;
-    const cw = canvas.width, ch = canvas.height;
-    const cAspect = cw / ch, sAspect = srcW / srcH;
-    let rW, rH, ox, oy;
-    if (cAspect > sAspect) { rH = ch; rW = rH * sAspect; ox = (cw - rW) / 2; oy = 0; }
-    else { rW = cw; rH = rW / sAspect; ox = 0; oy = (ch - rH) / 2; }
-    const tx = v => ox + (v / srcW) * rW;
-    const ty = v => oy + (v / srcH) * rH;
+        const srcW = frame.width || 1920, srcH = frame.height || 1080;
+        const cw = canvas.width, ch = canvas.height;
+        const cAspect = cw / ch, sAspect = srcW / srcH;
+        let rW, rH, ox, oy;
+        if (cAspect > sAspect) { rH = ch; rW = rH * sAspect; ox = (cw - rW) / 2; oy = 0; }
+        else { rW = cw; rH = rW / sAspect; ox = 0; oy = (ch - rH) / 2; }
+        const tx = (v) => ox + (v / srcW) * rW;
+        const ty = (v) => oy + (v / srcH) * rH;
 
-    (frame.persons || []).forEach(p => {
-        const [bx1, by1, bx2, by2] = p.bbox;
-        const cx1 = tx(bx1), cy1 = ty(by1), cx2 = tx(bx2), cy2 = ty(by2);
-        const bw = cx2 - cx1, bh = cy2 - cy1;
+        const bgrToRgb = (bgr) => bgr ? `rgb(${bgr[2]}, ${bgr[1]}, ${bgr[0]})` : 'rgb(0, 255, 0)';
 
-        const isSelected = selectedPerson === p.id;
-        const colorBGR = p.color || [0, 255, 0];
-        const color = bgrToRgb(colorBGR);
+        (frame.persons || []).forEach(p => {
+            if (!p.bbox || p.bbox.length < 4) return;
+            const [bx1, by1, bx2, by2] = p.bbox;
+            const cx1 = tx(bx1), cy1 = ty(by1), cx2 = tx(bx2), cy2 = ty(by2);
+            const bw = cx2 - cx1, bh = cy2 - cy1;
 
-        // 1. Human Bounding Box - Thin & Subtle
-        ctx.strokeStyle = color;
-        ctx.lineWidth = isSelected ? 3 : 1;
-        ctx.strokeRect(cx1, cy1, bw, bh);
+            const isSelected = selectedPerson === p.id;
+            const color = bgrToRgb(p.color);
 
-        // 2. ID Label - Professional Orbitron font
-        ctx.fillStyle = color;
-        ctx.font = `700 ${isSelected ? 13 : 11}px "Orbitron", sans-serif`;
-        ctx.fillText(`ID:${p.id}`, cx1, cy1 - 4);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = isSelected ? 3 : 1;
+            ctx.strokeRect(cx1, cy1, bw, bh);
 
-        // 3. Skeleton - High-end visual
-        if (p.pose_keypoints) {
-            const kpts = p.pose_keypoints;
-            ctx.strokeStyle = 'rgba(255, 255, 0, 0.5)'; // Yellow semi-trans
-            ctx.lineWidth = 1.2;
-            POSE_CONNECTIONS.forEach(([s, e]) => {
-                if (kpts[s] && kpts[e] && kpts[s][2] > 0.4 && kpts[e][2] > 0.4) {
-                    ctx.beginPath();
-                    ctx.moveTo(tx(kpts[s][0]), ty(kpts[s][1]));
-                    ctx.lineTo(tx(kpts[e][0]), ty(kpts[e][1]));
-                    ctx.stroke();
+            ctx.fillStyle = color;
+            ctx.font = `700 ${isSelected ? 13 : 11}px "Orbitron", sans-serif`;
+            ctx.fillText(`ID:${p.id}`, cx1, cy1 - 4);
+
+            if (p.pose_keypoints) {
+                const kpts = p.pose_keypoints;
+                ctx.strokeStyle = 'rgba(255, 255, 0, 0.5)';
+                ctx.lineWidth = 1.2;
+                POSE_CONNECTIONS.forEach(([s, e]) => {
+                    if (kpts[s] && kpts[e] && kpts[s][2] > 0.4 && kpts[e][2] > 0.4) {
+                        ctx.beginPath();
+                        ctx.moveTo(tx(kpts[s][0]), ty(kpts[s][1]));
+                        ctx.lineTo(tx(kpts[e][0]), ty(kpts[e][1]));
+                        ctx.stroke();
+                    }
+                });
+                kpts.forEach((kp, i) => {
+                    if (i >= 5 && kp[2] > 0.5) {
+                        const kpx = tx(kp[0]), kpy = ty(kp[1]);
+                        ctx.fillStyle = '#ff0000';
+                        ctx.beginPath(); ctx.arc(kpx, kpy, 2.5, 0, Math.PI * 2); ctx.fill();
+                        ctx.strokeStyle = '#fff'; ctx.lineWidth = 1;
+                        ctx.beginPath(); ctx.arc(kpx, kpy, 3, 0, Math.PI * 2); ctx.stroke();
+                    }
+                });
+            }
+
+            let by = cy1 - 20;
+            const attrs = p.attributes || {};
+            const badges = [];
+            if (attrs.role) badges.push({ text: attrs.role.toUpperCase(), bg: attrs.role.includes('Staff') ? '#10b981' : '#4b5563' });
+            if (attrs.emotion) badges.push({ text: (attrs.emotion).toUpperCase(), bg: EMO_COLORS[attrs.emotion.toLowerCase()] || '#4b5563' });
+
+            ctx.font = '800 8px "Inter", sans-serif';
+            badges.reverse().forEach(b => {
+                const tw = ctx.measureText(b.text).width;
+                ctx.fillStyle = b.bg + 'dd';
+                if (ctx.roundRect) {
+                    ctx.beginPath(); ctx.roundRect(cx1, by - 12, tw + 6, 11, 2); ctx.fill();
+                } else {
+                    ctx.fillRect(cx1, by - 12, tw + 6, 11);
                 }
+                ctx.fillStyle = '#fff';
+                ctx.fillText(b.text, cx1 + 3, by - 4);
+                by -= 13;
             });
-            kpts.forEach((kp, i) => {
-                if (i >= 5 && kp[2] > 0.5) {
-                    const kpx = tx(kp[0]), kpy = ty(kp[1]);
-                    ctx.fillStyle = '#ff0000';
-                    ctx.beginPath(); ctx.arc(kpx, kpy, 2.5, 0, Math.PI * 2); ctx.fill();
-                    ctx.strokeStyle = '#fff'; ctx.lineWidth = 1;
-                    ctx.beginPath(); ctx.arc(kpx, kpy, 3, 0, Math.PI * 2); ctx.stroke();
-                }
-            });
-        }
-
-        // 4. Retail Badges - Compact & Corner-aligned
-        let by = cy1 - 20;
-        const attrs = p.attributes || {};
-        const badges = [];
-        if (attrs.role) badges.push({ text: attrs.role.toUpperCase(), bg: attrs.role.includes('Staff') ? '#10b981' : '#4b5563' });
-        if (attrs.emotion) badges.push({ text: (attrs.emotion).toUpperCase(), bg: EMO_COLORS[attrs.emotion.toLowerCase()] || '#4b5563' });
-
-        ctx.font = '800 8px "Inter", sans-serif';
-        badges.reverse().forEach(b => {
-            const tw = ctx.measureText(b.text).width;
-            ctx.fillStyle = b.bg + 'dd';
-            ctx.beginPath(); ctx.roundRect?.(cx1, by - 12, tw + 6, 11, 2); ctx.fill();
-            ctx.fillStyle = '#fff';
-            ctx.fillText(b.text, cx1 + 3, by - 4);
-            by -= 13;
         });
-    });
 
-    // 5. Interaction Lines - Emerald/Green dashed
-    (frame.interactions || []).forEach(inter => {
-        const pts = inter.ids.map(id => {
-            const p = (frame.persons || []).find(x => x.id === id);
-            return p ? [tx((p.bbox[0] + p.bbox[2]) / 2), ty((p.bbox[1] + p.bbox[3]) / 2)] : null;
-        }).filter(Boolean);
-        if (pts.length < 2) return;
-
-        ctx.strokeStyle = 'rgba(16, 185, 129, 0.4)';
-        ctx.lineWidth = 1;
-        ctx.setLineDash([4, 4]);
-        ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); ctx.lineTo(pts[1][0], pts[1][1]);
-        ctx.stroke(); ctx.setLineDash([]);
-    });
+        (frame.interactions || []).forEach(inter => {
+            const pts = inter.ids.map(id => {
+                const p = (frame.persons || []).find(x => x.id === id);
+                return (p && p.bbox) ? [tx((p.bbox[0] + p.bbox[2]) / 2), ty((p.bbox[1] + p.bbox[3]) / 2)] : null;
+            }).filter(Boolean);
+            if (pts.length < 2) return;
+            ctx.strokeStyle = 'rgba(16, 185, 129, 0.4)';
+            ctx.lineWidth = 1; ctx.setLineDash([4, 4]);
+            ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); ctx.lineTo(pts[1][0], pts[1][1]);
+            ctx.stroke(); ctx.setLineDash([]);
+        });
+    } catch (e) { console.error("Overlay error:", e); }
 }
 
 // ─── App ─────────────────────────────────────────────────────────────────────
