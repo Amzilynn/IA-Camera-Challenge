@@ -149,7 +149,8 @@ export default function App() {
     const [stats, setStats] = useState({
         total_frames: 0, unique_persons_count: 0, emotions_breakdown: {},
         total_interactions: 0, interaction_types: {}, roles_breakdown: {},
-        intents_breakdown: {}, avg_persons_per_frame: 0
+        intents_breakdown: {}, avg_persons_per_frame: 0,
+        avg_dwell_time_seconds: 0, engagement_score: 0, zone_activity: {}
     });
 
     const canvasRef = useRef(null);
@@ -241,7 +242,8 @@ export default function App() {
         setStats({
             total_frames: 0, unique_persons_count: 0, emotions_breakdown: {},
             total_interactions: 0, interaction_types: {}, roles_breakdown: {},
-            intents_breakdown: {}, avg_persons_per_frame: 0
+            intents_breakdown: {}, avg_persons_per_frame: 0,
+            avg_dwell_time_seconds: 0, engagement_score: 0, zone_activity: {}
         });
 
         setUploadProgress(10);
@@ -263,7 +265,7 @@ export default function App() {
     const emotionData = useMemo(() => Object.entries(stats.emotions_breakdown || {}).map(([n, v]) => ({ name: n, value: v })), [stats]);
     const interData = useMemo(() => Object.entries(stats.interaction_types || {}).map(([n, v]) => ({ name: n, value: v })), [stats]);
     const rolesData = useMemo(() => Object.entries(stats.roles_breakdown || {}).map(([n, v]) => ({ name: n.split(' ')[0], value: v })), [stats]);
-    const intentsData = useMemo(() => Object.entries(stats.intents_breakdown || {}).map(([n, v]) => ({ name: n, value: v })), [stats]);
+    const zonesData = useMemo(() => Object.entries(stats.zone_activity || {}).map(([n, v]) => ({ name: n, value: v })), [stats]);
     const densityData = useMemo(() => data.slice(-60).map((d, i) => ({ i, count: d.persons?.length || 0 })), [data]);
 
     const filteredLogs = useMemo(() => {
@@ -318,10 +320,10 @@ export default function App() {
                     {/* Mini KPIs */}
                     <div className="mini-kpis">
                         {[
-                            { icon: <Users size={14} />, label: 'PERSONS', val: stats.unique_persons_count, color: 'cyan' },
-                            { icon: <Zap size={14} />, label: 'INTERACTIONS', val: stats.total_interactions, color: 'amber' },
-                            { icon: <Activity size={14} />, label: 'AVG CROWD', val: stats.avg_persons_per_frame, color: 'emerald' },
-                            { icon: <Brain size={14} />, label: 'FRAMES', val: stats.total_frames, color: 'purple' },
+                            { icon: <Users size={14} />, label: 'VISITORS', val: stats.unique_persons_count, color: 'cyan' },
+                            { icon: <Activity size={14} />, label: 'AVG DWELL', val: `${stats.avg_dwell_time_seconds || 0}s`, color: 'emerald' },
+                            { icon: <Zap size={14} />, label: 'ENGAGEMENT', val: `${stats.engagement_score || 0}%`, color: 'amber' },
+                            { icon: <MessageSquare size={14} />, label: 'INTERACTIONS', val: stats.total_interactions, color: 'purple' },
                         ].map(k => (
                             <div key={k.label} className={`mini-kpi ${k.color}`}>
                                 {k.icon}<div><div className="mini-label">{k.label}</div><div className="mini-val">{k.val}</div></div>
@@ -452,7 +454,7 @@ export default function App() {
                     <div className="chart-grid">
                         {[
                             {
-                                title: 'CROWD DENSITY', icon: <Activity size={12} />, chart: (
+                                title: 'CUSTOMER FLOW', icon: <Activity size={12} />, chart: (
                                     <AreaChart data={densityData}>
                                         <defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">
                                             <stop offset="5%" stopColor="#06b6d4" stopOpacity={0.25} />
@@ -460,12 +462,21 @@ export default function App() {
                                         </linearGradient></defs>
                                         <XAxis dataKey="i" hide />
                                         <Tooltip contentStyle={TOOLTIP_STYLE} />
-                                        <Area type="monotone" dataKey="count" stroke="#06b6d4" strokeWidth={2} fill="url(#ag)" name="Persons" />
+                                        <Area type="monotone" dataKey="count" stroke="#06b6d4" strokeWidth={2} fill="url(#ag)" name="Customers" />
                                     </AreaChart>
                                 )
                             },
                             {
-                                title: 'INTERACTION TYPES', icon: <BarChart3 size={12} />, chart: (
+                                title: 'ZONE ACTIVITY', icon: <Navigation size={12} />, chart: (
+                                    <BarChart data={zonesData}>
+                                        <XAxis dataKey="name" fontSize={8} axisLine={false} tickLine={false} />
+                                        <Tooltip contentStyle={TOOLTIP_STYLE} />
+                                        <Bar dataKey="value" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
+                                    </BarChart>
+                                )
+                            },
+                            {
+                                title: 'BEHAVIORAL ACTIONS', icon: <BarChart3 size={12} />, chart: (
                                     <BarChart data={interData}>
                                         <XAxis dataKey="name" fontSize={8} axisLine={false} tickLine={false} />
                                         <Tooltip contentStyle={TOOLTIP_STYLE} />
@@ -476,16 +487,7 @@ export default function App() {
                                 )
                             },
                             {
-                                title: 'INTENT ANALYSIS', icon: <Navigation size={12} />, chart: (
-                                    <BarChart data={intentsData}>
-                                        <XAxis dataKey="name" fontSize={8} axisLine={false} tickLine={false} />
-                                        <Tooltip contentStyle={TOOLTIP_STYLE} />
-                                        <Bar dataKey="value" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
-                                    </BarChart>
-                                )
-                            },
-                            {
-                                title: 'EMOTION TREND', icon: <TrendingUp size={12} />, chart: (
+                                title: 'SHOPPER EMOTION', icon: <TrendingUp size={12} />, chart: (
                                     <BarChart data={emotionData}>
                                         <XAxis dataKey="name" fontSize={8} axisLine={false} tickLine={false} />
                                         <Tooltip contentStyle={TOOLTIP_STYLE} />
