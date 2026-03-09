@@ -9,9 +9,9 @@ from cv_pipeline.pose_estimation.rtm_pose import RTMPoseEstimator
 MIN_HEIGHT_RATIO = 0.2
 CONF_HUMAN = 0.35
 CONF_POSE = 0.30
-CONF_FACE = 0.30
+CONF_FACE = 0.40
 IOU_HUMAN = 0.45
-IMG_SIZE = 800
+IMG_SIZE = 640
 
 # YOLO Pose skeleton connections - BODY ONLY (excluding face keypoints)
 # 0: nose, 1-2: eyes, 3-4: ears, 5-6: shoulders, 7-8: elbows, 
@@ -27,11 +27,12 @@ POSE_CONNECTIONS = [
     (12, 14), (14, 16)  # right leg
 ]
 
+
 class YOLODetector:
     def __init__(self,
-                 human_model_path="cv_pipeline/models/yolov8m.pt",
-                 pose_model_path="cv_pipeline/models/yolov8m-pose.pt",
-                 face_model_path="cv_pipeline/models/yolov8n-face.pt"):
+                 human_model_path="yolov8m.pt",
+                 pose_model_path="yolov8m-pose.pt",
+                 face_model_path="models/yolov8n-face.pt"):
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"I: Using device: {self.device}")
@@ -68,11 +69,13 @@ class YOLODetector:
         if self.pose_model is None:
             self.pose_model = YOLO("yolov8m-pose.pt")
 
-        try:
-            self.face_model = YOLO(face_model_path)
-        except:
-            print("I: YOLO face model not found. Using fallback for analysis.")
-            self.face_model = None
+        self.face_model = None
+        if face_model_path:
+            try:
+                self.face_model = YOLO(face_model_path)
+            except:
+                print("I: YOLO face model not found. Using DeepFace fallback for analysis.")
+                self.face_model = None
 
         # 4️⃣ RTMPose (Absolute Best for this project)
         try:
@@ -100,11 +103,11 @@ class YOLODetector:
     def detect(self, frame):
         h, w = frame.shape[:2]
 
-        # 1️⃣ HUMAN DETECTION (GPU FORCED)
-        human_results = self.human_model(
+        # 1️⃣ DETECTION (GPU FORCED) - Detect all, then filter
+        results = self.human_model(
             frame,
             verbose=False,
-            imgsz=640,
+            imgsz=IMG_SIZE,
             device=self.device,
             conf=CONF_HUMAN,
             iou=IOU_HUMAN
@@ -112,70 +115,76 @@ class YOLODetector:
 
         detections = []
 
-        if human_results.boxes:
-            for box in human_results.boxes:
-                if int(box.cls[0]) != 0: 
-                    continue
 
+        if results.boxes:
+            for box in results.boxes:
+                cls_id = int(box.cls[0])
+                conf = float(box.conf[0])
                 x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
-                if (y2 - y1) < MIN_HEIGHT_RATIO * h:
-                    continue
 
-                det = {
-                    "bbox": (x1, y1, x2, y2),
-                    "conf": float(box.conf[0]),
-                    "pose_keypoints": None,
-                    "faces": []
-                }
+                # Handle Humans
+                if cls_id == 0:
+                    if (y2 - y1) < MIN_HEIGHT_RATIO * h:
+                        continue
 
-                # Prepare crop for Pose Fallback or Face Detection
-                human_crop, offset = self._crop_region(frame, det["bbox"], margin=0.05)
+                    det = {
+                        "type": "person",
+                        "bbox": (x1, y1, x2, y2),
+                        "conf": conf,
+                        "pose_keypoints": None,
+                        "faces": []
+                    }
 
-                # 2️⃣ POSE ESTIMATION (RTMPose Primary, YOLO Fallback)
-                if self.rtm_pose:
-                    kpts = self.rtm_pose.estimate(frame, det["bbox"])
-                    det["pose_keypoints"] = kpts
-                else:
-                    if human_crop.size > 0:
-                        pose_res = self.pose_model(
+                    # Prepare crop for Pose Fallback or Face Detection
+                    human_crop, offset = self._crop_region(frame, det["bbox"], margin=0.05)
+
+                    # 2️⃣ POSE ESTIMATION (RTMPose Primary, YOLO Fallback)
+                    if self.rtm_pose:
+                        kpts = self.rtm_pose.estimate(frame, det["bbox"])
+                        det["pose_keypoints"] = kpts
+                    else:
+                        if human_crop.size > 0:
+                            pose_res = self.pose_model(
+                                human_crop,
+                                verbose=False,
+                                imgsz=256,
+                                device=self.device,
+                                conf=0.25
+                            )[0]
+
+                            if len(pose_res.boxes) > 0 and pose_res.keypoints is not None:
+                                kpts_xy = pose_res.keypoints.xy[0].cpu().numpy()
+                                kpts_conf = pose_res.keypoints.conf[0].cpu().numpy() if pose_res.keypoints.conf is not None else np.ones((kpts_xy.shape[0],))
+                                kpts_xy[:, 0] += offset[0]
+                                kpts_xy[:, 1] += offset[1]
+                                det["pose_keypoints"] = np.column_stack((kpts_xy, kpts_conf))
+
+                    # 3️⃣ FACE DETECTION (model‑based)
+                    if self.face_model and human_crop.size > 0:
+                        face_res = self.face_model(
                             human_crop,
                             verbose=False,
-                            imgsz=192,
+                            imgsz=256,
                             device=self.device,
-                            conf=0.25
+                            conf=CONF_FACE
                         )[0]
 
-                        if len(pose_res.boxes) > 0 and pose_res.keypoints is not None:
-                            kpts_xy = pose_res.keypoints.xy[0].cpu().numpy()
-                            kpts_conf = pose_res.keypoints.conf[0].cpu().numpy() if pose_res.keypoints.conf is not None else np.ones((kpts_xy.shape[0],))
-                            kpts_xy[:, 0] += offset[0]
-                            kpts_xy[:, 1] += offset[1]
-                            det["pose_keypoints"] = np.column_stack((kpts_xy, kpts_conf))
+                        for fbox in face_res.boxes:
+                            fx1, fy1, fx2, fy2 = fbox.xyxy[0].cpu().numpy()
+                            fx1 += offset[0]
+                            fy1 += offset[1]
+                            fx2 += offset[0]
+                            fy2 += offset[1]
 
-                # 3️⃣ FACE DETECTION (GPU FORCED)
-                if self.face_model and human_crop.size > 0:
-                    face_res = self.face_model(
-                        human_crop,
-                        verbose=False,
-                        imgsz=256,
-                        device=self.device,
-                        conf=CONF_FACE
-                    )[0]
+                            det["faces"].append({
+                                "bbox": (fx1, fy1, fx2, fy2),
+                                "conf": float(fbox.conf[0])
+                            })
 
-                    for fbox in face_res.boxes:
-                        fx1, fy1, fx2, fy2 = fbox.xyxy[0].cpu().numpy()
-                        fx1 += offset[0]
-                        fy1 += offset[1]
-                        fx2 += offset[0]
-                        fy2 += offset[1]
-
-                        det["faces"].append({
-                            "bbox": (fx1, fy1, fx2, fy2),
-                            "conf": float(fbox.conf[0])
-                        })
-
-                detections.append(det)
-
+                    detections.append(det)
+                
+                # Handle Store Objects (for HOI/Intent analysis)
+                # No store‑object handling in the original pipeline – ignore other classes
         return detections
 
     def draw(self, frame, detections, draw_skeleton=True, draw_faces=True):
@@ -229,9 +238,11 @@ class YOLODetector:
                 for f in det["faces"]:
                     fx1, fy1, fx2, fy2 = map(int, f["bbox"])
                     fconf = f["conf"]
-                    cv2.rectangle(out, (fx1, fy1), (fx2, fy2), (255,0,0), 2)
+                    
+                    # Consolidate to Blue for the improved face detection
+                    cv2.rectangle(out, (fx1, fy1), (fx2, fy2), (255, 0, 0), 2)
                     cv2.putText(out, f"Face {fconf:.2f}", (fx1, fy1-6),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 1)
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1)
 
         return out
 

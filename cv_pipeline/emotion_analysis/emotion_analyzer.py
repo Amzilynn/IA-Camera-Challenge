@@ -1,70 +1,84 @@
 from deepface import DeepFace
 import cv2
 import numpy as np
+try:
+    from hsemotion.facial_emotions import HSEmotionRecognizer
+    HSEMOTION_AVAILABLE = True
+except ImportError:
+    HSEMOTION_AVAILABLE = False
 
 class EmotionAnalyzer:
-    def __init__(self, backend='opencv'):
+    def __init__(self, backend='hsemotion'):
         self.backend = backend
+        self.fer_model = None
+        
+        if HSEMOTION_AVAILABLE:
+            try:
+                # Using a balanced model: enet_b2_8 for 8 emotions
+                self.fer_model = HSEmotionRecognizer(model_name='enet_b2_8', device='cuda')
+                print("I: HSEmotion (SOTA) initialized successfully on GPU.")
+            except Exception as e:
+                try:
+                    self.fer_model = HSEmotionRecognizer(model_name='enet_b2_8', device='cpu')
+                    print("I: HSEmotion initialized successfully on CPU.")
+                except Exception as e2:
+                    print(f"W: HSEmotion initialization failed. Falling back to DeepFace. Error1: {e}, Error2: {e2}")
+                    self.fer_model = None
+        else:
+            print("W: HSEmotion not installed. Falling back to DeepFace.")
         
     def analyze(self, frame, bbox=None):
         """
-        Analyze emotions, age, and gender for a face or person crop.
-        Args:
-            frame: The full video frame
-            bbox: Face or person bounding box (x1, y1, x2, y2). 
-                  If None, DeepFace will try to find a face in the image (not recommended).
-        Returns:
-            dict: {
-                'emotion': str,
-                'age': int,
-                'gender': str
-            } or None
+        Analyze emotions, age, and gender using SOTA HSEmotion.
         """
-        face_crop = frame
-        if bbox is not None:
-            x1, y1, x2, y2 = map(int, bbox)
-            h, w, c = frame.shape
+        if bbox is None:
+            return None
             
-            # Validations
-            x1, y1 = max(0, x1), max(0, y1)
-            x2, y2 = min(w, x2), min(h, y2)
+        x1, y1, x2, y2 = map(int, bbox)
+        h, w = frame.shape[:2]
+        x1, y1 = max(0, x1), max(0, y1)
+        x2, y2 = min(w, x2), min(h, y2)
+        
+        if x2 <= x1 or y2 <= y1:
+            return None
             
-            if x2 <= x1 or y2 <= y1:
-                return None
-                
-            face_crop = frame[y1:y2, x1:x2]
-            if face_crop.size == 0:
-                return None
+        face_crop = frame[y1:y2, x1:x2]
+        if face_crop.size == 0:
+            return None
             
         try:
-            # DeepFace can handle emotion, age, and gender
+            # 1. SOTA Emotion Prediction
+            if self.fer_model:
+                emotion, scores = self.fer_model.predict_emotions(face_crop, logits=False)
+            else:
+                # Fallback to DeepFace for emotion
+                res = DeepFace.analyze(img_path=face_crop, actions=['emotion'], 
+                                       enforce_detection=False, detector_backend='skip', silent=True)[0]
+                emotion = res['dominant_emotion']
+            
+            # 2. Age/Gender via DeepFace
             results = DeepFace.analyze(
                 img_path=face_crop,
-                actions=['emotion', 'age', 'gender'],
+                actions=['age', 'gender'],
                 enforce_detection=False, 
                 detector_backend='skip',
                 silent=True
             )
             
-            if not results:
-                return None
-                
-            res = results[0]
-            
-            # Normalize age and gender
-            age = int(res['age'])
-            gender = res['dominant_gender'].lower() # 'man' or 'woman'
-            # Map DeepFace gender to our pipeline's expected values
-            gender = "male" if gender in ["man", "male"] else "female"
+            age = 25
+            gender = "unknown"
+            if results:
+                res = results[0]
+                age = int(res['age'])
+                gender = "male" if res['dominant_gender'].lower() in ["man", "male"] else "female"
             
             return {
-                'emotion': res['dominant_emotion'],
+                'emotion': emotion,
                 'age': age,
                 'gender': gender
             }
             
         except Exception as e:
-            # print(f"DeepFace analysis failed: {e}")
             return None
 
     def get_embedding(self, frame, bbox):
@@ -75,7 +89,7 @@ class EmotionAnalyzer:
             return None
             
         x1, y1, x2, y2 = map(int, bbox)
-        h, w, c = frame.shape
+        h, w = frame.shape[:2]
         x1, y1 = max(0, x1), max(0, y1)
         x2, y2 = min(w, x2), min(h, y2)
         
