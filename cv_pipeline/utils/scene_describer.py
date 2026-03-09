@@ -31,6 +31,7 @@ class SceneDescriber:
             person = {
                 "id": track_id,
                 "bbox": [round(float(x), 2) for x in det['bbox']],
+                "color": det.get('track_color', (0, 255, 0)),
                 "attributes": {}
             }
             
@@ -46,8 +47,11 @@ class SceneDescriber:
             if 'group_id' in det and det['group_id'] != -1: attrs['group_id'] = det['group_id']
             if det.get('space_violated'): attrs['space_violation'] = True
             
+            # Expose raw skeleton and face data for EXACT drawing in frontend
             if 'pose_keypoints' in det and det['pose_keypoints'] is not None:
-                attrs['pose_tracked'] = True
+                person["pose_keypoints"] = [[round(float(x), 2) for x in kp] for kp in det['pose_keypoints']]
+            if 'faces' in det and det['faces']:
+                person["faces"] = [{"bbox": [round(float(x), 2) for x in f["bbox"]], "conf": round(float(f["conf"]), 2)} for f in det["faces"]]
                 
             frame_data["persons"].append(person)
             

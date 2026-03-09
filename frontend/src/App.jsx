@@ -20,7 +20,11 @@ const INT_COLORS = {
     'Approaching': '#3b82f6', 'Physical Contact': '#ef4444', 'Service/Helping': '#8b5cf6'
 };
 
-// ─── Canvas Overlay ──────────────────────────────────────────────────────────
+const POSE_CONNECTIONS = [
+    [5, 6], [5, 7], [7, 9], [6, 8], [8, 10], [5, 11], [6, 12],
+    [11, 12], [11, 13], [13, 15], [12, 14], [14, 16]
+];
+
 function drawOverlay(canvas, frame, selectedPerson) {
     if (!canvas || !frame) return;
     const ctx = canvas.getContext('2d');
@@ -32,7 +36,6 @@ function drawOverlay(canvas, frame, selectedPerson) {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Letterbox-aware mapping
     const srcW = 1920, srcH = 1080;
     const cw = canvas.width, ch = canvas.height;
     const cAspect = cw / ch, sAspect = srcW / srcH;
@@ -42,68 +45,85 @@ function drawOverlay(canvas, frame, selectedPerson) {
     const tx = v => ox + (v / srcW) * rW;
     const ty = v => oy + (v / srcH) * rH;
 
+    const bgrToRgb = (bgr) => `rgb(${bgr[2]}, ${bgr[1]}, ${bgr[0]})`;
+
     (frame.persons || []).forEach(p => {
         const [bx1, by1, bx2, by2] = p.bbox;
-        let cx1 = tx(bx1), cy1 = ty(by1), cx2 = tx(bx2), cy2 = ty(by2);
+        const cx1 = tx(bx1), cy1 = ty(by1), cx2 = tx(bx2), cy2 = ty(by2);
         const bw = cx2 - cx1, bh = cy2 - cy1;
-        const attrs = p.attributes || {};
-        const isStaff = (attrs.role || '').includes('Staff');
+
         const isSelected = selectedPerson === p.id;
-        const color = isStaff ? '#10b981' : isSelected ? '#f59e0b' : '#06b6d4';
-        const emotion = (attrs.emotion || 'neutral').toLowerCase();
+        const colorBGR = p.color || [0, 255, 0];
+        const color = bgrToRgb(colorBGR);
 
-        // Glowing bbox
-        ctx.save();
-        ctx.shadowBlur = isSelected ? 30 : 16;
-        ctx.shadowColor = color;
+        // 1. Human Bounding Box (cv2.rectangle style)
         ctx.strokeStyle = color;
-        ctx.lineWidth = isSelected ? 3 : 2;
+        ctx.lineWidth = isSelected ? 4 : 2;
         ctx.strokeRect(cx1, cy1, bw, bh);
-        ctx.restore();
 
-        // Semi-transparent fill
-        ctx.fillStyle = color + '14';
-        ctx.fillRect(cx1, cy1, bw, bh);
+        // 2. ID Label (cv2.putText style)
+        ctx.fillStyle = color;
+        ctx.font = `600 ${isSelected ? 16 : 13}px "Inter", sans-serif`;
+        ctx.fillText(`ID:${p.id}`, cx1, cy1 - 5);
 
-        // Corner brackets
-        const cl = Math.min(bw, bh, 20);
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 3;
-        ctx.shadowBlur = 0;
-        [
-            [cx1, cy1, 1, 1], [cx2, cy1, -1, 1], [cx1, cy2, 1, -1], [cx2, cy2, -1, -1]
-        ].forEach(([px, py, dx, dy]) => {
-            ctx.beginPath();
-            ctx.moveTo(px + dx * cl, py); ctx.lineTo(px, py); ctx.lineTo(px, py + dy * cl);
-            ctx.stroke();
+        // 3. Skeleton (replicate cv2.line and cv2.circle)
+        if (p.pose_keypoints) {
+            const kpts = p.pose_keypoints;
+            // Bones
+            ctx.strokeStyle = '#ffff00'; // Yellow lines
+            ctx.lineWidth = 2;
+            POSE_CONNECTIONS.forEach(([s, e]) => {
+                if (kpts[s] && kpts[e] && kpts[s][2] > 0.4 && kpts[e][2] > 0.4) {
+                    ctx.beginPath();
+                    ctx.moveTo(tx(kpts[s][0]), ty(kpts[s][1]));
+                    ctx.lineTo(tx(kpts[e][0]), ty(kpts[e][1]));
+                    ctx.stroke();
+                }
+            });
+            // Joints
+            kpts.forEach((kp, i) => {
+                if (i >= 5 && kp[2] > 0.4) {
+                    const kpx = tx(kp[0]), kpy = ty(kp[1]);
+                    ctx.fillStyle = '#ff0000'; // Red fill
+                    ctx.beginPath(); ctx.arc(kpx, kpy, 4, 0, Math.PI * 2); ctx.fill();
+                    ctx.strokeStyle = '#ffffff'; // White border
+                    ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(kpx, kpy, 5, 0, Math.PI * 2); ctx.stroke();
+                }
+            });
+        }
+
+        // 4. Faces (Blue boxes)
+        if (p.faces) {
+            p.faces.forEach(f => {
+                const [fx1, fy1, fx2, fy2] = f.bbox;
+                const fcx1 = tx(fx1), fcy1 = ty(fy1), fcx2 = tx(fx2), fcy2 = ty(fy2);
+                ctx.strokeStyle = '#0000ff';
+                ctx.lineWidth = 2;
+                ctx.strokeRect(fcx1, fcy1, fcx2 - fcx1, fcy2 - fcy1);
+            });
+        }
+
+        // 5. Retail Badges (replicate run_full_pipeline.py draw_badge style)
+        let by = cy1 - 25;
+        const badges = [];
+        const attrs = p.attributes || {};
+        if (attrs.role) badges.push({ text: `ROLE: ${attrs.role}`, bg: attrs.role.includes('Staff') ? 'rgb(255, 100, 0)' : 'rgb(100, 100, 100)' });
+        if (attrs.intent) badges.push({ text: `INTENT: ${attrs.intent}`, bg: attrs.intent !== 'Normal' ? 'rgb(0, 0, 255)' : 'rgb(50, 50, 50)' });
+        if (attrs.emotion) badges.push({ text: `EMO: ${attrs.emotion} ${attrs.mood_trend || ''}`, bg: EMO_COLORS[attrs.emotion.toLowerCase()] || 'rgb(100, 100, 100)' });
+        if (attrs.gender) badges.push({ text: `${attrs.gender} | Age: ${attrs.age || 'N/A'}`, bg: 'rgb(50, 50, 50)' });
+
+        ctx.font = '700 11px "Inter", sans-serif';
+        badges.forEach(b => {
+            const tw = ctx.measureText(b.text).width;
+            ctx.fillStyle = b.bg;
+            ctx.fillRect(cx1, by - 18, tw + 10, 15);
+            ctx.fillStyle = '#ffffff';
+            ctx.fillText(b.text, cx1 + 5, by - 7);
+            by -= 18;
         });
-
-        // Stacked badges above box
-        const FONT = 11;
-        const PAD = 6, BH = FONT + 8;
-        ctx.font = `700 ${FONT}px "Inter", sans-serif`;
-        let by = cy1 - 2;
-
-        const badge = (text, bg, fg = '#fff') => {
-            const tw = ctx.measureText(text).width;
-            const bxPos = Math.max(0, Math.min(cx1, cw - tw - PAD * 2));
-            ctx.fillStyle = bg + 'ee';
-            ctx.beginPath();
-            ctx.roundRect?.(bxPos, by - BH, tw + PAD * 2, BH, 3);
-            ctx.fill();
-            ctx.fillStyle = fg;
-            ctx.fillText(text, bxPos + PAD, by - 3);
-            by -= BH + 2;
-        };
-
-        const intent = attrs.intent || 'Normal';
-        if (intent !== 'Normal') badge(`⚡ ${intent}`, '#dc2626');
-        badge(`EMO: ${emotion}`, EMO_COLORS[emotion] || '#6366f1');
-        badge(isStaff ? '● STAFF' : '● VISITOR', isStaff ? '#059669' : '#2563eb');
-        badge(`ID ${p.id}`, isSelected ? '#b45309' : '#0f172add');
     });
 
-    // Interaction lines
+    // 6. Interaction Lines (Green dashed lines)
     (frame.interactions || []).forEach(inter => {
         const pts = inter.ids.map(id => {
             const p = (frame.persons || []).find(x => x.id === id);
@@ -111,23 +131,17 @@ function drawOverlay(canvas, frame, selectedPerson) {
         }).filter(Boolean);
         if (pts.length < 2) return;
 
-        const color = INT_COLORS[inter.type] || '#f59e0b';
-        ctx.save();
-        ctx.shadowBlur = 10; ctx.shadowColor = color;
-        ctx.strokeStyle = color + 'aa'; ctx.lineWidth = 2;
-        ctx.setLineDash([8, 5]);
-        ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); ctx.lineTo(pts[1][0], pts[1][1]);
+        ctx.strokeStyle = '#00ff00';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(pts[0][0], pts[0][1]);
+        ctx.lineTo(pts[1][0], pts[1][1]);
         ctx.stroke();
-        ctx.restore();
-        ctx.setLineDash([]);
 
-        const mx = (pts[0][0] + pts[1][0]) / 2, my = (pts[0][1] + pts[1][1]) / 2 - 12;
-        ctx.font = '700 11px "Inter", sans-serif';
-        const label = inter.type;
-        const lw = ctx.measureText(label).width;
-        ctx.fillStyle = color + 'cc';
-        ctx.beginPath(); ctx.roundRect?.(mx - lw / 2 - 8, my - 14, lw + 16, 18, 4); ctx.fill();
-        ctx.fillStyle = '#fff'; ctx.fillText(label, mx - lw / 2, my - 1);
+        const mx = (pts[0][0] + pts[1][0]) / 2, my = (pts[0][1] + pts[1][1]) / 2;
+        ctx.fillStyle = '#00ff00';
+        ctx.font = '700 16px "Inter", sans-serif';
+        ctx.fillText(`<< ${inter.type} >>`, mx - 50, my);
     });
 }
 
@@ -152,6 +166,9 @@ export default function App() {
         intents_breakdown: {}, avg_persons_per_frame: 0,
         avg_dwell_time_seconds: 0, engagement_score: 0, zone_activity: {}
     });
+
+    const processPct = pipeline.total_frames > 0 ? Math.round(pipeline.progress / pipeline.total_frames * 100) : 0;
+    const isProcessing = pipeline.status === 'processing';
 
     const canvasRef = useRef(null);
     const fileInputRef = useRef(null);
@@ -260,8 +277,7 @@ export default function App() {
     }, []);
 
     const clearFilters = () => { setFilterType(null); setFilterValue(null); setSelectedPerson(null); };
-    const processPct = pipeline.total_frames > 0 ? Math.round(pipeline.progress / pipeline.total_frames * 100) : 0;
-    const isProcessing = pipeline.status === 'processing';
+
 
     const emotionData = useMemo(() => Object.entries(stats.emotions_breakdown || {}).map(([n, v]) => ({ name: n, value: v })), [stats]);
     const interData = useMemo(() => Object.entries(stats.interaction_types || {}).map(([n, v]) => ({ name: n, value: v })), [stats]);

@@ -139,7 +139,7 @@ async def upload_video(background_tasks: BackgroundTasks, file: UploadFile = Fil
                 f.write("")
 
             pipeline_process = subprocess.Popen(
-                [sys.executable, script_path, file_path, "--log", LOG_PATH, "--output", output_path],
+                [sys.executable, script_path, file_path, "--headless", "--log", LOG_PATH, "--output", output_path],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
