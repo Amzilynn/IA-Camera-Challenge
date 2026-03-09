@@ -388,24 +388,64 @@ export default function App() {
                                 <video key={outputVideoUrl} src={outputVideoUrl} autoPlay muted loop controls
                                     style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', zIndex: 3, background: '#000' }} />
                             )}
-                            {/* Live source video */}
-                            {!outputVideoUrl && uploadedVideoUrl && (
+                            {/* Live source video - HIDDEN DURING PROCESSING to avoid sync mess */}
+                            {!isProcessing && !outputVideoUrl && uploadedVideoUrl && (
                                 <video key={uploadedVideoUrl} src={uploadedVideoUrl} autoPlay muted loop
                                     style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', zIndex: 1, background: '#000' }} />
                             )}
-                            {/* Canvas overlay */}
-                            {!outputVideoUrl && (
+                            {/* Canvas overlay - HIDDEN DURING PROCESSING */}
+                            {!isProcessing && !outputVideoUrl && (
                                 <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 2, pointerEvents: 'none' }} />
                             )}
-                            {/* Processing overlay */}
+                            {/* Processing overlay - Opaque Deep Analysis Screen */}
                             {isProcessing && (
                                 <div className="processing-overlay">
-                                    {showIntro && (
+                                    {showIntro ? (
                                         <div className="intro-splash">
                                             <div className="splash-content">
                                                 <Loader size={36} className="spin splash-loader" />
                                                 <div className="splash-title">INITIALIZING RETAIL INTELLIGENCE</div>
                                                 <div className="splash-sub">CALIBRATING AI SENSORS & NEURAL NETWORKS</div>
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <div className="analysis-screen">
+                                            <div className="analysis-content">
+                                                <div className="analysis-header">
+                                                    <Brain className="analysis-icon pulse" size={48} />
+                                                    <h2>DEEP SCENE ANALYSIS</h2>
+                                                    <p>MAPPING CUSTOMER FLOW & BEHAVIORAL PATTERNS</p>
+                                                </div>
+
+                                                <div className="analysis-progress-container">
+                                                    <div className="progress-bar-label">
+                                                        <span>NEURAL PROCESSING</span>
+                                                        <span>{processPct}%</span>
+                                                    </div>
+                                                    <div className="analysis-progress-bg">
+                                                        <div className="analysis-progress-fill" style={{ width: `${processPct}%` }} />
+                                                    </div>
+                                                </div>
+
+                                                <div className="analysis-stats-mini">
+                                                    <div className="a-stat">
+                                                        <span className="a-label">VISITORS</span>
+                                                        <span className="a-val">{stats.unique_persons_count || 0}</span>
+                                                    </div>
+                                                    <div className="a-stat">
+                                                        <span className="a-label">DETECTIONS</span>
+                                                        <span className="a-val">{pipeline.progress || 0}</span>
+                                                    </div>
+                                                    <div className="a-stat">
+                                                        <span className="a-label">INTENTS</span>
+                                                        <span className="a-val">{stats.total_interactions || 0}</span>
+                                                    </div>
+                                                </div>
+
+                                                <div className="analysis-footer">
+                                                    <Loader size={14} className="spin" />
+                                                    <span>STABILIZING VISUAL TELEMETRY...</span>
+                                                </div>
                                             </div>
                                         </div>
                                     )}
