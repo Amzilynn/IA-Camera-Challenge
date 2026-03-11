@@ -1,62 +1,64 @@
-# IA Camera Challenge - Computer Vision Pipeline
+# IA Camera Challenge - Scene Intelligence Pipeline
 
-A state-of-the-art CV pipeline for security camera analysis featuring YOLOv26-s, real-time person tracking, pose estimation, and a hybrid Service Provider Identification layer.
+A high-performance computer vision pipeline for human-centric scene understanding, featuring Scene Graph Generation (SGG), real-time social interaction analysis, and a premium HUD visualization.
 
-## 🚀 Key Features
+## Key Features
 
-### 💎 Core Intelligence
-- **YOLOv26-s Upgrade**: Leverages the latest YOLO26 architecture for ultra-efficient, end-to-end NMS-free human detection and pose estimation.
-- **Hybrid Role Identification**: A multi-layered logic to distinguish Service Providers (Staff) from Visitors using:
-    - **Visual Markers**: Scanning for registries, badges, and tablets on person crops.
-    - **Social Centrality**: Analysis of interaction hub behavior (who interacts with the most unique people).
-    - **Spatial Dispersion**: Tracking scene coverage patterns (patrolling vs. territorial stay).
-- **Social Interaction (STAS)**: Geometry-based detection of behaviors like Talking, Service/Helping, Walking together, and Space VIOLATIONS.
+### Scene Intelligence
+- **REACT++ Integration**: Leverages state-of-the-art Scene Graph Generation for real-time object and relationship detection.
+- **Social Interaction Index (STAS)**: Advanced temporal analysis of human-to-human relationships, including talking, physical contact, and social proximity.
+- **Automated Role Discovery**: Distinguishes between Staff and Visitors based on mobility, social centrality, and Hand-Object Interaction (HOI) patterns.
+- **Temporal Smoothing**: Implements a 10-frame majority-voting buffer to eliminate semantic flickering and ensure stable interaction labels.
 
-### 🎥 Robust Pipeline
-- **Multi-Object Tracking**: BoxMOT (DeepOCSORT) for persistent IDs and cross-scene re-identification.
-- **Demographic Analysis**: MiVOLO (Face + Body) for precise age and gender estimation.
-- **Emotion Analysis**: DeepFace for facial emotion and sentiment trend analysis.
-- **JSONL Logging**: Structured, line-delimited JSON data for easy downstream analytics.
+### Premium HUD Visualization
+- **Glassmorphism Interface**: Semi-transparent, dark-themed intelligence cards for roles and satisfaction metrics.
+- **Anti-Aliased Typography**: High-quality PIL-based rendering for professional-grade text and graphics.
+- **Glow-Effect Relationships**: Cyan-glowing "energy cords" visualize social dynamics between individuals.
+- **Customer Satisfaction Index**: Real-time dashboard calculating aggregate visitor happiness from emotion trends.
 
-## 📁 Clean Repository Structure
+### Robust CV Core
+- **Multi-Object Tracking**: DEEPOCSORT (via BoxMOT) for persistent person identification.
+- **HSEmotion Analysis**: State-of-the-art emotion detection for real-time satisfaction monitoring.
+- **MiVOLO Demographics**: Precise age and gender estimation using face and body features.
+- **Structured Logging**: Frame-by-frame JSONL output for downstream data science and analytics.
+
+## Repository Structure
 
 ```bash
 IA-Camera-Challenge/
 ├── cv_pipeline/
-│   ├── detection/          # YOLOv26-s & Provider Identification
+│   ├── detection/          # REACT++ SGG & Human Detection
 │   ├── tracking/           # BoxMOT tracking module
-│   ├── pose_estimation/    # RTMPose & YOLO-Pose
-│   ├── emotion_analysis/   # DeepFace & MiVOLO
-│   ├── social_interaction/ # Hybrid Role Inference & STAS
-│   └── utils/              # JSON Scene Describer
+│   ├── pose_estimation/    # RTMPose & Pose Analysis
+│   ├── emotion_analysis/   # HSEmotion & MiVOLO
+│   ├── social_interaction/ # SocialAnalyzer & Role Discovery
+│   └── utils/              # UIProcessor HUD & Scene Describer
 ├── scripts/
-│   ├── run_full_pipeline.py  # Main entry point (MP4/JSON output)
-│   └── download_model.py     # Setup helper
-├── models/                 # Model weights (YOLO26-S, Face, MiVOLO)
-├── final_output.mp4        # Annotated high-res video output
+│   ├── run_full_pipeline.py  # Main entry point
+│   └── download_model.py     # Model setup helper
+├── models/                 # Model weights (REACT++, RTMPose, Face)
 └── scene_log.json          # Structured frame-by-frame data
 ```
 
-## 🛠 Quick Start
+## Quick Start
 
 ### Prerequisites
-- **Python**: 3.11+
-- **GPU**: NVIDIA GPU (GTX 1650+) with CUDA 12.1+
+- Python 3.11+
+- NVIDIA GPU with CUDA 12.1+ support
 
 ### Installation
-1. **Setup Env**: `python -m venv venv` and activate it.
-2. **PyTorch**: `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
-3. **Requirements**: `pip install -r requirements.txt`
-4. **Models**: Ensure `yolo26s.pt` is in the root or will be auto-downloaded by Ultralytics.
+1. Setup virtual environment: `python -m venv venv`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Ensure model weights are placed in the models/ directory as specified in the configuration.
 
 ### Usage
 ```bash
-python scripts/run_full_pipeline.py  # Default: vd2.mp4
+python cv_pipeline/scripts/run_full_pipeline.py [video_path] --output [output_name.mp4]
 ```
 
-## 📊 Outputs
-- **`final_output.mp4`**: Annotated video with ID, Role, Emotion, and Interaction tags.
-- **`scene_log.json`**: JSONL structured data for high-level scene understanding.
+## Outputs
+- **Annotated Video**: High-quality MP4 with ID, Role, Satisfaction, and Interaction HUD.
+- **Intelligence Log**: JSONL structured data file for high-level scene metrics and behavioral analysis.
 
 ---
-**Maintained by**: Amzilynn | **Engine**: YOLOv26-s + Custom Hybrid Logic
+**Maintained by**: Amzilynn | **Engine**: REACT++ SGG + Custom Scene Intelligence
