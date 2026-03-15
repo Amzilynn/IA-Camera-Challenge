@@ -1,6 +1,6 @@
 # IA Camera Challenge - Scene Intelligence Pipeline
 
-A high-performance computer vision pipeline for human-centric scene understanding, featuring Scene Graph Generation (SGG), real-time social interaction analysis, and a premium HUD visualization.
+A high-performance computer vision pipeline for human-centric scene understanding, featuring Scene Graph Generation (SGG), real-time social interaction analysis.
 
 ## Key Features
 
