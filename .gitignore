@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Conda & venv environments
+venv-camchallenge/
+venv/
+
+# VS Code files
+.vscode/
+
+# Python build
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Model weights or large files
+*.pth
+*.ckpt
+*.onnx
+models/mivolo_imbd.pth.tar
+# Video or input data
+data/
+*.mp4
+*.avi
+*.mov
+
+# Node / frontend (later when you create frontend)
+node_modules/
+
+# Environment files (NEVER commit)
+.env    
+.env.*
+
+*.pt
