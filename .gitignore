@@ -18,6 +18,7 @@ dist/
 
 # Logs
 *.log
+*.json
 
 # Model weights or large files
 *.pth
